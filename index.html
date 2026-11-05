@@ -1,0 +1,1848 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Monolina Sarkar | Academic Portfolio</title>
+  <meta name="description" content="Academic portfolio of Monolina Sarkar, Ph.D. in Biochemistry & M.Ed. Dedicated to Discipline-Based Education Research (DBER), Kaizen learning spaces, AI literacy, and undergraduate biology curriculum innovation.">
+  <meta name="keywords" content="Monolina Sarkar, DBER, Biology Education, Andragogy, Biochemistry, Kaizen, Scientific Reasoning, AI Literacy in Higher Education, Curriculum Innovation">
+  <meta property="og:title" content="Monolina Sarkar | Academic Portfolio">
+  <meta property="og:description" content="Exploring how learners construct, refine, and transfer scientific reasoning across unfamiliar biological contexts.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=DM+Sans:wght@400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/jpeg" href="images (3).jpg">
+
+  <style>
+    /* =========================================================
+       CONSOLIDATED HOME PAGE STYLES (VERSION 2 INTEGRATION)
+       ========================================================= */
+
+    section[id] {
+      scroll-margin-top: 85px;
+    }
+
+    /* Section 01: Hero */
+    #home {
+      width: 100%;
+      min-height: 440px;
+      box-sizing: border-box;
+      padding: clamp(60px, 9vw, 100px) 24px clamp(30px, 5vw, 48px);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: linear-gradient(to bottom, #fdfdfd 0%, #ffffff 60%, #ffffff 100%);
+    }
+
+    #home .hero-eyebrow {
+      margin: 0 0 24px;
+      color: #000000;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+
+    #home .hero-title-main {
+      margin: 0;
+      color: #171717;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(34px, 5.2vw, 58px);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+    }
+
+    #home .hero-title-main .accent {
+      color: #24577c;
+    }
+
+    #home .hero-desc {
+      margin: 32px auto 0;
+      max-width: 1100px;
+      width: 100%;
+      color: #000000;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(16px, 2vw, 24px);
+      font-weight: 500;
+      line-height: 1.6;
+    }
+
+    @media (min-width: 768px) {
+      #home .hero-desc {
+        white-space: nowrap;
+      }
+    }
+
+    #home .hero-desc em {
+      color: #24577c;
+      font-weight: 400;
+      font-style: italic;
+    }
+
+    #home .hero-cta-group {
+      margin-top: 42px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* Section: Research Focus */
+    #research-focus {
+      width: 100%;
+      margin: 0;
+      padding: clamp(60px, 7vw, 90px) 24px;
+      background: #FFFFFF;
+      color: #292E28;
+      box-sizing: border-box;
+    }
+
+    #research-focus-inner {
+      max-width: 1050px;
+      margin: 0 auto;
+      box-sizing: border-box;
+    }
+
+    #research-focus .focus-header {
+      margin-bottom: 24px;
+    }
+
+    #research-focus .focus-header .lead-text {
+      margin: 0 0 4px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(32px, 3.8vw, 42px);
+      font-weight: 400;
+      color: #171717;
+      line-height: 1.15;
+    }
+
+    #research-focus .focus-header .sublead-text {
+      margin: 0;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-style: italic;
+      font-size: clamp(36px, 4.4vw, 46px);
+      font-weight: 400;
+      color: #24577c;
+      line-height: 1.15;
+    }
+
+    #research-focus .focus-intro {
+      padding: 0 0 24px;
+      border-bottom: 1px solid #E2E5DE;
+    }
+
+    #research-focus .focus-intro p {
+      max-width: 100%;
+      margin: 0;
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 18px;
+      line-height: 1.65;
+      color: #000000;
+      font-weight: 500;
+      text-align: left;
+    }
+
+    #research-focus .focus-themes {
+      display: flex;
+      flex-direction: column;
+    }
+
+    #research-focus .focus-theme {
+      display: grid;
+      grid-template-columns: 46px minmax(0, 1fr);
+      gap: 16px;
+      padding: 24px 0;
+      border-bottom: 1px solid #E2E5DE;
+      align-items: baseline;
+    }
+
+    #research-focus .theme-num {
+      font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+      font-size: 16px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      color: #000000;
+    }
+
+    #research-focus .focus-theme h3 {
+      margin: 0 0 8px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      line-height: 1.3;
+      color: #000000;
+    }
+
+    #research-focus .focus-theme p {
+      max-width: 860px;
+      margin: 0;
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 17px;
+      line-height: 1.65;
+      color: #000000;
+      font-weight: 500;
+    }
+
+    /* Section Headings matching website_version_2.html */
+    .section-header {
+      max-width: 800px;
+      margin-bottom: 45px;
+      background: transparent !important;
+      background-color: transparent !important;
+      box-shadow: none !important;
+      border: none;
+    }
+
+    .section-header h1,
+    .section-header h2,
+    .section-header h3,
+    .section-title {
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(38px, 5vw, 58px);
+      font-weight: 600;
+      line-height: 1.2;
+      color: #000000;
+      margin-bottom: 22px;
+      background: transparent !important;
+      background-color: transparent !important;
+      box-shadow: none !important;
+      border: none;
+    }
+
+    /* Section: Research Questions (Thinking Section) */
+    .thinking-section-wrap {
+      width: 100%;
+      background-color: #f7f7f3;
+      border-top: 1px solid #e4e8e2;
+      border-bottom: 1px solid #e4e8e2;
+      box-sizing: border-box;
+    }
+
+    .thinking-section {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: clamp(50px, 7vw, 85px) 24px;
+      box-sizing: border-box;
+    }
+
+    .thinking-grid {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(0, 1fr));
+      gap: 40px;
+      align-items: start;
+    }
+
+    .thinking-card {
+      display: flex;
+      flex-direction: column;
+      background: transparent;
+      border: none;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    .thinking-card .card-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .thinking-card .card-category {
+      color: #000000;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+    }
+
+    .thinking-card .card-number {
+      flex-shrink: 0;
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      line-height: 1;
+      color: #d7dfd8;
+    }
+
+    .thinking-card h2 {
+      font-family: 'Playfair Display', serif;
+      color: #000000;
+      font-size: 30px;
+      line-height: 1.3;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .thinking-card .card-question {
+      position: relative;
+      padding-left: 17px;
+      margin-bottom: 16px;
+      border-left: 2px solid #c49a62;
+      font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+      font-size: 18px;
+      font-weight: 500;
+      font-style: italic;
+      line-height: 1.55;
+      color: #000000;
+    }
+
+    .thinking-card .card-description {
+      font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+      font-size: 16.5px;
+      line-height: 1.7;
+      color: #000000;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .card-extra {
+      display: none;
+      font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+      font-size: 16px;
+      line-height: 1.7;
+      color: #000000;
+      font-weight: 500;
+      margin-bottom: 16px;
+    }
+
+    .card-extra.open {
+      display: block;
+      animation: fadeIn 0.3s ease;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(4px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .read-more {
+      display: inline-flex;
+      align-items: center;
+      align-self: flex-start;
+      gap: 10px;
+      margin-top: 6px;
+      padding: 0;
+      border: none;
+      background: transparent;
+      font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 17px;
+      font-weight: 600;
+      color: #000000;
+      cursor: pointer;
+      transition: color 0.25s ease;
+    }
+
+    .read-more:hover {
+      color: #a47a43;
+    }
+
+    .read-more .arrow {
+      display: inline-block;
+      font-size: 16px;
+      line-height: 1;
+      transition: transform 0.25s ease;
+    }
+
+    @media (max-width: 900px) {
+      .thinking-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 32px;
+      }
+    }
+
+    @media (max-width: 600px) {
+      .thinking-grid {
+        grid-template-columns: 1fr;
+        gap: 36px;
+      }
+    }
+
+    /* Section: Research Contributions / Work */
+    #research-work {
+      --rw-surface: #ffffff;
+      --rw-text: #111111;
+      --rw-line: #e5e5e5;
+      --rw-accent: #b69a4a;
+      --rw-accent-soft: #f5f0e2;
+      position: relative;
+      width: 100%;
+      padding: clamp(50px, 7vw, 76px) 0 clamp(60px, 8vw, 88px);
+      background: #ffffff;
+      color: #000000;
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      box-sizing: border-box;
+    }
+
+    #research-work .rw-container {
+      width: min(1120px, calc(100% - 48px));
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    #research-work .rw-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+      gap: 36px;
+      background: #ffffff;
+    }
+
+    #research-work .rw-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+      padding: 24px 0 18px;
+      background: #ffffff;
+    }
+
+    #research-work .rw-filter-group {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 7px;
+    }
+
+    #research-work .rw-filter {
+      appearance: none;
+      border: 1px solid transparent;
+      border-radius: 4px;
+      background: #ffffff;
+      padding: 8px 14px;
+      font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 16px;
+      font-weight: 600;
+      line-height: 1.4;
+      color: #000000;
+      cursor: pointer;
+      transition: background 0.2s ease, border-color 0.2s ease, color 0.2s ease;
+    }
+
+    #research-work .rw-filter:hover {
+      border-color: #dedede;
+    }
+
+    #research-work .rw-filter.is-active {
+      color: #000000;
+      background: var(--rw-accent-soft);
+      border-color: #e6dcc0;
+      font-weight: 600;
+    }
+
+    #research-work .rw-profiles {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 18px;
+      flex-shrink: 0;
+    }
+
+    #research-work .rw-profile-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding-bottom: 4px;
+      border-bottom: 1px solid #cfcfcf;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      text-decoration: none;
+      color: #000000;
+      transition: color 0.2s ease, border-color 0.2s ease;
+    }
+
+    #research-work .rw-profile-link:hover {
+      color: #8d7027;
+      border-color: var(--rw-accent);
+    }
+
+    #research-work .rw-publications {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      column-gap: 84px;
+      align-items: start;
+      background: #ffffff;
+    }
+
+    #research-work .rw-publication {
+      min-width: 0;
+      padding: 22px 0 25px;
+      border-top: 1px solid var(--rw-line);
+      background: #ffffff;
+      transition: border-color 0.2s ease;
+    }
+
+    #research-work .rw-publication:hover {
+      border-top-color: var(--rw-accent);
+    }
+
+    #research-work .rw-publication-meta {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin: 0 0 12px;
+    }
+
+    #research-work .rw-publication-type {
+      display: inline-flex;
+      align-items: center;
+      gap: 7px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.5px;
+      line-height: 1.5;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: #000000;
+      transition: color 0.2s ease;
+    }
+
+    #research-work .rw-publication-type:hover {
+      color: #8d7027;
+    }
+
+    #research-work .rw-type-arrow {
+      font-size: 13px;
+      line-height: 1;
+      transition: transform 0.2s ease;
+    }
+
+    #research-work .rw-publication-type:hover .rw-type-arrow {
+      transform: translate(2px, -2px);
+    }
+
+    #research-work .rw-citation {
+      margin: 0 0 13px;
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 17.5px;
+      font-weight: 400;
+      line-height: 1.55;
+      color: #000000;
+      overflow-wrap: anywhere;
+    }
+
+    #research-work .rw-citation strong {
+      font-weight: 600;
+      color: #000000;
+    }
+
+    #research-work .rw-citation em {
+      font-style: italic;
+      color: #000000;
+    }
+
+    #research-work .rw-contribution {
+      margin: 0;
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 16.5px;
+      font-weight: 500;
+      line-height: 1.55;
+      color: #000000;
+    }
+
+    #research-work .rw-contribution-label {
+      display: inline;
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-weight: 600;
+      color: #000000;
+    }
+
+    #research-work .rw-contribution-label::after {
+      content: " ";
+    }
+
+    #research-work .rw-empty-state {
+      grid-column: 1 / -1;
+      padding: 48px 20px;
+      text-align: center;
+      border-bottom: 1px solid var(--rw-line);
+      background: #ffffff;
+    }
+
+    #research-work .rw-empty-title {
+      margin: 0 0 8px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 16px;
+      font-weight: 500;
+      color: #000000;
+    }
+
+    #research-work .rw-empty-text {
+      margin: 0;
+      font-size: 16px;
+      line-height: 1.5;
+      color: #000000;
+      font-weight: 500;
+    }
+
+    @media (max-width: 900px) {
+      #research-work .rw-publications {
+        column-gap: 36px;
+      }
+      #research-work .rw-controls {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+    }
+
+    @media (max-width: 640px) {
+      #research-work .rw-publications {
+        grid-template-columns: minmax(0, 1fr);
+        column-gap: 0;
+      }
+    }
+
+    /* Section: Practice Areas */
+    .research-section-wrap {
+      width: 100%;
+      background-color: #f7f7f3;
+      border-top: 1px solid #e4e8e2;
+      border-bottom: 1px solid #e4e8e2;
+      box-sizing: border-box;
+    }
+
+    .research-section {
+      max-width: 1150px;
+      margin: 0 auto;
+      padding: clamp(50px, 7vw, 85px) 24px;
+      box-sizing: border-box;
+    }
+
+    .cards-grid {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 26px;
+    }
+
+    .research-card {
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      min-width: 0;
+      padding: 34px;
+      background: #ffffff;
+      border: 1px solid #e4e8e2;
+      border-radius: 8px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    }
+
+    .research-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 0;
+      height: 4px;
+      background: #c49a62;
+      transition: width 0.35s ease;
+    }
+
+    .research-card:hover {
+      transform: translateY(-5px);
+      border-color: #d5ddd5;
+      box-shadow: 0 16px 40px rgba(24, 60, 53, 0.08);
+    }
+
+    .research-card:hover::before {
+      width: 100%;
+    }
+
+    .research-card .card-top {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      margin-bottom: 24px;
+    }
+
+    .research-card .card-category {
+      color: #000000;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.6px;
+      text-transform: uppercase;
+    }
+
+    .research-card .card-number {
+      font-family: 'Playfair Display', serif;
+      font-size: 32px;
+      font-weight: 500;
+      line-height: 1;
+      color: #d7dfd8;
+    }
+
+    .research-card h2 {
+      font-family: 'Playfair Display', serif;
+      color: #000000;
+      font-size: clamp(22px, 2.3vw, 28px);
+      line-height: 1.35;
+      font-weight: 600;
+      margin-bottom: 16px;
+    }
+
+    .research-card .card-description {
+      color: #000000;
+      font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+      font-size: 17.5px;
+      font-weight: 500;
+      line-height: 1.65;
+      margin-bottom: 16px;
+    }
+
+    @media (max-width: 768px) {
+      .cards-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* Section: Join Kaizen & Footer */
+    .join-kaizen-wrap {
+      width: 100%;
+      padding: clamp(48px, 6vw, 70px) 5%;
+      box-sizing: border-box;
+      background: #f7f3ed;
+    }
+
+    .join-kaizen-grid {
+      max-width: 1150px;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 1fr);
+      align-items: center;
+      gap: 10%;
+      box-sizing: border-box;
+    }
+
+    .join-kaizen-eyebrow {
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 16px;
+      font-weight: 600;
+      letter-spacing: 4px;
+      color: #59748b;
+      margin-bottom: 18px;
+    }
+
+    .join-kaizen-title {
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-size: clamp(44px, 5vw, 68px);
+      font-weight: 500;
+      letter-spacing: 3px;
+      line-height: 1.05;
+      color: #245b80;
+      margin: 0 0 24px;
+    }
+
+    .join-kaizen-divider {
+      width: 65px;
+      height: 3px;
+      background: #a42c1c;
+      margin-bottom: 24px;
+    }
+
+    .join-kaizen-text {
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 18px;
+      font-weight: 500;
+      line-height: 1.75;
+      color: #000000;
+      margin: 0 0 30px;
+    }
+
+    .join-kaizen-text a {
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+    }
+
+    .enso-card {
+      width: 100%;
+      min-width: 0;
+      padding: 35px 25px;
+      background: #ffffff;
+      box-sizing: border-box;
+      text-align: center;
+      border: 1px solid #e3ddd3;
+      border-radius: 4px;
+    }
+
+    .enso-card img {
+      display: block;
+      width: 100%;
+      max-width: 260px;
+      height: 260px;
+      object-fit: contain;
+      margin: 0 auto 16px;
+    }
+
+    .enso-card p {
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 17px;
+      letter-spacing: 0.5px;
+      line-height: 1.6;
+      color: #000000;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    @media (max-width: 768px) {
+      .join-kaizen-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 36px;
+      }
+    }
+
+    .site-footer-v2 {
+      width: 100%;
+      padding: 38px 5% 20px;
+      box-sizing: border-box;
+      background: #f3eee8;
+      border-top: 1px solid #e3ddd3;
+    }
+
+    .footer-v2-container {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    .footer-brand-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+    }
+
+    .footer-nav-link {
+      color: #000000;
+      font-weight: 500;
+      text-decoration: none;
+      font-family: 'Cormorant Garamond', serif !important;
+      font-size: 18px;
+      padding: 6px 0;
+      transition: color 0.2s ease;
+    }
+
+    .footer-nav-link:hover,
+    .footer-nav-link.active {
+      color: #17619b;
+    }
+
+    .footer-divider {
+      width: 100%;
+      margin: 28px 0 0;
+      border-top: 1px solid #d8d0c7;
+    }
+
+    .footer-bottom-row {
+      padding: 22px 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px 25px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: #000000;
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px 24px;
+    }
+
+    .footer-bottom-links a {
+      color: #000000;
+      font-weight: 500;
+      font-size: 17px;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-bottom-links a:hover {
+      color: #17619b;
+      text-decoration: underline;
+    }
+  </style>
+</head>
+
+<body>
+
+  <!-- Skip Links -->
+  <div class="skip-links">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#site-header" class="skip-link">Skip to navigation</a>
+    <a href="#site-footer" class="skip-link">Skip to footer</a>
+    <button type="button" class="skip-link" id="skip-a11y-btn">Open Accessibility Preferences (Alt+A)</button>
+  </div>
+
+  <!-- NAVIGATION BAR -->
+  <header class="site-header" id="site-header" role="banner" style="background:#ffffff; border-bottom:1px solid #e9e7e3; padding: 18px 0;">
+    <div class="container navbar" style="height: auto; min-height: 60px;">
+      
+      <!-- BRAND -->
+      <a href="#home" class="brand" aria-label="Monolina Sarkar Home" style="text-decoration:none;">
+        <span class="brand-name" style="font-family:'Cormorant Garamond',serif; font-size:24px; font-weight:500; letter-spacing:5px; line-height:1.15; white-space:nowrap; color:#000000;">
+          MONOLINA SARKAR
+        </span>
+        <span class="brand-subtitle" style="margin-top:4px; font-family:'Cormorant Garamond',serif; font-size:15px; font-weight:500; letter-spacing:0.2px; color:#000000;">
+          Discipline-Based Education Research &middot; Andragogy
+        </span>
+      </a>
+
+      <!-- DESKTOP NAVIGATION LINKS -->
+      <nav aria-label="Primary Navigation" role="navigation">
+        <ul class="nav-links" style="gap: 28px;">
+          <li><a href="#home" class="nav-link active" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Home</a></li>
+          <li><a href="about.html" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">About</a></li>
+          <li><a href="#research-focus" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Research</a></li>
+          <li><a href="#practice-areas" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Practice areas</a></li>
+          <li><a href="contact.html" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- NAV ACTIONS -->
+      <div class="nav-actions">
+        <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav-cv" data-drive-doc="academicCv" aria-label="View Academic Curriculum Vitae">
+          ACADEMIC CV
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- MOBILE NAVIGATION DRAWER -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <a href="#home" class="nav-link active">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="#research-focus" class="nav-link">Research</a>
+    <a href="#practice-areas" class="nav-link">Practice areas</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="accessibility-statement.html" class="nav-link">Accessibility Statement</a>
+    <div style="margin-top: 1.5rem;">
+      <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-drive-doc="academicCv" style="width: 100%; text-align: center;">View Academic CV</a>
+    </div>
+  </div>
+
+  <!-- MAIN CONTENT -->
+  <main id="main-content">
+
+    <!-- HERO SECTION -->
+    <section id="home">
+
+      <!-- EYEBROW -->
+      <p class="hero-eyebrow">
+        PEDAGOGICAL PHILOSOPHY
+      </p>
+
+      <!-- MAIN HEADING -->
+      <h1 class="hero-title-main">
+        CURIOSITY.
+        <span class="accent">KAIZEN.</span>
+        BECOMING.
+      </h1>
+
+      <!-- DESCRIPTION -->
+      <p class="hero-desc">Exploring how learners <em>construct, refine, and transfer</em> scientific reasoning</p>
+
+      <!-- CALL-TO-ACTION BUTTONS -->
+      <div class="hero-cta-group">
+        <!-- PRIMARY BUTTON -->
+        <a href="#research-focus" class="btn btn-primary">
+          <span>Explore Research Framework</span>
+          <span style="font-size:17px;" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <!-- SECONDARY BUTTON -->
+        <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-drive-doc="academicCv">
+          <span>Download Academic CV</span>
+          <span style="font-size:16px;" aria-hidden="true">&rarr;</span>
+        </a>
+
+        <!-- GOLD BUTTON -->
+        <a href="contact.html" class="btn btn-gold">
+          Collaborate With Me
+        </a>
+      </div>
+
+    </section>
+
+    <!-- SECTION: RESEARCH FOCUS (KAIZEN LEARNING LABORATORY) -->
+    <section id="research-focus">
+      <div id="research-focus-inner">
+
+        <!-- SECTION HEADER -->
+        <header class="section-header focus-header">
+          <h2 class="lead-text">The classroom as a</h2>
+          <h2 class="sublead-text">Kaizen learning laboratory.</h2>
+        </header>
+
+        <!-- INTRODUCTION -->
+        <div class="focus-intro">
+          <p>
+            My academic journey, shaped by a Ph.D. in Biochemistry, an M.A. in Education, and over a decade of teaching biology in higher education, informs my interest in Discipline-Based Education Research (DBER). My research explores how students develop biological understanding, connect concepts across levels of organization, and transfer knowledge to unfamiliar contexts, particularly through inquiry- and problem-based learning.
+          </p>
+        </div>
+
+        <!-- RESEARCH THEMES -->
+        <div class="focus-themes">
+
+          <!-- THEME 01 -->
+          <article class="focus-theme">
+            <span class="theme-num">01</span>
+            <div>
+              <h3>Critical Thinking</h3>
+              <p>
+                How students analyse scientific problems, evaluate evidence, and construct evidence-based explanations.
+              </p>
+            </div>
+          </article>
+
+          <!-- THEME 02 -->
+          <article class="focus-theme">
+            <span class="theme-num">02</span>
+            <div>
+              <h3>Systems Thinking</h3>
+              <p>
+                How students connect biological processes and phenomena to develop an integrated understanding of biological systems.
+              </p>
+            </div>
+          </article>
+
+          <!-- THEME 03 -->
+          <article class="focus-theme">
+            <span class="theme-num">03</span>
+            <div>
+              <h3>Sociocultural Perspectives</h3>
+              <p>
+                How social interactions, learning environments, and broader sociocultural contexts shape students' engagement, and reasoning.
+              </p>
+            </div>
+          </article>
+
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: RESEARCH QUESTIONS -->
+    <section class="thinking-section-wrap" id="research-questions">
+      <div class="thinking-section">
+
+        <!-- SECTION INTRODUCTION -->
+        <header class="section-header">
+          <h1 class="section-title">Research Questions</h1>
+        </header>
+
+        <!-- THREE COLUMNS -->
+        <div class="thinking-grid">
+
+        <!-- COLUMN 01: CURIOSITY -->
+        <article class="thinking-card">
+          <div class="card-top">
+            <span class="card-category">Scientific Reasoning</span>
+            <span class="card-number">01</span>
+          </div>
+
+          <h2>Curiosity</h2>
+
+          <blockquote class="card-question">
+            &ldquo;When AI can provide the answer, can learners retain ownership of scientific reasoning?&rdquo;
+          </blockquote>
+
+          <p class="card-description">
+            I explore how learners engage with AI, focusing on whether they formulate questions, evaluate scientific evidence, test predictions, and construct evidence-based explanations rather than simply accept AI-generated answers.
+          </p>
+        </article>
+
+        <!-- COLUMN 02: KAIZEN -->
+        <article class="thinking-card">
+          <div class="card-top">
+            <span class="card-category">Iterative Learning</span>
+            <span class="card-number">02</span>
+          </div>
+
+          <h2>Kaizen</h2>
+
+          <blockquote class="card-question">
+            &ldquo;What can persistent misconceptions reveal about how learners organize knowledge&mdash;and how can it inform instructional improvement?&rdquo;
+          </blockquote>
+
+          <p class="card-description">
+            I examine persistent misconceptions in higher education biology as indicators of underlying conceptual difficulties, using patterns in student responses to inform instructional improvement.
+          </p>
+        </article>
+
+        <!-- COLUMN 03: BECOMING -->
+        <article class="thinking-card">
+          <div class="card-top">
+            <span class="card-category">Agency, Identity &amp; Transfer</span>
+            <span class="card-number">03</span>
+          </div>
+
+          <h2>Becoming</h2>
+
+          <blockquote class="card-question">
+            &ldquo;How can biology learning environments enable students to express themselves, exercise agency, and find their place in science?&rdquo;
+          </blockquote>
+
+          <p class="card-description">
+            Exploring how learning environments support learners in developing scientific confidence, exercising choice, and participating in ways that reflect their strengths, interests, and experiences.
+          </p>
+
+          <div class="card-extra" id="becoming-extra">
+            This research vector examines pedagogical mechanisms that bridge academic biological competencies with students' personal epistemologies, fostering belonging and authentic identity formation in STEM.
+          </div>
+
+          <button
+            class="read-more"
+            type="button"
+            aria-expanded="false"
+            aria-controls="becoming-extra"
+            onclick="toggleCard(this, 'becoming-extra')">
+            <span class="button-text">Read More</span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </button>
+        </article>
+
+      </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: RESEARCH CONTRIBUTIONS / WORK -->
+    <section id="research-work" aria-labelledby="rw-heading">
+
+      <div class="rw-container">
+
+        <!-- SECTION HEADER -->
+        <header class="rw-header">
+          <header class="section-header" style="margin-bottom: 0;">
+            <h1 class="section-title" id="rw-heading">Research Contributions</h1>
+          </header>
+        </header>
+
+        <!-- FILTERS AND PROFILES -->
+        <div class="rw-controls">
+
+          <div class="rw-filter-group" role="group" aria-label="Filter publications by year">
+            <button
+              type="button"
+              class="rw-filter is-active"
+              data-filter="all"
+              aria-pressed="true">
+              All publications
+            </button>
+
+            <button
+              type="button"
+              class="rw-filter"
+              data-filter="recent"
+              aria-pressed="false">
+              Last 5 years
+            </button>
+          </div>
+
+          <div class="rw-profiles" aria-label="Academic profiles">
+            <a
+              href="https://orcid.org/0000-0002-8172-1111"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rw-profile-link">
+              ORCID <span aria-hidden="true">&rarr;</span>
+            </a>
+
+            <a
+              href="https://www.scopus.com"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="rw-profile-link">
+              SCOPUS <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
+
+        </div>
+
+        <!-- PUBLICATIONS LIST -->
+        <div class="rw-publications" id="rw-publications">
+
+          <!-- PUBLICATION 1 - 2023 -->
+          <article
+            class="rw-publication"
+            data-year="2023"
+            data-search="2023 Sarkar light-responsive biodegradation wastewater pollutants new developments potential perspectives Journal of Hazardous Materials Advances review article photo-assisted biological mechanisms microbial photocatalytic synergies effluent remediation">
+            <div class="rw-publication-meta">
+              <a
+                class="rw-publication-type"
+                href="https://doi.org/10.1016/j.hazadv.2023.100281"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open review article">
+                <span>Review Article</span>
+                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <p class="rw-citation">
+              <strong>Sarkar, M.</strong> (2023).
+              Light-responsive biodegradation of wastewater pollutants:
+              New developments and potential perspectives.
+              <em>Journal of Hazardous Materials Advances</em>,
+              10, 100281.
+            </p>
+            <p class="rw-contribution">
+              <span class="rw-contribution-label">CRediT</span>
+              Reviewed photo-assisted biological mechanisms and
+              microbial&ndash;photocatalytic synergies for advanced effluent remediation.
+            </p>
+          </article>
+
+          <!-- PUBLICATION 2 - 2023 -->
+          <article
+            class="rw-publication"
+            data-year="2023"
+            data-search="2023 Das Sarkar Paul tools approaches assessing stress-responsive secondary metabolites climate-smart crops Biology Biotechnology Environmental Stress Tolerance Plants book chapter methodological frameworks metabolomic profiling stress-resilient crop development">
+            <div class="rw-publication-meta">
+              <a
+                class="rw-publication-type"
+                href="https://www.appleacademicpress.com/"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Visit the publisher for the book chapter">
+                <span>Book Chapter</span>
+                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <p class="rw-citation">
+              Das, D. R., <strong>Sarkar, M.</strong>, &amp; Paul, A.
+              (2023). Tools and approaches for assessing stress-responsive
+              secondary metabolites to design climate-smart crops.
+              In <em>Biology and Biotechnology of Environmental Stress
+              Tolerance in Plants</em> (pp. 305&ndash;370).
+              Apple Academic Press.
+            </p>
+            <p class="rw-contribution">
+              <span class="rw-contribution-label">Focus</span>
+              Methodological frameworks and metabolomic profiling strategies
+              for stress-resilient crop development.
+            </p>
+          </article>
+
+          <!-- PUBLICATION 3 - 2022 -->
+          <article
+            class="rw-publication"
+            data-year="2022"
+            data-search="2022 Guha Molla Sarkar Ibanez Fabra DasGupta Nod factor-independent crack-entry symbiosis dalbergoid legume Arachis hypogaea Environmental Microbiology rhizobial entry mechanisms">
+            <div class="rw-publication-meta">
+              <a
+                class="rw-publication-type"
+                href="https://doi.org/10.1111/1462-2920.15989"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open research article">
+                <span>Research Article</span>
+                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <p class="rw-citation">
+              Guha, S., Molla, F., <strong>Sarkar, M.</strong>,
+              Ib&aacute;&ntilde;ez, F., Fabra, A., &amp; DasGupta, M. (2022).
+              Nod factor-independent 'crack-entry' symbiosis in dalbergoid
+              legume <em>Arachis hypogaea</em>.
+              <em>Environmental Microbiology</em>, 24(6), 2732&ndash;2746.
+            </p>
+            <p class="rw-contribution">
+              <span class="rw-contribution-label">CRediT</span>
+              Uncovered molecular and structural insights into Nod
+              factor-independent rhizobial entry mechanisms.
+            </p>
+          </article>
+
+          <!-- PUBLICATION 4 - 2022 -->
+          <article
+            class="rw-publication"
+            data-year="2022"
+            data-search="2022 Sarkar Paul Das engineered biosynthesized metal-based nanoparticles alleviate abiotic stress Response Field Crops Abiotic Stress CRC Press Taylor Francis nanobiotechnology agricultural crop systems">
+            <div class="rw-publication-meta">
+              <a
+                class="rw-publication-type"
+                href="https://doi.org/10.1201/9781003258063"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open book chapter">
+                <span>Book Chapter</span>
+                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <p class="rw-citation">
+              <strong>Sarkar, M.</strong>, Paul, A., &amp; Das, D. R.
+              (2022). Availing engineered and biosynthesized metal-based
+              nanoparticles to alleviate abiotic stress.
+              In <em>Response of Field Crops to Abiotic Stress</em>
+              (pp. 15&ndash;33). CRC Press / Taylor &amp; Francis.
+            </p>
+            <p class="rw-contribution">
+              <span class="rw-contribution-label">Focus</span>
+              Nanobiotechnology applications for mitigating abiotic stress
+              in agricultural crop systems.
+            </p>
+          </article>
+
+          <!-- PUBLICATION 5 - 2022 -->
+          <article
+            class="rw-publication"
+            data-year="2022"
+            data-search="2022 Sarkar effect silver nanoparticles nitrogen-cycling bacteria constructed wetlands Nanotechnology Environmental Engineering ecotoxicological microbial nitrogen transformation pathways">
+            <div class="rw-publication-meta">
+              <a
+                class="rw-publication-type"
+                href="https://doi.org/10.1007/s41204-022-00244-6"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open research article">
+                <span>Research Article</span>
+                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <p class="rw-citation">
+              <strong>Sarkar, M.</strong> (2022). Effect of silver
+              nanoparticles on nitrogen-cycling bacteria in constructed
+              wetlands. <em>Nanotechnology for Environmental Engineering</em>,
+              7(2), 537&ndash;559.
+            </p>
+            <p class="rw-contribution">
+              <span class="rw-contribution-label">CRediT</span>
+              Assessed the ecotoxicological impact of metallic nanoparticles
+              on microbial nitrogen transformation pathways.
+            </p>
+          </article>
+
+          <!-- PUBLICATION 6 - 2016 -->
+          <article
+            class="rw-publication"
+            data-year="2016"
+            data-search="2016 Guha Sarkar Ganguly Uddin Mandal DasGupta segregation nod-containing nod-deficient bradyrhizobia endosymbionts Arachis hypogaea endophytes Oryza sativa intercropped fields Bengal Basin India Environmental Microbiology host microbe selectivity">
+            <div class="rw-publication-meta">
+              <a
+                class="rw-publication-type"
+                href="https://doi.org/10.1111/1462-2920.13289"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="Open research article">
+                <span>Research Article</span>
+                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+              </a>
+            </div>
+            <p class="rw-citation">
+              Guha, S., <strong>Sarkar, M.</strong>, Ganguly, P., Uddin,
+              M. R., Mandal, S., &amp; DasGupta, M. (2016). Segregation of
+              nod-containing and nod-deficient bradyrhizobia as endosymbionts
+              of <em>Arachis hypogaea</em> and as endophytes of
+              <em>Oryza sativa</em> in intercropped fields of Bengal Basin,
+              India. <em>Environmental Microbiology</em>, 18(8), 2575&ndash;2590.
+            </p>
+            <p class="rw-contribution">
+              <span class="rw-contribution-label">CRediT</span>
+              Demonstrated host&ndash;microbe selectivity and natural
+              endosymbiont/endophyte distribution across intercropped agrosystems.
+            </p>
+          </article>
+
+          <!-- EMPTY SEARCH RESULTS -->
+          <div class="rw-empty-state" id="rw-empty" hidden>
+            <p class="rw-empty-title">No publications found.</p>
+            <p class="rw-empty-text">
+              Try another filter or view all publications.
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- SECTION: PRACTICE AREAS -->
+    <section class="research-section-wrap" id="practice-areas">
+      <div class="research-section">
+
+        <!-- SECTION INTRODUCTION -->
+        <header class="section-header">
+          <h1 class="section-title">Practice Areas</h1>
+        </header>
+
+        <!-- FOUR PRACTICE CARDS -->
+        <div class="cards-grid">
+
+        <!-- CARD 01 -->
+        <article class="research-card">
+          <div class="card-top">
+            <span class="card-category">
+              Education Research &amp; Collaboration
+            </span>
+            <span class="card-number">01</span>
+          </div>
+
+          <h2>
+            Education Research &amp; Collaboration
+          </h2>
+
+          <p class="card-description">
+            Collaborating with academic colleagues across higher education institutions to investigate how students learn and to advance inclusive, evidence-informed approaches to scientific reasoning.
+          </p>
+
+          <div class="card-extra" id="extra-1">
+            Focusing on systematic inquiry into instructional effectiveness, evidence-based curriculum redesign, and pedagogical research partnerships that bridge theory and laboratory practice.
+          </div>
+
+          <button
+            class="read-more"
+            type="button"
+            aria-expanded="false"
+            aria-controls="extra-1"
+            onclick="toggleCard(this, 'extra-1')">
+            <span class="button-text">Read More</span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </button>
+        </article>
+
+        <!-- CARD 02 -->
+        <article class="research-card">
+          <div class="card-top">
+            <span class="card-category">
+              Global Teaching &amp; Faculty Collaboration
+            </span>
+            <span class="card-number">02</span>
+          </div>
+
+          <h2>
+            Collaborative Online International Learning
+          </h2>
+
+          <p class="card-description">
+            Engaging with international virtual exchange initiatives through the Global Citizenship Virtual Exchange Consortium (GCVEX), associated with Rutgers University's Graduate School of Education, and COIL Connect, New York, Brooklyn.
+          </p>
+
+          <div class="card-extra" id="extra-2">
+            I am interested in how cross-context collaboration can inform pedagogical practice, enrich global learning, strengthen critical thinking, and create opportunities for collaborative education research.
+          </div>
+
+          <button
+            class="read-more"
+            type="button"
+            aria-expanded="false"
+            aria-controls="extra-2"
+            onclick="toggleCard(this, 'extra-2')">
+            <span class="button-text">Read More</span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </button>
+        </article>
+
+        <!-- CARD 03 -->
+        <article class="research-card">
+          <div class="card-top">
+            <span class="card-category">
+              Adaptability, Reusability &amp; Knowledge Sharing
+            </span>
+            <span class="card-number">03</span>
+          </div>
+
+          <h2>
+            Open Educational Resources
+          </h2>
+
+          <p class="card-description">
+            Contributing educational resources and reviewing learning materials for MERLOT, supporting the discoverability, quality, and wider use of open educational resources to enhance teaching and learning.
+          </p>
+
+          <div class="card-extra" id="extra-3">
+            Open educational resources offer opportunities to make quality learning materials more accessible, adaptable, and reusable. This work supports knowledge sharing and the broader educational community.
+          </div>
+
+          <button
+            class="read-more"
+            type="button"
+            aria-expanded="false"
+            aria-controls="extra-3"
+            onclick="toggleCard(this, 'extra-3')">
+            <span class="button-text">Read More</span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </button>
+        </article>
+
+        <!-- CARD 04 -->
+        <article class="research-card">
+          <div class="card-top">
+            <span class="card-category">
+              Extending Science Beyond the Classroom
+            </span>
+            <span class="card-number">04</span>
+          </div>
+
+          <h2>
+            Public Science Writing
+          </h2>
+
+          <p class="card-description">
+            Communicating scientific research and ideas to broader audiences through science writing, with contributions to the American Society for Microbiology (ASM) and CSIR Science Reporter.
+          </p>
+
+          <div class="card-extra" id="extra-4">
+            This work focuses on translating scientific concepts into accessible narratives that connect research with wider public understanding, encourage curiosity, and make scientific knowledge more approachable for diverse audiences.
+          </div>
+
+          <button
+            class="read-more"
+            type="button"
+            aria-expanded="false"
+            aria-controls="extra-4"
+            onclick="toggleCard(this, 'extra-4')">
+            <span class="button-text">Read More</span>
+            <span class="arrow" aria-hidden="true">&rarr;</span>
+          </button>
+        </article>
+
+      </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer id="site-footer" role="contentinfo">
+
+    <!-- UPPER SECTION: JOIN KAIZEN -->
+    <section class="join-kaizen-wrap" id="join-kaizen">
+      <div class="join-kaizen-grid">
+
+        <!-- LEFT COLUMN -->
+        <div style="min-width:0;">
+          <div class="join-kaizen-eyebrow">
+            JOIN
+          </div>
+
+          <h2 class="join-kaizen-title">
+            KAIZEN
+          </h2>
+
+          <div class="join-kaizen-divider"></div>
+
+          <!-- COLLABORATION TEXT -->
+          <p class="join-kaizen-text">
+            Evaluating new curricular systems or exploring student AI
+            literacy? Let's build evidence-informed learning together.
+            Feel free to mail me at
+            <a href="mailto:monolinasarkar1@gmail.com" style="color:#000000; font-family:'EB Garamond', Garamond, Georgia, serif; font-weight:500; text-decoration:underline; text-underline-offset:3px;">monolinasarkar1@gmail.com</a>
+          </p>
+
+          <!-- ACTION BUTTONS -->
+          <div style="display:flex; align-items:center; flex-wrap:wrap; gap:16px;">
+            <a href="contact.html" class="btn btn-primary">
+              Reach Out &amp; Collaborate
+            </a>
+
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-copy="monolinasarkar1@gmail.com"
+              data-copy-label="monolinasarkar1@gmail.com copied to clipboard">
+              Copy Email
+            </button>
+          </div>
+        </div>
+
+        <!-- RIGHT COLUMN: ENSO IMAGE -->
+        <div class="enso-card">
+          <img
+            src="images (3).jpg" 
+            alt="Enso circle symbolising continuous learning and growth">
+          <p>
+            The Ens&omacr; &mdash;<br>
+            Symbol of continuous learning &amp; growth
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- LOWER SECTION: BRAND + NAVIGATION -->
+    <section class="site-footer-v2">
+      <div class="footer-v2-container">
+
+        <div class="footer-brand-nav">
+          <!-- BRAND -->
+          <div>
+            <div style="font-family:'Cormorant Garamond',serif; font-size:24px; letter-spacing:5px; line-height:1.4; color:#000000; font-weight:500;">
+              MONOLINA SARKAR
+            </div>
+            <div style="font-family:'Cormorant Garamond',serif; font-size:16px; line-height:1.5; color:#000000; margin-top:2px;">
+              Discipline-Based Education Research &middot; Andragogy
+            </div>
+          </div>
+
+          <!-- FOOTER NAVIGATION -->
+          <nav aria-label="Footer navigation">
+            <div class="footer-nav-links">
+              <a href="#home" class="footer-nav-link active">Home</a>
+              <a href="about.html" class="footer-nav-link">About</a>
+              <a href="#research-focus" class="footer-nav-link">Research</a>
+              <a href="#practice-areas" class="footer-nav-link">Practice areas</a>
+              <a href="contact.html" class="footer-nav-link">Contact</a>
+              <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav-cv" data-drive-doc="academicCv" style="font-size:14px; padding:6px 14px; margin-left:6px; text-decoration:none;">
+                ACADEMIC CV
+              </a>
+            </div>
+          </nav>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="footer-divider"></div>
+
+        <!-- COPYRIGHT + PROFESSIONAL LINKS -->
+        <div class="footer-bottom-row">
+          <div>
+            &copy; 2026 Monolina Sarkar. All rights reserved.
+          </div>
+
+          <div class="footer-bottom-links">
+            <a href="accessibility-statement.html">Accessibility Statement</a>
+            <a href="https://orcid.org/0000-0002-8172-1111" target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a href="https://www.linkedin.com/in/monolinasarkar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </footer>
+
+  <!-- ACADEMIC CV MODAL -->
+  <div class="modal-overlay" id="cv-modal" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="cv-modal-close" aria-label="Close CV Modal">&times;</button>
+      
+      <div class="cv-document" id="cv-document">
+        <div class="cv-print-header" role="banner">
+          <div class="section-label" style="margin-bottom: 0.35rem;">Curriculum Vitae</div>
+          <h2 id="cv-modal-title" class="cv-print-title">
+            Monolina Sarkar, Ph.D., M.Ed.
+          </h2>
+          <div class="cv-print-subtitle">
+            Biochemistry Doctorate &middot; Master of Education &middot; Discipline-Based Education Research (DBER)
+          </div>
+          <div class="cv-print-contacts">
+            <span><strong>Email:</strong> monolinasarkar1@gmail.com</span>
+            <span><strong>ORCID:</strong> 0000-0002-8172-1111</span>
+            <span><strong>Web of Science:</strong> GRY-0666-2022</span>
+            <span><strong>LinkedIn:</strong> linkedin.com/in/monolinasarkar</span>
+          </div>
+        </div>
+
+        <section class="cv-section">
+          <h3 class="cv-section-title">Scholarly &amp; Pedagogical Profile</h3>
+          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
+            Higher education biology educator and research biochemist with over 10 years of teaching experience. Specializes in Discipline-Based Education Research (DBER), transforming undergraduate classrooms into continuous <em>Kaizen</em> learning laboratories. Investigates how learners iteratively construct, refine, and apply scientific reasoning in unfamiliar biological contexts, with focal emphasis on student AI literacy, conceptual change, and evidence-informed curriculum redesign aligned with National Research Council (NRC, 2012) standards.
+          </p>
+        </section>
+
+        <section class="cv-section">
+          <h3 class="cv-section-title">Education &amp; Credentials</h3>
+          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
+            <div class="cv-item">
+              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                <strong>Doctor of Philosophy (Ph.D.) in Biochemistry</strong>
+                <span class="cv-date">Conferred</span>
+              </div>
+              <div style="font-size: 0.9rem; color: var(--text-secondary);">University of Calcutta &middot; Department of Biochemistry</div>
+            </div>
+            <div class="cv-item">
+              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                <strong>Master of Education (M.Ed.)</strong>
+                <span class="cv-date">Conferred</span>
+              </div>
+              <div style="font-size: 0.9rem; color: var(--text-secondary);">Focus: Pedagogical Theory, Curriculum Design &amp; Learning Assessment</div>
+            </div>
+            <div class="cv-item">
+              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
+                <strong>Master of Science (M.Sc.) in Biochemistry</strong>
+                <span class="cv-date">Conferred</span>
+              </div>
+              <div style="font-size: 0.9rem; color: var(--text-secondary);">University of Calcutta &middot; First Class Honors</div>
+            </div>
+          </div>
+        </section>
+
+        <section class="cv-section">
+          <h3 class="cv-section-title">Higher Education &amp; Teaching Leadership (10+ Years)</h3>
+          <ul class="cv-list">
+            <li><strong>Undergraduate &amp; Graduate Biology Instruction:</strong> Over a decade of teaching biochemistry, molecular biology, and general biology across diverse student cohorts.</li>
+            <li><strong>DBER Curriculum Innovation:</strong> Designed inquiry-driven, problem-based learning modules emphasizing systems thinking, mechanism-building, and data evaluation.</li>
+            <li><strong>AI Literacy &amp; Scientific Reasoning:</strong> Lead author on pedagogical interventions investigating student interactions with generative AI in biology problem-solving.</li>
+            <li><strong>Pedagogical Mentorship:</strong> Mentored teaching assistants and junior instructors on reflective teaching, continuous feedback loops, and inclusive classroom design.</li>
+          </ul>
+        </section>
+
+        <section class="cv-section">
+          <h3 class="cv-section-title">Peer-Reviewed Publications &amp; Book Chapters</h3>
+          <ul class="cv-list" style="list-style: decimal;">
+            <li><strong>Sarkar, M.</strong> (2023). Light-responsive biodegradation of wastewater pollutants: New developments and potential perspectives. <em>Journal of Hazardous Materials Advances</em>, 10, 100281.</li>
+            <li>Das, D. R., <strong>Sarkar, M.</strong>, &amp; Paul, A. (2023). Tools and approaches for assessing stress-responsive secondary metabolites to design climate-smart crops. In <em>Biology and Biotechnology of Environmental Stress Tolerance in Plants</em> (pp. 305&ndash;370). Apple Academic Press.</li>
+            <li>Guha, S., Molla, F., <strong>Sarkar, M.</strong>, Ib&aacute;&ntilde;ez, F., Fabra, A., &amp; DasGupta, M. (2022). Nod factor-independent 'crack-entry' symbiosis in dalbergoid legume <em>Arachis hypogaea</em>. <em>Environmental Microbiology</em>, 24(6), 2732&ndash;2746.</li>
+            <li><strong>Sarkar, M.</strong>, Paul, A., &amp; Das, D. R. (2022). Availing engineered and biosynthesized metal-based nanoparticles to alleviate abiotic stress. In <em>Response of Field Crops to Abiotic Stress</em> (pp. 15&ndash;33). CRC Press / Taylor &amp; Francis.</li>
+            <li><strong>Sarkar, M.</strong> (2022). Effect of silver nanoparticles on nitrogen-cycling bacteria in constructed wetlands. <em>Nanotechnology for Environmental Engineering</em>, 7(2), 537&ndash;559.</li>
+            <li>Guha, S., <strong>Sarkar, M.</strong>, Ganguly, P., Uddin, M. R., Mandal, S., &amp; DasGupta, M. (2016). Segregation of nod-containing and nod-deficient bradyrhizobia as endosymbionts of <em>Arachis hypogaea</em> and as endophytes of <em>Oryza sativa</em>. <em>Environmental Microbiology</em>, 18(8), 2575&ndash;2590.</li>
+          </ul>
+        </section>
+
+        <section class="cv-section" style="margin-bottom: 0;">
+          <h3 class="cv-section-title">Professional Affiliations &amp; Service</h3>
+          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55;">
+            Member, American Society for Microbiology (ASM) &middot; Discipline-Based Education Research (DBER) Network &middot; Peer Reviewer, MERLOT Biology Editorial Board &middot; Contributor, Public Science Writing &amp; Knowledge Translation.
+          </p>
+        </section>
+      </div>
+
+      <div class="cv-actions">
+        <button class="btn btn-secondary" onclick="window.print()">
+          Print / Save PDF
+        </button>
+        <a href="mailto:monolinasarkar1@gmail.com?subject=Academic%20Dossier%20Inquiry%20-%20Monolina%20Sarkar" class="btn btn-primary">
+          Inquire Directly
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- SCRIPT FOR CARD TOGGLE -->
+  <script>
+    function toggleCard(button, contentId) {
+      const content = document.getElementById(contentId);
+      if (!content) return;
+      const isExpanded = button.getAttribute("aria-expanded") === "true";
+
+      content.classList.toggle("open", !isExpanded);
+      button.setAttribute("aria-expanded", String(!isExpanded));
+
+      const textSpan = button.querySelector(".button-text");
+      if (textSpan) {
+        textSpan.textContent = isExpanded ? "Read More" : "Read Less";
+      }
+
+      const arrow = button.querySelector(".arrow");
+      if (arrow) {
+        arrow.textContent = isExpanded ? "\u2192" : "\u2191";
+      }
+    }
+  </script>
+
+  <!-- SCRIPT FOR RESEARCH WORK YEAR FILTER -->
+  <script>
+    (function () {
+      "use strict";
+      const section = document.getElementById("research-work");
+      if (!section) return;
+
+      const publications = Array.from(section.querySelectorAll(".rw-publication"));
+      const filterButtons = Array.from(section.querySelectorAll(".rw-filter"));
+      const emptyState = section.querySelector("#rw-empty");
+      let activeFilter = "all";
+
+      function updatePublications() {
+        let numberVisible = 0;
+        publications.forEach(function (pub) {
+          const year = Number(pub.dataset.year);
+          let match = true;
+          if (activeFilter === "recent") {
+            match = year >= 2020;
+          }
+          pub.hidden = !match;
+          if (match) numberVisible++;
+        });
+
+        if (emptyState) {
+          emptyState.hidden = numberVisible > 0;
+        }
+      }
+
+      filterButtons.forEach(function (btn) {
+        btn.addEventListener("click", function () {
+          filterButtons.forEach(b => {
+            b.classList.remove("is-active");
+            b.setAttribute("aria-pressed", "false");
+          });
+          btn.classList.add("is-active");
+          btn.setAttribute("aria-pressed", "true");
+          activeFilter = btn.dataset.filter;
+          updatePublications();
+        });
+      });
+    })();
+  </script>
+
+  <!-- SCROLLSPY SCRIPT -->
+  <script>
+    (function() {
+      const sections = document.querySelectorAll('section[id]');
+      const navLinks = document.querySelectorAll('.site-header .nav-link');
+      if (!sections.length || !navLinks.length) return;
+
+      window.addEventListener('scroll', () => {
+        let current = '';
+        const scrollPos = window.scrollY + 140;
+
+        sections.forEach(section => {
+          const top = section.offsetTop;
+          const height = section.offsetHeight;
+          if (scrollPos >= top && scrollPos < top + height) {
+            current = section.getAttribute('id');
+          }
+        });
+
+        if (current) {
+          navLinks.forEach(link => {
+            const href = link.getAttribute('href');
+            if (href === '#' + current || (current === 'home' && (href === '#home' || href === 'index.html'))) {
+              link.classList.add('active');
+            } else if (href && href.startsWith('#')) {
+              link.classList.remove('active');
+            }
+          });
+        }
+      }, { passive: true });
+    })();
+  </script>
+
+  <!-- MAIN SCRIPT (Modals, Sticky Header, Mobile Drawer, Copy Buttons) -->
+  <script src="js/main.js"></script>
+
+</body>
+</html>

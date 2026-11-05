@@ -1,0 +1,1305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Accessibility Statement — Monolina Sarkar, Ph.D. | Digital Inclusion & WCAG 2.2 AA Compliance</title>
+  <meta name="description" content="Official Accessibility Statement for the academic and pedagogical portfolio of Monolina Sarkar, Ph.D. Outlines compliance with WCAG 2.2 AA, built-in accessibility controls, and alternative format requests.">
+  <meta name="keywords" content="Accessibility Statement, WCAG 2.2 AA, Universal Design for Learning, UDL, Monolina Sarkar, DBER, Digital Inclusion, Higher Education Accessibility">
+
+  <!-- Google Fonts Preconnect & Stylesheets -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,600&family=Playfair+Display:ital,wght@0,400;0,600;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="icon" type="image/png" href="assets/images/enso-kaizen-transparent.png">
+
+  <style>
+    /* -------------------------------------------------------------
+       ACCESSIBILITY STATEMENT PAGE - EDITORIAL DESIGN ENHANCEMENTS
+       ------------------------------------------------------------- */
+
+    body {
+      background-color: #ffffff;
+      color: #0A0A0C;
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+    }
+
+    /* Accessibility Hero Section */
+    #a11y-hero {
+      width: 100%;
+      min-height: 400px;
+      box-sizing: border-box;
+      padding: clamp(56px, 7vw, 90px) 24px clamp(36px, 5vw, 56px);
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+      text-align: center;
+      background: linear-gradient(to bottom, #fbf9f6 0%, #ffffff 80%, #ffffff 100%);
+      border-bottom: 1px solid #f0ede6;
+    }
+
+    .hero-content {
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .a11y-hero-eyebrow {
+      margin: 0 0 18px;
+      color: #000000;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 14px;
+      font-weight: 600;
+      letter-spacing: 6px;
+      text-transform: uppercase;
+    }
+
+    .a11y-hero-title {
+      margin: 0;
+      color: #171717;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(34px, 5.2vw, 56px);
+      font-weight: 400;
+      line-height: 1.25;
+      letter-spacing: 7px;
+      text-transform: uppercase;
+    }
+
+    .a11y-hero-title .accent-blue {
+      color: #24577c;
+      font-style: normal;
+    }
+
+    .a11y-hero-desc {
+      margin: 24px auto 0;
+      max-width: 820px;
+      color: #000000;
+      font-family: 'Playfair Display', Georgia, serif;
+      font-size: clamp(17px, 2.1vw, 22px);
+      font-weight: 500;
+      line-height: 1.75;
+    }
+
+    .a11y-badge-group {
+      margin-top: 24px;
+      display: flex;
+      gap: 10px;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .a11y-pill-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 5px 14px;
+      border-radius: 9999px;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      box-sizing: border-box;
+    }
+
+    .a11y-pill-badge--gold {
+      background: #faf4e8;
+      color: #8c6a2b;
+      border: 1px solid #edd9b6;
+    }
+
+    .a11y-pill-badge--blue {
+      background: #eef5f9;
+      color: #24577c;
+      border: 1px solid #cfe0ec;
+    }
+
+    .a11y-pill-badge--neutral {
+      background: #f7f6f2;
+      color: #555555;
+      border: 1px solid #e5e3db;
+    }
+
+    .a11y-hero-actions {
+      margin-top: 36px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      flex-wrap: wrap;
+    }
+
+    /* Content Wrapper */
+    .a11y-content-container {
+      max-width: 1080px;
+      margin: 0 auto;
+      padding: clamp(40px, 6vw, 70px) 24px clamp(60px, 8vw, 90px);
+      box-sizing: border-box;
+    }
+
+    /* Table of Contents */
+    .statement-toc-card {
+      background: #faf8f5;
+      border: 1px solid #e3ddd3;
+      border-radius: 6px;
+      padding: clamp(24px, 4vw, 36px);
+      margin-bottom: clamp(40px, 5vw, 60px);
+      box-shadow: 0 2px 14px rgba(0,0,0,0.02);
+    }
+
+    .statement-toc-header {
+      display: flex;
+      align-items: baseline;
+      justify-content: space-between;
+      gap: 16px;
+      border-bottom: 1px solid #e5ded5;
+      padding-bottom: 16px;
+      margin-bottom: 22px;
+      flex-wrap: wrap;
+    }
+
+    .statement-toc-title {
+      margin: 0;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(22px, 2.5vw, 26px);
+      font-weight: 500;
+      color: #171717;
+    }
+
+    .statement-toc-tag {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #7E8B7A;
+    }
+
+    .statement-toc-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 10px 24px;
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+
+    .statement-toc-link {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 10px;
+      color: #292E28;
+      text-decoration: none;
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 17px;
+      line-height: 1.5;
+      padding: 5px 0;
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+
+    .statement-toc-link:hover {
+      color: #24577c;
+      transform: translateX(3px);
+    }
+
+    .statement-toc-num {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 600;
+      color: #7E8B7A;
+      min-width: 20px;
+    }
+
+    /* Section Styling */
+    .a11y-section {
+      margin-bottom: clamp(42px, 6vw, 64px);
+      padding-bottom: clamp(32px, 5vw, 48px);
+      border-bottom: 1px solid #E2E5DE;
+    }
+
+    .a11y-section:last-of-type {
+      border-bottom: none;
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+
+    .a11y-section-header {
+      display: flex;
+      align-items: baseline;
+      gap: 14px;
+      margin-bottom: 20px;
+    }
+
+    .a11y-section-num {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      letter-spacing: 0.5px;
+      color: #7E8B7A;
+      flex-shrink: 0;
+    }
+
+    .a11y-section-title {
+      margin: 0;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: clamp(24px, 3.2vw, 30px);
+      font-weight: 500;
+      color: #171717;
+      line-height: 1.25;
+    }
+
+    .a11y-paragraph {
+      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-size: 18px;
+      line-height: 1.75;
+      color: #000000;
+      font-weight: 500;
+      margin: 0 0 16px;
+      max-width: 900px;
+    }
+
+    .a11y-paragraph:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Feature Cards Grid (Section 02) */
+    .a11y-feature-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 20px;
+      margin-top: 24px;
+    }
+
+    .a11y-feature-card {
+      display: flex;
+      gap: 16px;
+      align-items: flex-start;
+      padding: 22px;
+      background: #ffffff;
+      border: 1px solid #E2E5DE;
+      border-radius: 6px;
+      box-sizing: border-box;
+      transition: transform 0.25s ease, border-color 0.25s ease, box-shadow 0.25s ease;
+    }
+
+    .a11y-feature-card:hover {
+      transform: translateY(-3px);
+      border-color: #24577c;
+      box-shadow: 0 8px 24px rgba(36, 87, 124, 0.08);
+    }
+
+    .a11y-feature-icon-badge {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: #eef5f9;
+      color: #24577c;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+
+    .a11y-feature-card h3 {
+      margin: 0 0 6px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 21px;
+      font-weight: 600;
+      line-height: 1.3;
+      color: #171717;
+    }
+
+    .a11y-feature-card p {
+      margin: 0;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 16.5px;
+      line-height: 1.6;
+      color: #000000;
+      font-weight: 500;
+    }
+
+    /* Status Card (Section 03) */
+    .a11y-status-card {
+      background: #faf8f5;
+      border: 1px solid #e3ddd3;
+      border-radius: 6px;
+      padding: 24px 28px;
+      margin: 20px 0 0;
+    }
+
+    .a11y-status-badge {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 12px;
+    }
+
+    .status-dot-emerald {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #10B981;
+      display: inline-block;
+      box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+    }
+
+    .status-badge-title {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 14px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      color: #171717;
+    }
+
+    /* Modern Table (Section 04) */
+    .a11y-table-container {
+      width: 100%;
+      overflow-x: auto;
+      margin-top: 24px;
+      border: 1px solid #E2E5DE;
+      border-radius: 6px;
+      background: #ffffff;
+    }
+
+    .a11y-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 17px;
+      text-align: left;
+    }
+
+    .a11y-table th {
+      background: #f7f5ef;
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: #171717;
+      padding: 14px 18px;
+      border-bottom: 1px solid #e3ddd3;
+    }
+
+    .a11y-table td {
+      padding: 14px 18px;
+      font-family: 'EB Garamond', Georgia, serif;
+      line-height: 1.6;
+      color: #000000;
+      font-weight: 500;
+      border-bottom: 1px solid #E2E5DE;
+      vertical-align: top;
+    }
+
+    .a11y-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .a11y-table tr:hover td {
+      background: rgba(36, 87, 124, 0.02);
+    }
+
+    .a11y-table strong {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 18px;
+      font-weight: 600;
+      color: #171717;
+    }
+
+    /* Card Groups for Limitations & Feedback */
+    .a11y-cards-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      margin-top: 22px;
+    }
+
+    .a11y-info-card {
+      background: #ffffff;
+      border: 1px solid #E2E5DE;
+      border-left: 3px solid #24577c;
+      border-radius: 4px;
+      padding: 22px 24px;
+      box-sizing: border-box;
+      transition: box-shadow 0.2s ease;
+    }
+
+    .a11y-info-card:hover {
+      box-shadow: 0 4px 16px rgba(0,0,0,0.04);
+    }
+
+    .a11y-info-card h3 {
+      margin: 0 0 8px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 21px;
+      font-weight: 600;
+      color: #24577c;
+    }
+
+    .a11y-info-card p {
+      margin: 0 0 10px;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 17.5px;
+      line-height: 1.65;
+      color: #000000;
+      font-weight: 500;
+    }
+
+    .a11y-info-card p:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Split Action Cards (Section 07) */
+    .a11y-split-cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 20px;
+      margin-top: 22px;
+    }
+
+    .a11y-action-box {
+      background: #faf8f5;
+      border: 1px solid #e3ddd3;
+      border-radius: 6px;
+      padding: 24px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      box-sizing: border-box;
+    }
+
+    .a11y-action-box h3 {
+      margin: 0 0 8px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 22px;
+      font-weight: 600;
+      color: #171717;
+    }
+
+    .a11y-action-box p {
+      margin: 0 0 18px;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.6;
+      color: #000000;
+      font-weight: 500;
+      flex-grow: 1;
+    }
+
+    /* Testing Cards (Section 10) */
+    .a11y-testing-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
+      gap: 20px;
+      margin-top: 22px;
+    }
+
+    .a11y-testing-card {
+      background: #ffffff;
+      border: 1px solid #E2E5DE;
+      border-radius: 6px;
+      padding: 22px 24px;
+      box-sizing: border-box;
+    }
+
+    .a11y-testing-card h3 {
+      margin: 0 0 12px;
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-size: 21px;
+      font-weight: 600;
+      color: #24577c;
+      border-bottom: 1px solid #f0ede6;
+      padding-bottom: 8px;
+    }
+
+    .a11y-testing-card ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .a11y-testing-card li {
+      font-family: 'EB Garamond', Georgia, serif;
+      font-size: 17px;
+      line-height: 1.55;
+      color: #000000;
+      font-weight: 500;
+    }
+
+    .a11y-testing-card li strong {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-size: 13px;
+      font-weight: 600;
+      color: #171717;
+    }
+
+    /* Return Bar (Section 11) */
+    .a11y-return-bar {
+      margin-top: 36px;
+      padding-top: 28px;
+      border-top: 1px solid #E2E5DE;
+      display: flex;
+      gap: 14px;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+
+    /* Footer V2 Styling Matching All Pages */
+    .site-footer-v2 {
+      width: 100%;
+      padding: 38px 5% 20px;
+      box-sizing: border-box;
+      background: #f3eee8;
+      border-top: 1px solid #e3ddd3;
+    }
+
+    .footer-v2-container {
+      max-width: 1150px;
+      margin: 0 auto;
+    }
+
+    .footer-brand-nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 30px;
+      flex-wrap: wrap;
+    }
+
+    .footer-nav-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 8px 18px;
+    }
+
+    .footer-nav-link {
+      color: #000000;
+      font-weight: 500;
+      text-decoration: none;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      padding: 6px 0;
+      transition: color 0.2s ease;
+    }
+
+    .footer-nav-link:hover,
+    .footer-nav-link.active {
+      color: #17619b;
+    }
+
+    .footer-divider {
+      width: 100%;
+      margin: 28px 0 0;
+      border-top: 1px solid #d8d0c7;
+    }
+
+    .footer-bottom-row {
+      padding: 22px 0 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 16px 25px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 17px;
+      font-weight: 500;
+      color: #000000;
+    }
+
+    .footer-bottom-links {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 14px 24px;
+    }
+
+    .footer-bottom-links a {
+      color: #000000;
+      font-weight: 500;
+      font-size: 17px;
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+
+    .footer-bottom-links a:hover {
+      color: #17619b;
+      text-decoration: underline;
+    }
+
+    @media screen and (max-width: 768px) {
+      .footer-brand-nav {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+      }
+      .footer-bottom-row {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 14px;
+      }
+      .statement-toc-card {
+        padding: 20px;
+      }
+      .a11y-table th, .a11y-table td {
+        padding: 10px 12px;
+        font-size: 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Skip Navigation Links for Keyboard & Screen Reader Users -->
+  <div class="skip-links">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <a href="#site-header" class="skip-link">Skip to navigation</a>
+    <a href="#site-footer" class="skip-link">Skip to footer</a>
+    <button type="button" class="skip-link" id="skip-a11y-btn">Open Accessibility Preferences (Alt+A)</button>
+  </div>
+
+  <!-- Site Navigation -->
+  <header class="site-header" id="site-header" role="banner" style="background:#ffffff; border-bottom:1px solid #e9e7e3; padding: 18px 0;">
+    <div class="container navbar" style="height: auto; min-height: 60px;">
+      
+      <!-- BRAND -->
+      <a href="index.html" class="brand" aria-label="Monolina Sarkar Home" style="text-decoration:none;">
+        <span class="brand-name" style="font-family:'Cormorant Garamond',serif; font-size:24px; font-weight:500; letter-spacing:5px; line-height:1.15; white-space:nowrap; color:#000000;">
+          MONOLINA SARKAR
+        </span>
+        <span class="brand-subtitle" style="margin-top:4px; font-family:'Cormorant Garamond',serif; font-size:15px; font-weight:500; letter-spacing:0.2px; color:#000000;">
+          Discipline-Based Education Research &middot; Andragogy
+        </span>
+      </a>
+
+      <!-- DESKTOP NAVIGATION LINKS -->
+      <nav aria-label="Primary Navigation" role="navigation">
+        <ul class="nav-links" style="gap: 28px;">
+          <li><a href="index.html" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Home</a></li>
+          <li><a href="about.html" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">About</a></li>
+          <li><a href="index.html#research-focus" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Research</a></li>
+          <li><a href="index.html#practice-areas" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Practice areas</a></li>
+          <li><a href="contact.html" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Contact</a></li>
+        </ul>
+      </nav>
+
+      <!-- NAV ACTIONS -->
+      <div class="nav-actions">
+        <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav-cv" data-drive-doc="academicCv" aria-label="View Academic Curriculum Vitae">
+          ACADEMIC CV
+        </a>
+        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
+    <a href="index.html" class="nav-link">Home</a>
+    <a href="about.html" class="nav-link">About</a>
+    <a href="index.html#research-focus" class="nav-link">Research</a>
+    <a href="index.html#practice-areas" class="nav-link">Practice areas</a>
+    <a href="contact.html" class="nav-link">Contact</a>
+    <a href="accessibility-statement.html" class="nav-link active">Accessibility Statement</a>
+    <div style="margin-top: 1.5rem;">
+      <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-drive-doc="academicCv" style="width: 100%; text-align: center;">View Academic CV</a>
+    </div>
+  </div>
+
+  <!-- Main Content Landmark -->
+  <main id="main-content" role="main">
+
+    <!-- Accessibility Hero Section -->
+    <section id="a11y-hero">
+      <div class="hero-content">
+        
+        <p class="a11y-hero-eyebrow">
+          DIGITAL INCLUSION &amp; STANDARDS
+        </p>
+
+        <h1 class="a11y-hero-title">
+          ACCESSIBILITY <span class="accent-blue">STATEMENT</span>
+        </h1>
+
+        <p class="a11y-hero-desc">
+          Monolina Sarkar is committed to ensuring digital accessibility, cognitive inclusion, and barrier-free access for all researchers, educators, and students of diverse abilities.
+        </p>
+
+        <div class="a11y-badge-group">
+          <span class="a11y-pill-badge a11y-pill-badge--gold">WCAG 2.2 Level AA</span>
+          <span class="a11y-pill-badge a11y-pill-badge--blue">Universal Design for Learning</span>
+          <span class="a11y-pill-badge a11y-pill-badge--neutral">October 2026 Audit Edition</span>
+        </div>
+
+        <div class="a11y-hero-actions">
+          <button type="button" class="btn btn-primary open-a11y-panel">
+            <span>Open Accessibility Tools (Alt + A)</span>
+            <span style="font-size:16px;" aria-hidden="true">&rarr;</span>
+          </button>
+          <a href="mailto:monolinasarkar1@gmail.com?subject=Accessibility%20Support%20Request%20-%20Monolina%20Sarkar%20Portfolio" class="btn btn-secondary">
+            <span>Request Alternative Format</span>
+            <span aria-hidden="true">&#9993;</span>
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Main Content Container -->
+    <div class="a11y-content-container">
+
+      <!-- Table of Contents Quick Links -->
+      <nav class="statement-toc-card" aria-label="Accessibility Statement Contents">
+        <div class="statement-toc-header">
+          <h2 class="statement-toc-title">Statement Navigation &amp; Quick Index</h2>
+          <span class="statement-toc-tag">WCAG 2.2 AA Framework</span>
+        </div>
+        <ul class="statement-toc-grid">
+          <li>
+            <a href="#sec-commitment" class="statement-toc-link">
+              <span class="statement-toc-num">01</span> Commitment to Inclusion &amp; Equity
+            </a>
+          </li>
+          <li>
+            <a href="#sec-capabilities" class="statement-toc-link">
+              <span class="statement-toc-num">02</span> How Accessible This Website Is
+            </a>
+          </li>
+          <li>
+            <a href="#sec-compliance" class="statement-toc-link">
+              <span class="statement-toc-num">03</span> Compliance Status (WCAG 2.2 AA)
+            </a>
+          </li>
+          <li>
+            <a href="#sec-features" class="statement-toc-link">
+              <span class="statement-toc-num">04</span> Built-in Accessibility Tools
+            </a>
+          </li>
+          <li>
+            <a href="#sec-limitations" class="statement-toc-link">
+              <span class="statement-toc-num">05</span> Known Limitations &amp; Exceptions
+            </a>
+          </li>
+          <li>
+            <a href="#sec-burden" class="statement-toc-link">
+              <span class="statement-toc-num">06</span> Disproportionate Burden Assessment
+            </a>
+          </li>
+          <li>
+            <a href="#sec-feedback" class="statement-toc-link">
+              <span class="statement-toc-num">07</span> Feedback &amp; Alternative Formats
+            </a>
+          </li>
+          <li>
+            <a href="#sec-enforcement" class="statement-toc-link">
+              <span class="statement-toc-num">08</span> Enforcement &amp; Escalation Procedures
+            </a>
+          </li>
+          <li>
+            <a href="#sec-technical" class="statement-toc-link">
+              <span class="statement-toc-num">09</span> Technical Specifications &amp; Standards
+            </a>
+          </li>
+          <li>
+            <a href="#sec-testing" class="statement-toc-link">
+              <span class="statement-toc-num">10</span> How We Tested This Website
+            </a>
+          </li>
+          <li>
+            <a href="#sec-preparation" class="statement-toc-link">
+              <span class="statement-toc-num">11</span> Preparation &amp; Review Details
+            </a>
+          </li>
+        </ul>
+      </nav>
+
+      <!-- Section 01: Commitment -->
+      <section class="a11y-section" id="sec-commitment">
+        <div class="a11y-section-header">
+          <span class="a11y-section-num">01</span>
+          <h2 class="a11y-section-title">Commitment to Digital Inclusion &amp; Equity</h2>
+        </div>
+        <p class="a11y-paragraph">
+          In Discipline-Based Education Research (DBER) and higher-education andragogy, equity and cognitive access are non-negotiable foundations of meaningful learning. Just as physical and virtual classrooms must be designed under <strong>Universal Design for Learning (UDL)</strong> principles, our academic web presence must serve all visitors regardless of visual, motor, auditory, or cognitive abilities.
+        </p>
+        <p class="a11y-paragraph">
+          We design, build, and maintain this digital ecosystem in accordance with the principles of the <em>Public Sector Bodies (Websites and Mobile Applications) (No. 2) Accessibility Regulations 2018</em> and international best practices established by the World Wide Web Consortium (W3C).
+        </p>
+      </section>
+
+      <!-- Section 02: How Accessible This Website Is -->
+      <section class="a11y-section" id="sec-capabilities">
+        <div class="a11y-section-header">
+          <span class="a11y-section-num">02</span>
+          <h2 class="a11y-section-title">How Accessible This Website Is (User Capabilities)</h2>
+        </div>
+        <p class="a11y-paragraph">
+          We want as many people as possible to be able to access and benefit from this website. For example, that means that when visiting this website, you should be able to:
+        </p>
+
+        <div class="a11y-feature-grid">
+          <div class="a11y-feature-card">
+            <div class="a11y-feature-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/><line x1="11" y1="8" x2="11" y2="14"/><line x1="8" y1="11" x2="14" y2="11"/></svg>
+            </div>
+            <div>
+              <h3>Zoom &amp; Reflow up to 400%</h3>
+              <p>Zoom in up to 300%–400% on desktop and mobile browsers without content spilling off the viewport or requiring horizontal scrolling (WCAG 1.4.10 Reflow).</p>
+            </div>
+          </div>
+
+          <div class="a11y-feature-card">
+            <div class="a11y-feature-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M6 8h.01M10 8h.01M14 8h.01M18 8h.01M6 12h.01M10 12h.01M14 12h.01M18 12h.01M8 16h8"/></svg>
+            </div>
+            <div>
+              <h3>Full Keyboard Operability</h3>
+              <p>Navigate the entire website using only a keyboard (Tab, Shift+Tab, Enter, Spacebar, Escape) with skip-to-content links and high-contrast visible focus rings.</p>
+            </div>
+          </div>
+
+          <div class="a11y-feature-card">
+            <div class="a11y-feature-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polygon points="11 5 6 9 2 9 2 15 6 15 11 19 11 5"/><path d="M19.07 4.93a10 10 0 0 1 0 14.14M15.54 8.46a5 5 0 0 1 0 7.07"/></svg>
+            </div>
+            <div>
+              <h3>Screen Reader Compatibility</h3>
+              <p>Listen to the website using modern screen readers (including NVDA, JAWS, VoiceOver on iOS/macOS, Narrator, and TalkBack) supported by semantic HTML5 and ARIA landmark roles.</p>
+            </div>
+          </div>
+
+          <div class="a11y-feature-card">
+            <div class="a11y-feature-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M12 2a10 10 0 0 1 0 20z"/></svg>
+            </div>
+            <div>
+              <h3>Dynamic Contrast &amp; Sizing</h3>
+              <p>Customize color contrast (High Contrast Dark, High Contrast Light, Color Inversion) and font sizing on the fly via the built-in Accessibility Tools panel.</p>
+            </div>
+          </div>
+
+          <div class="a11y-feature-card">
+            <div class="a11y-feature-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/><path d="M6.5 2H20v20H6.5A2.5 2.5 0 0 1 4 19.5v-15A2.5 2.5 0 0 1 6.5 2z"/></svg>
+            </div>
+            <div>
+              <h3>Dyslexia &amp; Cognitive Reading Aids</h3>
+              <p>Enable Lexend dyslexia-friendly typography, expanded line and letter spacing, and a horizontal Reading Guide / Line Ruler that assists with visual tracking.</p>
+            </div>
+          </div>
+
+          <div class="a11y-feature-card">
+            <div class="a11y-feature-icon-badge" aria-hidden="true">
+              <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><line x1="9" y1="9" x2="15" y2="15"/><line x1="15" y1="9" x2="9" y2="15"/></svg>
+            </div>
+            <div>
+              <h3>Motion Reduction &amp; Large Cursor</h3>
+              <p>Suppress CSS animations and motion transitions for vestibular comfort, and toggle an enlarged, high-visibility mouse cursor.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 03: Compliance Status -->
+      <section class="a11y-section" id="sec-compliance">
+        <div class="a11y-section-header">
+          <span class="a11y-section-num">03</span>
+          <h2 class="a11y-section-title">Compliance Status</h2>
+        </div>
+        
+        <div class="a11y-status-card">
+          <div class="a11y-status-badge">
+            <span class="status-dot-emerald"></span>
+            <span class="status-badge-title">Substantially Compliant with WCAG 2.2 Level AA</span>
+          </div>
+          <p class="a11y-paragraph" style="margin-bottom: 12px;">
+            The Web Content Accessibility Guidelines (WCAG) 2.2 defines requirements for designers and developers to improve accessibility for people with disabilities. It defines three levels of conformance: Level A, Level AA, and Level AAA.
+          </p>
+          <p class="a11y-paragraph" style="margin-bottom: 0;">
+            This website is <strong>partially / substantially compliant</strong> with the <strong>Web Content Accessibility Guidelines version 2.2 AA standard</strong>, due to the third-party exemptions and non-compliances documented in Section 05 below. All core site markup, interactive controls, typography, and visual assets developed for this portfolio strictly adhere to Level AA (and many Level AAA criteria).
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 04: Built-in Accessibility Features & Controls -->
+      <section class="a11y-section" id="sec-features">
+        <div class="a11y-section-header">
+          <span class="a11y-section-num">04</span>
+          <h2 class="a11y-section-title">Built-in Accessibility Tools on This Site</h2>
+        </div>
+        <p class="a11y-paragraph">
+          We have engineered dedicated assistive tools directly into the website's interface. Visitors can access these features from any page by clicking the floating <strong>"Accessibility"</strong> button in the bottom corner, the <strong>"A11y"</strong> button in the top navigation, or by pressing the keyboard shortcut <kbd style="background:#f7f6f2; border:1px solid #dcd7ce; padding:3px 7px; border-radius:4px; font-family:'Plus Jakarta Sans', sans-serif; font-size:12px; font-weight:600;">Alt + A</kbd> (or <kbd style="background:#f7f6f2; border:1px solid #dcd7ce; padding:3px 7px; border-radius:4px; font-family:'Plus Jakarta Sans', sans-serif; font-size:12px; font-weight:600;">Option + A</kbd> on macOS).
+        </p>
+
+        <div class="a11y-table-container">
+          <table class="a11y-table" aria-label="Built-in Accessibility Features Table">
+            <thead>
+              <tr>
+                <th scope="col" style="width: 25%;">Tool / Feature</th>
+                <th scope="col" style="width: 45%;">Function &amp; Implementation</th>
+                <th scope="col" style="width: 30%;">Relevant WCAG Criterion</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Skip-Navigation Links</strong></td>
+                <td>Allows keyboard and screen-reader users to bypass repetitive header navigation and jump directly to main content, navigation, or footer.</td>
+                <td>WCAG 2.4.1 (Bypass Blocks) — Level A</td>
+              </tr>
+              <tr>
+                <td><strong>Text Resizing (100%–150%)</strong></td>
+                <td>Dynamic typography scaling with four distinct presets (Normal 100%, Medium 115%, Large 130%, Extra Large 150%) that reflow cleanly without layout clipping.</td>
+                <td>WCAG 1.4.4 (Resize Text) — Level AA</td>
+              </tr>
+              <tr>
+                <td><strong>High Contrast Modes</strong></td>
+                <td>Toggle between Default, High Contrast Dark (Black &amp; Gold), High Contrast Light (Stark Black &amp; White), and Color Inversion with contrast ratios exceeding 7:1.</td>
+                <td>WCAG 1.4.3 (Contrast Minimum) &amp; 1.4.6 (Contrast Enhanced)</td>
+              </tr>
+              <tr>
+                <td><strong>Dyslexia-Friendly Font (Lexend)</strong></td>
+                <td>Applies Google Fonts Lexend, an evidence-based typeface engineered in collaboration with educational researchers to reduce visual stress and character confusion.</td>
+                <td>WCAG 1.4.12 (Text Spacing) &amp; UDL Guidelines</td>
+              </tr>
+              <tr>
+                <td><strong>Highlight All Links</strong></td>
+                <td>Renders bright high-contrast background badges and distinctive underlines across all interactive hyperlinks, ensuring links do not rely solely on color.</td>
+                <td>WCAG 1.4.1 (Use of Color) — Level A</td>
+              </tr>
+              <tr>
+                <td><strong>Enhanced Text &amp; Line Spacing</strong></td>
+                <td>Expands body line-height to 2.0, letter spacing to 0.08em, and word spacing to 0.16em to mitigate cognitive fatigue and crowded text.</td>
+                <td>WCAG 1.4.12 (Text Spacing) — Level AA</td>
+              </tr>
+              <tr>
+                <td><strong>Reading Ruler / Focus Bar</strong></td>
+                <td>A horizontal translucent guide line that follows mouse cursor movements and keyboard focus, helping readers with ADHD or dyslexia maintain focus across lines.</td>
+                <td>Cognitive Ergonomics &amp; Assistive Reading</td>
+              </tr>
+              <tr>
+                <td><strong>Reduced Motion</strong></td>
+                <td>Suppresses CSS animations, transitions, and smooth scrolling for individuals sensitive to motion sickness or vestibular disorders.</td>
+                <td>WCAG 2.3.3 (Animation from Interactions) — Level AAA</td>
+              </tr>
+              <tr>
+                <td><strong>Focus Trapping &amp; Escape Dismiss</strong></td>
+                <td>Accessible dialog management for the Academic CV modal, photo lightbox, and accessibility panel; focus is contained while open and returned upon closing.</td>
+                <td>WCAG 2.1.2 (No Keyboard Trap) — Level A</td>
+              </tr>
+              <tr>
+                <td><strong>Preference Persistence</strong></td>
+                <td>Accessibility settings are saved locally to your device via <code style="font-family:'Plus Jakarta Sans',monospace; font-size:13px; background:#f5f4ef; padding:2px 5px; border-radius:3px;">localStorage</code>, maintaining your customizations on subsequent visits.</td>
+                <td>Usability &amp; Persistent User Preferences</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- Section 05: Non-Accessible Content & Known Limitations -->
+      <section class="a11y-section" id="sec-limitations">
+        <div class="a11y-section-header">
+          <span class="a11y-section-num">05</span>
+          <h2 class="a11y-section-title">Non-Accessible Content &amp; Known Limitations</h2>
+        </div>
+        <p class="a11y-paragraph">
+          Despite our best efforts to ensure the accessibility of this website, we recognize that some content may not yet be fully accessible. Modeled on institutional transparency standards, we document all known limitations below:
+        </p>
+
+        <div class="a11y-cards-stack">
+          <div class="a11y-info-card">
+            <h3>1. External Scientific Journal &amp; Publisher Repositories (Third-Party Platforms)</h3>
+            <p>
+              <strong>Description:</strong> Several research papers and book chapters authored by Monolina Sarkar link out via Digital Object Identifiers (DOIs) to external academic publisher platforms (e.g., <em>Elsevier ScienceDirect</em>, <em>Springer Nature</em>, <em>Wiley Environmental Microbiology</em>, <em>Taylor &amp; Francis / CRC Press</em>, and <em>Apple Academic Press</em>). These external publisher portals and archived journal PDF downloads are hosted on third-party commercial systems outside our direct editorial control.
+            </p>
+            <p>
+              <strong>WCAG Criteria:</strong> Some external publisher PDFs may fail WCAG 1.1.1 (Non-text Content), WCAG 1.3.1 (Info and Relationships), and WCAG 2.4.2 (Page Titled) because they lack full structural tagging or reflow mechanisms.
+            </p>
+            <p>
+              <strong>Accessible Workaround:</strong> We provide full plain-text bibliographic citations, abstracts, and contextual research summaries directly on this website. Furthermore, any researcher or student may request an accessible copy (accessible Word document, tagged PDF, or Markdown plain text) by emailing <a href="mailto:monolinasarkar1@gmail.com?subject=Accessible%20Paper%20Request%20-%20Monolina%20Sarkar" style="color:#24577c; font-weight:600; text-decoration:underline;">monolinasarkar1@gmail.com</a>.
+            </p>
+          </div>
+
+          <div class="a11y-info-card">
+            <h3>2. Complex Biochemical Diagrams &amp; Molecular Pathways</h3>
+            <p>
+              <strong>Description:</strong> Certain biological pathway diagrams (such as Nod-factor independent rhizobial crack-entry symbiosis and heavy-metal stress mechanisms) present multi-scale spatial and molecular relationships that are inherently complex.
+            </p>
+            <p>
+              <strong>WCAG Criteria:</strong> WCAG 1.1.1 (Non-text Content). While all diagrams feature descriptive HTML alt text and accompanying text captions, intricate chemical interactions can be challenging to convey completely through short alternative text alone.
+            </p>
+            <p>
+              <strong>Accessible Workaround:</strong> Detailed narrative breakdowns of the biochemical hypotheses and empirical findings are provided in the surrounding text and research inquiry tabs. Visitors may also request one-on-one narrative walkthroughs.
+            </p>
+          </div>
+
+          <div class="a11y-info-card">
+            <h3>3. Outbound Academic Profiles &amp; External Services</h3>
+            <p>
+              <strong>Description:</strong> External links to academic directories such as ORCID (0000-0002-8172-1111), Web of Science ResearcherID (GRY-0666-2022), and LinkedIn are operated under the respective governance of those platforms.
+            </p>
+            <p>
+              <strong>WCAG Criteria:</strong> WCAG 3.2.4 (Consistent Identification). All external links open with clear visual external link indicators (<span aria-hidden="true">&nearr;</span>) and accessible <code style="font-family:'Plus Jakarta Sans',monospace; font-size:13px; background:#f5f4ef; padding:2px 5px; border-radius:3px;">target="_blank" rel="noopener noreferrer"</code> attributes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 06: Disproportionate Burden -->
+      <section class="a11y-section" id="sec-burden">
+        <div class="a11y-section-header">
+          <span class="a11y-section-num">06</span>
+          <h2 class="a11y-section-title">Disproportionate Burden Assessment</h2>
+        </div>
+        <p class="a11y-paragraph">
+          Under Regulation 12 of the Public Sector Bodies Accessibility Regulations 2018, organizations assess whether fixing specific legacy assets imposes a disproportionate operational or financial burden.
+        </p>
+        <p class="a11y-paragraph">
+          We have assessed that retroactively modifying and re-typesetting historical publisher-owned PDFs originally published between 2016 and 2022 would represent a disproportionate administrative burden. However, in keeping with our commitment to open science, we maintain on-demand alternative format conversion for all historical works without charge.
+        </p>
+      </section>
+
+      <!-- Section 07: Feedback & Alternative Formats -->
+      <section class="a11y-section" id="sec-feedback">
+        <div class="a11y-section-header">
+          <span class="a11y-section-num">07</span>
+          <h2 class="a11y-section-title">Feedback, Contact &amp; Alternative Formats</h2>
+        </div>
+        <p class="a11y-paragraph">
+          We welcome your feedback on the accessibility of this portfolio. If you encounter accessibility barriers, find any feature not functioning properly with your assistive technology, or require materials in an alternative format:
+        </p>
+
+        <div class="a11y-split-cards">
+          <div class="a11y-action-box">
+            <div>
+              <h3>Request an Alternative Format</h3>
+              <p>
+                If you need information on this website in a different format—such as an accessible Word document (.docx), large-print PDF (18pt+), plain-text Markdown (.md), or narrated audio summary—we will gladly prepare it for you.
+              </p>
+            </div>
+            <div>
+              <a href="mailto:monolinasarkar1@gmail.com?subject=Alternative%20Format%20Request%20-%20Monolina%20Sarkar%20Portfolio" class="btn btn-primary" style="width:100%; box-sizing:border-box;">
+                <span>Request Alternative Format</span>
+                <span aria-hidden="true">&#9993;</span>
+              </a>
+            </div>
+          </div>
+
+          <div class="a11y-action-box">
+            <div>
+              <h3>Report an Accessibility Barrier</h3>
+              <p>
+                Please include the URL of the affected page, a description of the barrier, and the assistive technology or browser you were using (e.g. Chrome with NVDA, Safari with VoiceOver).
+              </p>
+            </div>
+            <div>
+              <a href="mailto:monolinasarkar1@gmail.com?subject=Accessibility%20Barrier%20Report%20-%20Monolina%20Sarkar%20Portfolio" class="btn btn-secondary" style="width:100%; box-sizing:border-box;">
+                <span>Submit Barrier Report</span>
+                <span aria-hidden="true">&#9993;</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div style="margin-top: 20px; background: #faf8f5; border: 1px solid #e3ddd3; border-radius: 6px; padding: 18px 22px;">
+          <p style="font-family:'EB Garamond',serif; font-size: 17px; color: #000000; font-weight: 500; margin: 0;">
+            <strong>Response Time:</strong> We endeavor to review all accessibility inquiries and respond within <strong>two business days</strong>.
+          </p>
+        </div>
+      </section>
+
+      <!-- Section 08: Enforcement & Resolution -->
+      <section class="a11y-section" id="sec-enforcement">
+        <div class="a11y-section-header">
+          <span class="a11y-section-num">08</span>
+          <h2 class="a11y-section-title">Enforcement &amp; Escalation Procedures</h2>
+        </div>
+        <p class="a11y-paragraph">
+          If you have contacted us regarding an accessibility barrier and are not satisfied with our response or the provision of alternative formats, you may contact our primary academic coordination channel directly at <a href="mailto:monolinasarkar1@gmail.com" style="color:#24577c; font-weight:600; text-decoration:underline;">monolinasarkar1@gmail.com</a> with the subject header <em>"Urgent: Accessibility Escalation"</em> for immediate priority review.
+        </p>
+        <p class="a11y-paragraph">
+          In institutional contexts, web accessibility across UK and international higher education is overseen by statutory equality bodies. We strive to proactively resolve all matters through direct and collaborative engagement.
+        </p>
+      </section>
+
+      <!-- Section 09: Technical Specifications -->
+      <section class="a11y-section" id="sec-technical">
+        <div class="a11y-section-header">
+          <span class="a11y-section-num">09</span>
+          <h2 class="a11y-section-title">Technical Information &amp; Web Standards</h2>
+        </div>
+        <p class="a11y-paragraph">
+          Accessibility of this website relies on the following core web technologies to work in concert with assistive technologies and individual browser configurations:
+        </p>
+        <ul style="list-style: none; padding: 0; margin: 16px 0 0; display: flex; flex-direction: column; gap: 14px;">
+          <li style="display: flex; gap: 12px; align-items: baseline; font-family:'EB Garamond',serif; font-size: 18px; color: #292E28;">
+            <span style="color: #24577c; font-weight: 700;">&bull;</span>
+            <span><strong>HTML5:</strong> Semantic landmark elements (<code>&lt;header&gt;</code>, <code>&lt;nav&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code>, <code>&lt;section&gt;</code>, <code>&lt;article&gt;</code>) establishing logical document structure.</span>
+          </li>
+          <li style="display: flex; gap: 12px; align-items: baseline; font-family:'EB Garamond',serif; font-size: 18px; color: #292E28;">
+            <span style="color: #24577c; font-weight: 700;">&bull;</span>
+            <span><strong>WAI-ARIA 1.2:</strong> Accessible Rich Internet Applications landmark roles, state attributes (<code>aria-expanded</code>, <code>aria-controls</code>, <code>aria-label</code>, <code>aria-modal</code>), and live regions (<code>aria-live="polite"</code>).</span>
+          </li>
+          <li style="display: flex; gap: 12px; align-items: baseline; font-family:'EB Garamond',serif; font-size: 18px; color: #292E28;">
+            <span style="color: #24577c; font-weight: 700;">&bull;</span>
+            <span><strong>CSS3:</strong> Fluid responsive layout grids, CSS Custom Properties for dynamic high-contrast theming, rem-based typographic scaling, and <code>:focus-visible</code> indicators.</span>
+          </li>
+          <li style="display: flex; gap: 12px; align-items: baseline; font-family:'EB Garamond',serif; font-size: 18px; color: #292E28;">
+            <span style="color: #24577c; font-weight: 700;">&bull;</span>
+            <span><strong>ECMAScript (Vanilla JavaScript):</strong> Lightweight, dependency-free client logic ensuring rapid rendering, robust keyboard trapping, and client-side preference persistence without invasive trackers.</span>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Section 10: How We Tested This Website -->
+      <section class="a11y-section" id="sec-testing">
+        <div class="a11y-section-header">
+          <span class="a11y-section-num">10</span>
+          <h2 class="a11y-section-title">How We Tested This Website</h2>
+        </div>
+        <p class="a11y-paragraph">
+          This website was evaluated using a rigorous combination of automated testing suites and manual human audits:
+        </p>
+
+        <div class="a11y-testing-grid">
+          <div class="a11y-testing-card">
+            <h3>Automated Audit Suites</h3>
+            <ul>
+              <li><strong>Google Chrome Lighthouse:</strong> Targeting 100/100 Accessibility Score across desktop and mobile profiles.</li>
+              <li><strong>Axe-core DevTools:</strong> Comprehensive scanning for WCAG 2.1 and WCAG 2.2 AA violations.</li>
+              <li><strong>WAVE Accessibility Tool:</strong> Validating color contrast ratios, alt text presence, and semantic heading hierarchies.</li>
+            </ul>
+          </div>
+
+          <div class="a11y-testing-card">
+            <h3>Manual &amp; Assistive Audits</h3>
+            <ul>
+              <li><strong>Keyboard Navigation Testing:</strong> 100% of interactive controls operated solely via Tab, Shift+Tab, Spacebar, Enter, and Escape.</li>
+              <li><strong>Screen Reader Verification:</strong> Manual testing using NVDA on Windows and VoiceOver on macOS/iOS.</li>
+              <li><strong>Zoom &amp; Reflow Testing:</strong> Evaluated at 200%, 300%, and 400% magnification to prevent horizontal scrolling and text truncation.</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <!-- Section 11: Preparation & Review Dates -->
+      <section class="a11y-section" id="sec-preparation">
+        <div class="a11y-section-header">
+          <span class="a11y-section-num">11</span>
+          <h2 class="a11y-section-title">Preparation &amp; Review Details</h2>
+        </div>
+        <p class="a11y-paragraph">
+          This accessibility statement was prepared on <strong>14 October 2026</strong>.
+        </p>
+        <p class="a11y-paragraph">
+          It was last reviewed and audited on <strong>14 October 2026</strong> against the <strong>WCAG 2.2 Level AA standard</strong>.
+        </p>
+        <p class="a11y-paragraph">
+          We review this statement and audit our codebase periodically upon any major curricular publication, pedagogical update, or architectural revision.
+        </p>
+
+        <div class="a11y-return-bar">
+          <a href="index.html" class="btn btn-primary">
+            <span>Return to Home Portfolio</span>
+            <span aria-hidden="true">&rarr;</span>
+          </a>
+          <button type="button" class="btn btn-secondary open-a11y-panel">
+            <span>Customize Accessibility Settings</span>
+          </button>
+          <a href="contact.html" class="btn btn-gold">
+            <span>Contact Monolina</span>
+          </a>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Site Footer -->
+  <footer id="site-footer" role="contentinfo">
+    <section class="site-footer-v2">
+      <div class="footer-v2-container">
+
+        <div class="footer-brand-nav">
+          <!-- BRAND -->
+          <div>
+            <div style="font-family:'Cormorant Garamond',serif; font-size:24px; letter-spacing:5px; line-height:1.4; color:#000000; font-weight:500;">
+              MONOLINA SARKAR
+            </div>
+            <div style="font-family:'Cormorant Garamond',serif; font-size:16px; line-height:1.5; color:#000000; margin-top:2px;">
+              Discipline-Based Education Research &middot; Andragogy
+            </div>
+          </div>
+
+          <!-- FOOTER NAVIGATION -->
+          <nav aria-label="Footer navigation">
+            <div class="footer-nav-links">
+              <a href="index.html" class="footer-nav-link">Home</a>
+              <a href="about.html" class="footer-nav-link">About</a>
+              <a href="index.html#research-focus" class="footer-nav-link">Research</a>
+              <a href="index.html#practice-areas" class="footer-nav-link">Practice areas</a>
+              <a href="contact.html" class="footer-nav-link">Contact</a>
+              <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav-cv" data-drive-doc="academicCv" style="font-size:14px; padding:6px 14px; margin-left:6px; text-decoration:none;">
+                ACADEMIC CV
+              </a>
+            </div>
+          </nav>
+        </div>
+
+        <!-- DIVIDER -->
+        <div class="footer-divider"></div>
+
+        <!-- COPYRIGHT + PROFESSIONAL LINKS -->
+        <div class="footer-bottom-row">
+          <div>
+            &copy; 2026 Monolina Sarkar. All rights reserved.
+          </div>
+
+          <div class="footer-bottom-links">
+            <a href="accessibility-statement.html" class="active" style="color:#17619b; text-decoration:underline;">Accessibility Statement</a>
+            <a href="https://orcid.org/0000-0002-8172-1111" target="_blank" rel="noopener noreferrer">ORCID</a>
+            <a href="https://www.linkedin.com/in/monolinasarkar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.webofscience.com" target="_blank" rel="noopener noreferrer">Web of Science (GRY-0666-2022)</a>
+          </div>
+        </div>
+
+      </div>
+    </section>
+  </footer>
+
+  <!-- Academic CV Modal -->
+  <div class="modal-overlay" id="cv-modal" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
+    <div class="modal-card">
+      <button class="modal-close-btn" id="cv-modal-close" aria-label="Close CV Modal">&times;</button>
+      
+      <div class="cv-document" id="cv-document">
+        <div class="cv-print-header" role="banner">
+          <div class="section-label" style="margin-bottom: 0.35rem;">Curriculum Vitae</div>
+          <h2 id="cv-modal-title" class="cv-print-title">
+            Monolina Sarkar, Ph.D., M.Ed.
+          </h2>
+          <div class="cv-contact-strip">
+            <span>Discipline-Based Education Research (DBER)</span>
+            <span>&bull;</span>
+            <span>Higher Education Biology Educator</span>
+            <span>&bull;</span>
+            <span>monolinasarkar1@gmail.com</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
