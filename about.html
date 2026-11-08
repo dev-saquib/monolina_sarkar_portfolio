@@ -20,243 +20,76 @@
   <link rel="stylesheet" href="css/style.css">
   <link rel="icon" type="image/jpeg" href="images (3).jpg">
 
+<body>
   <style>
-    section[id] {
-      scroll-margin-top: 85px;
-    }
 
-    /* About Hero Section Styling */
-    .about-hero {
-      display: grid;
-      grid-template-columns: minmax(280px, 420px) minmax(0, 1fr);
-      gap: clamp(36px, 5vw, 64px);
-      align-items: start;
-    }
-
-    .portrait-wrapper {
-      position: relative;
-    }
-
-    .portrait-frame {
-      position: relative;
-      border-radius: var(--radius-sm);
-      overflow: hidden;
-      box-shadow: var(--shadow-card);
-      border: 1px solid var(--border-medium);
-      background-color: var(--bg-card);
-    }
-
-    .portrait-frame img {
-      width: 100%;
-      height: auto;
-      display: block;
-      object-fit: cover;
-    }
-
-    .about-narrative {
-      display: flex;
-      flex-direction: column;
-    }
-
-    .about-narrative h1 {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: clamp(36px, 4.5vw, 52px);
-      font-weight: 500;
-      color: var(--text-primary);
-      line-height: 1.15;
-      margin-top: 0.25rem;
-    }
-
-    .about-quote {
-      margin: 1.75rem 0;
-      padding: 1.5rem 1.75rem;
-      background-color: #FAF8F5;
-      border-left: 3px solid var(--accent-gold);
-      border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
-    }
-
-    .about-quote blockquote {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-style: italic;
-      font-size: 1.15rem;
-      line-height: 1.65;
-      color: var(--text-primary);
-      margin-bottom: 0.75rem;
-    }
-
-    .about-quote cite {
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      color: var(--text-muted);
-      font-style: normal;
-      display: block;
-    }
-
-    /* Blog Card Enhancements */
-    .blog-grid {
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-      gap: 2rem;
-    }
-
-    .blog-card {
-      background-color: var(--bg-card);
-      border: 1px solid var(--border-medium);
-      border-radius: var(--radius-sm);
-      overflow: hidden;
-      display: flex;
-      flex-direction: column;
-      transition: transform var(--transition-normal), box-shadow var(--transition-normal), border-color var(--transition-normal);
-    }
-
-    .blog-card:hover {
-      transform: translateY(-4px);
-      box-shadow: var(--shadow-hover);
-      border-color: var(--accent-blue);
-    }
-
-    .blog-card-media {
-      height: 220px;
-      overflow: hidden;
-      background-color: var(--bg-card-subtle);
-      position: relative;
-    }
-
-    .blog-card-media img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      transition: transform var(--transition-smooth);
-    }
-
-    .blog-card:hover .blog-card-media img {
-      transform: scale(1.04);
-    }
-
-    .blog-card-body {
-      padding: 1.75rem;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      flex: 1;
-    }
-
-    .blog-tag {
-      font-family: var(--font-sans);
-      font-size: 0.75rem;
-      font-weight: 700;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      color: var(--accent-blue);
-      margin-bottom: 0.6rem;
-    }
-
-    .blog-title {
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: 1.35rem;
-      font-weight: 600;
-      line-height: 1.3;
-      color: var(--text-primary);
-      margin-bottom: 0.85rem;
-    }
-
-    .blog-snippet {
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: 1.05rem;
-      line-height: 1.65;
-      color: var(--text-secondary);
-      margin-bottom: 1.5rem;
-    }
-
-    .blog-footer {
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      padding-top: 1rem;
-      border-top: 1px solid var(--border-subtle);
-      font-family: var(--font-sans);
-      font-size: 0.85rem;
-      color: var(--text-muted);
-    }
-
-    @media (max-width: 900px) {
-      .about-hero {
-        grid-template-columns: minmax(0, 1fr);
-        gap: 36px;
-      }
-
-      .portrait-wrapper {
-        max-width: 380px;
-        margin: 0 auto;
-      }
-    }
-
-    /* Join Kaizen Banner Section */
+    /* Section: Join Kaizen & Footer */
     .join-kaizen-wrap {
       width: 100%;
       padding: clamp(48px, 6vw, 70px) 5%;
       box-sizing: border-box;
-      background: #f7f3ed;
+      background: #E0E4E8;
     }
 
     .join-kaizen-grid {
       max-width: 1150px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 1fr);
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 1fr);
       align-items: center;
       gap: 10%;
       box-sizing: border-box;
     }
 
     .join-kaizen-eyebrow {
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 4px;
-      color: #59748b;
+      color: black;
       margin-bottom: 18px;
     }
 
     .join-kaizen-title {
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
-      font-size: clamp(44px, 5vw, 68px);
-      font-weight: 500;
-      letter-spacing: 3px;
-      line-height: 1.05;
+      font-family: Garamond;
+      font-size: clamp(36px, 5vw, 58px);
+      font-weight: 400;
+      letter-spacing: 7px;
+      line-height: 1.25;
       color: #245b80;
       margin: 0 0 24px;
     }
+  
 
     .join-kaizen-divider {
       width: 65px;
       height: 3px;
-      background: #a42c1c;
+      background: #245b80;
       margin-bottom: 24px;
     }
 
     .join-kaizen-text {
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.75;
+      font-family: Garamond;
+      font-size: 17.5px;
+      font-weight: 400;
+      line-height: 1.65;
       color: #000000;
       margin: 0 0 30px;
     }
 
     .join-kaizen-text a {
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
     }
 
     .enso-card {
       width: 100%;
       min-width: 0;
       padding: 35px 25px;
-      background: #ffffff;
+      
       box-sizing: border-box;
       text-align: center;
-      border: 1px solid #e3ddd3;
-      border-radius: 4px;
+     
+     
     }
 
     .enso-card img {
@@ -269,12 +102,12 @@
     }
 
     .enso-card p {
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-size: 17px;
       letter-spacing: 0.5px;
       line-height: 1.6;
       color: #000000;
-      font-weight: 500;
+      font-weight: 400;
       margin: 0;
     }
 
@@ -287,10 +120,10 @@
 
     .site-footer-v2 {
       width: 100%;
-      padding: 38px 5% 20px;
+      /*padding: 38px 5% 20px;*/
       box-sizing: border-box;
-      background: #f3eee8;
-      border-top: 1px solid #e3ddd3;
+      background:#F0F4FA;
+      
     }
 
     .footer-v2-container {
@@ -317,8 +150,8 @@
       color: #000000;
       font-weight: 500;
       text-decoration: none;
-      font-family: 'Cormorant Garamond', serif !important;
-      font-size: 18px;
+      font-family: 'Garamond', serif !important;
+      font-size: 1.15rem;
       padding: 6px 0;
       transition: color 0.2s ease;
     }
@@ -331,7 +164,7 @@
     .footer-divider {
       width: 100%;
       margin: 28px 0 0;
-      border-top: 1px solid #d8d0c7;
+      border-top: 1px solid #D0DFF8;
     }
 
     .footer-bottom-row {
@@ -341,7 +174,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 16px 25px;
-      font-family: 'Cormorant Garamond', serif;
+      font-family: Garamond;
       font-size: 17px;
       font-weight: 500;
       color: #000000;
@@ -364,110 +197,802 @@
 
     .footer-bottom-links a:hover {
       color: #17619b;
-      text-decoration: underline;
+      
+    }
+    /* =========================================
+   CONTACT CARDS — MATCH RESEARCH CARD DESIGN
+========================================= */
+
+.contact-columns {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 23px;
+    align-items: stretch;
+}
+
+.contact-column {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    min-width: 0;
+
+    padding: 30px 27px;
+    min-height: 216px;
+
+    background: #ffffff;
+    border: 1px solid #e4e8e2;
+    border-radius: 8px;
+    overflow: hidden;
+
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease,
+        border-color 0.3s ease;
+}
+
+/* Gold accent line */
+
+.contact-column::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 4px;
+    background: #c49a62;
+    transition: width 0.35s ease;
+}
+
+/* Same hover as research cards */
+
+.contact-column:hover {
+    transform: translateY(-5px);
+    border-color: #d5ddd5;
+    box-shadow: 0 16px 40px rgba(24, 60, 53, 0.08);
+}
+
+.contact-column:hover::before {
+    width: 100%;
+}
+
+/* Top row: category left, number right */
+
+.contact-column .contact-column-top {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 24px;
+}
+
+.contact-column .contact-category {
+    color: #000000;
+    font-family: Garamond, serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    text-transform: uppercase;
+    text-align: left;
+}
+
+.contact-column .contact-number {
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 1;
+    color: #d7dfd8;
+}
+
+/* Heading — same as research cards */
+
+.contact-column h2 {
+    font-family: 'Playfair Display', serif !important;
+    color: #000000 !important;
+    font-size: clamp(20px, 2vw, 25px) !important;
+    line-height: 1.35 !important;
+    font-weight: 600 !important;
+    margin: 0 0 16px !important;
+}
+
+/* Remove old horizontal divider */
+
+.contact-column .contact-separator {
+    display: none;
+}
+
+/* Contact information */
+
+.contact-column .contact-link-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-top: 0;
+}
+
+/* ORCID and Web of Science labels */
+
+.contact-column .contact-link-label {
+    color: #000000;
+    font-family: Garamond, serif;
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.2px;
+}
+
+/* Links styled like research-card descriptions */
+
+.contact-column .contact-link-group a {
+    display: inline-flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 6px;
+
+    color: #000000 !important;
+    font-family: Garamond, serif !important;
+    font-size: 16px !important;
+    font-weight: 400 !important;
+    line-height: 1.65 !important;
+
+    text-decoration: none;
+    overflow-wrap: anywhere;
+    transition: color 0.3s ease;
+}
+
+.contact-column .contact-link-group a:hover {
+    color: #245b80 !important;
+}
+
+/* Small arrow */
+
+.contact-column .contact-arrow {
+    font-size: 12px;
+    color: #245b80;
+    transition: transform 0.3s ease;
+}
+
+.contact-column .contact-link-group a:hover .contact-arrow {
+    transform: translate(3px, -3px);
+}
+
+/* Space between ORCID and Web of Science */
+
+.contact-column .secondary-link {
+    margin-top: 15px;
+}
+
+/* =========================================
+   RESPONSIVE DESIGN
+========================================= */
+
+@media (max-width: 900px) {
+
+    .contact-columns {
+        gap: 16px;
     }
 
-    /* Read More button styling matching Home Page */
-    .read-more {
-      display: inline-flex;
-      align-items: center;
-      align-self: flex-start;
-      gap: 10px;
-      margin-top: 6px;
-      padding: 0;
-      border: none;
-      background: transparent;
-      font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
-      font-size: 17px;
-      font-weight: 600;
-      color: #000000;
-      cursor: pointer;
-      text-decoration: none;
-      transition: color 0.25s ease;
+    .contact-column {
+        padding: 25px 20px;
     }
 
-    .read-more:hover {
-      color: #a47a43;
+    .contact-column .contact-category {
+        font-size: 9px;
+        letter-spacing: 1px;
     }
 
-    .read-more .arrow {
-      display: inline-block;
-      font-size: 16px;
-      line-height: 1;
-      transition: transform 0.25s ease;
+    .contact-column h2 {
+        font-size: 21px !important;
+    }
+}
+
+@media (max-width: 650px) {
+
+    .contact-columns {
+        grid-template-columns: 1fr;
+        gap: 18px;
     }
 
-    .read-more:hover .arrow {
-      transform: translateX(4px);
+    .contact-column {
+        padding: 30px;
+        min-height: auto;
     }
+
+    .contact-column h2 {
+        font-size: 24px !important;
+    }
+}
+
+
+
+/* =========================================
+   PROFESSIONAL ACADEMIC FOOTER
+   Original backgrounds and buttons preserved
+========================================= */
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.academic-footer {
+    width: 100%;
+    overflow: hidden;
+    font-family: Garamond, Georgia, serif;
+}
+
+
+/* =========================================
+   TOP CONNECT SECTION
+========================================= */
+
+.footer-connect {
+    padding: 75px 7%;
+    background: #F0F4FA;
+}
+
+.footer-connect-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    align-items: center;
+    gap: 70px;
+}
+
+
+/* LEFT CONTENT */
+
+.footer-eyebrow {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    font-family: Garamond;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+}
+
+.footer-connect-content h2 {
+    margin: 0;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: clamp(38px, 5vw, 56px);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.footer-connect-content h2 span {
+    font-style: italic;
+}
+
+.footer-gold-line {
+    width: 65px;
+    height: 2px;
+    margin: 25px 0;
+    background: currentColor;
+    opacity: 0.55;
+}
+
+.footer-connect-content > p {
+    max-width: 500px;
+    margin: 0 0 15px;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.footer-email-line a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.footer-email-line a:hover {
+    border-bottom-color: currentColor;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+   Original button styling preserved
+========================================= */
+
+.footer-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+
+/* =========================================
+   ENSO IMAGE
+========================================= */
+
+.footer-enso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-enso-image {
+    width: 225px;
+    height: 225px;
+    padding: 10px;
+
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 50%;
+}
+
+.footer-enso-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer-enso-caption {
+    max-width: 260px;
+    margin-top: 20px;
+}
+
+.footer-enso-caption span {
+    font-family: Garamond;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+}
+
+
+.footer-enso-caption p {
+    margin: 8px 0 0;
+    font-family: Garamond, Georgia, serif;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+@media (max-width: 600px) {
+    .footer-enso-caption p {
+        font-size: 14px;
+        white-space: normal;
+    }
+}
+/* =========================================
+   LOWER FOOTER
+========================================= */
+
+.footer-main {
+    padding: 0px 7% 25px;
+    background: transparent;
+}
+
+.footer-main-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.footer-main-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand-name {
+    display: inline-block;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 4px;
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-brand p {
+    margin: 8px 0 0;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-brand p span {
+    padding: 0 4px;
+}
+
+
+/* =========================================
+   FOOTER NAVIGATION
+========================================= */
+
+.footer-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.footer-navigation a {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+
+    color: inherit;
+    text-decoration: none;
+
+    transition: opacity 0.3s ease;
+}
+
+.footer-navigation a:hover {
+    opacity: 0.7;
+}
+
+
+/* CV LINK */
+
+.footer-navigation .footer-cv-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 15px;
+
+    border: 1px solid currentColor;
+    color: inherit;
+
+    transition: all 0.3s ease;
+}
+
+.footer-navigation .footer-cv-link:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    margin: 32px 0 22px;
+
+    background: currentColor;
+    opacity: 0.2;
+}
+
+
+/* =========================================
+   COPYRIGHT AND PROFESSIONAL LINKS
+========================================= */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.footer-copyright {
+    margin: 0;
+
+    font-family: Garamond;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+}
+
+.footer-social-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-social-links a {
+    font-family: Garamond;
+    font-size: 17px;
+    color: inherit;
+    text-decoration: none;
+
+    transition: opacity 0.3s ease;
+}
+
+.footer-social-links a:hover {
+    opacity: 0.65;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .footer-connect {
+        padding: 65px 6%;
+    }
+
+    .footer-connect-inner {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 35px;
+    }
+
+    .footer-enso-image {
+        width: 190px;
+        height: 190px;
+    }
+
+    .footer-main-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .footer-navigation {
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 600px) {
+
+    .footer-connect {
+        padding: 55px 23px;
+    }
+
+    .footer-connect-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-connect-content h2 {
+        font-size: 39px;
+    }
+
+    .footer-connect-content > p {
+        font-size: 17px;
+    }
+
+    .footer-actions {
+        gap: 12px;
+    }
+
+    .footer-enso-image {
+        width: 175px;
+        height: 175px;
+    }
+
+    .footer-main {
+        padding: 38px 23px 24px;
+    }
+
+    .footer-brand-name {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .footer-navigation {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: start;
+        gap: 19px 15px;
+        width: 100%;
+    }
+
+    .footer-navigation .footer-cv-link {
+        width: fit-content;
+    }
+
+    .footer-divider {
+        margin: 26px 0 20px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .footer-social-links {
+        gap: 18px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE SCREENS
+========================================= */
+
+@media (max-width: 380px) {
+
+    .footer-connect-content h2 {
+        font-size: 34px;
+    }
+
+    .footer-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-navigation {
+        gap: 17px 10px;
+    }
+
+    .footer-social-links {
+        gap: 13px;
+    }
+
+}
   </style>
-</head>
 
-<body>
-
-  <!-- Skip Navigation Links for Keyboard & Screen Reader Users -->
+  <!-- Skip Links -->
   <div class="skip-links">
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <a href="#site-header" class="skip-link">Skip to navigation</a>
     <a href="#site-footer" class="skip-link">Skip to footer</a>
-    <button type="button" class="skip-link" id="skip-a11y-btn">Open Accessibility Preferences (Alt+A)</button>
+    <button type="button" class="skip-link" id="skip-a11y-btn">
+      Open Accessibility Preferences (Alt+A)
+    </button>
   </div>
+<!-- NAVIGATION BAR -->
+<header class="site-header" id="site-header" role="banner"
+  style="background:#ffffff; border-bottom:1px solid #e9e7e3; padding:18px 0;">
 
-  <!-- Site Navigation -->
-  <header class="site-header" id="site-header" role="banner"
-    style="background:#ffffff; border-bottom:1px solid #e9e7e3; padding: 18px 0;">
-    <div class="container navbar" style="height: auto; min-height: 60px;">
+  <div class="container navbar"
+    style="height:auto; min-height:60px; margin-top:30px; margin-bottom:30px;">
 
-      <!-- BRAND -->
-      <a href="index.html" class="brand" aria-label="Monolina Sarkar Home" style="text-decoration:none;">
-        <span class="brand-name" style="font-family:'Cormorant Garamond',serif; font-size:24px; font-weight:500; letter-spacing:5px; line-height:1.15; white-space:nowrap; color:#000000;">
-          MONOLINA SARKAR
-        </span>
-        <span class="brand-subtitle" style="margin-top:4px; font-family:'Cormorant Garamond',serif; font-size:15px; font-weight:500; letter-spacing:0.2px; color:#000000;">
-          Discipline-Based Education Research &middot; Andragogy
-        </span>
+    <!-- BRAND -->
+    <a href="index.html#home" class="brand"
+       aria-label="Monolina Sarkar Home"
+       style="text-decoration:none;">
+
+      <span class="brand-name"
+        style="font-family:'Garamond'; font-size:24px; font-weight:500;
+        letter-spacing:5px; line-height:1.15; white-space:nowrap; color:#000000;">
+        MONOLINA SARKAR
+      </span>
+
+      <span class="brand-subtitle"
+        style="margin-top:4px; font-family:'Garamond'; font-size:15px;
+        font-weight:500; letter-spacing:0.2px; color:#000000;">
+        Discipline-Based Education Research &middot; Andragogy
+      </span>
+
+    </a>
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav aria-label="Primary Navigation" role="navigation">
+
+      <ul class="nav-links" style="gap:28px;">
+
+        <li>
+          <a href="index.html#home" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.05rem;">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#research-focus" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+            Research
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#practice-areas" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+            Practice areas
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html" class="nav-link active"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+            About
+          </a>
+        </li>
+
+
+
+        <li>
+          <a href="contact.html" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <!-- NAVIGATION ACTIONS -->
+    <div class="nav-actions">
+
+      <a href="Monolina_Sarkar_cv.pdf"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn-nav-cv"
+         data-drive-doc="academicCv"
+         aria-label="View Academic Curriculum Vitae">
+        Download CV
       </a>
 
-      <!-- DESKTOP NAVIGATION LINKS -->
-      <nav aria-label="Primary Navigation" role="navigation">
-        <ul class="nav-links" style="gap: 28px;">
-          <li><a href="index.html" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Home</a></li>
-          <li><a href="about.html" class="nav-link active" style="font-family:'Cormorant Garamond',serif; font-size:18px;">About</a></li>
-          <li><a href="index.html#research-focus" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Research</a></li>
-          <li><a href="index.html#practice-areas" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Practice areas</a></li>
-          <li><a href="contact.html" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Contact</a></li>
-        </ul>
-      </nav>
+      <button class="mobile-toggle"
+              type="button"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+              aria-controls="mobile-drawer">
 
-      <!-- NAV ACTIONS -->
-      <div class="nav-actions">
-        <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav-cv"
-          data-drive-doc="academicCv" aria-label="View Academic Curriculum Vitae">
-          ACADEMIC CV
-        </a>
-        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
 
     </div>
-  </header>
 
-  <!-- Mobile Drawer -->
-  <div class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
-    <a href="index.html" class="nav-link">Home</a>
-    <a href="about.html" class="nav-link active">About</a>
-    <a href="index.html#research-focus" class="nav-link">Research</a>
-    <a href="index.html#practice-areas" class="nav-link">Practice areas</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-    <a href="accessibility-statement.html" class="nav-link">Accessibility Statement</a>
-    <div style="margin-top: 1.5rem;">
-      <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary"
-        data-drive-doc="academicCv" style="width: 100%; text-align: center;">View Academic CV</a>
-    </div>
   </div>
+</header>
+
+
+<!-- MOBILE NAVIGATION DRAWER -->
+<div class="mobile-drawer" id="mobile-drawer"
+     aria-label="Mobile Navigation">
+
+  <a href="index.html#home" class="nav-link">Home</a>
+
+
+
+  <a href="index.html#research-focus" class="nav-link">Research</a>
+
+  <a href="index.html#practice-areas" class="nav-link">Practice areas</a>
+   <a href="about.html" class="nav-link active">About</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+
+  <a href="accessibility-statement.html" class="nav-link">
+    Accessibility Statement
+  </a>
+
+  <div style="margin-top:1.5rem;">
+
+    <a href="Monolina_Sarkar_cv.pdf"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn btn-primary"
+       data-drive-doc="academicCv"
+       style="width:100%; text-align:center;">
+
+      View Academic CV
+
+    </a>
+
+  </div>
+
+</div>
+</body>
 
   <main id="main-content" role="main">
 
@@ -484,32 +1009,55 @@
           </div>
 
           <!-- Narrative -->
-          <div class="about-narrative">
-            <span class="section-label">01 / The Scholar &amp; The Explorer</span>
-            <h1>The Journey</h1>
-            <div class="divider-gold"></div>
+          <div >
+    
+         
 
-            <p>
+
+           <div class="container">
+        <div class="section-header">
+         
+          
+        <!-- SECTION INTRODUCTION -->
+        <header class="section-header">
+          <h1 class="section-title">
+    The Journey
+</h1>
+
+        </header>
+            
+            <p style="font-family:Garamond";>
               I'm a curious mind. When I'm not designing innovative learning experiences, you'll find me paragliding
               through breathtaking landscapes, exploring new destinations, or capturing the world through my camera
-              lens.
-            </p>
-
-            <p>
-              I have a knack for diving into books about diverse cultures, constantly fueling my curiosity and
+              lens. I have a knack for diving into books about diverse cultures, constantly fueling my curiosity and
               appreciation for the world's diversity. It is with passion and in the pursuit of professional excellence
               that I share my musings on learning, leading, and living here.
+      
             </p>
 
-            <div class="about-quote">
-              <blockquote>
-                "The secret to life is to put yourself in the right lighting. For some, it's a Broadway spotlight; for
-                others, a lamplit desk. Use your natural powers&mdash;of persistence, concentration, and
-                insight&mdash;to do work you love and work that matters. Solve problems, make art, think deeply."
-              </blockquote>
-              <cite>&mdash; Susan Cain, <em>Quiet: The Power of Introverts in a World That Can't Stop
-                  Talking</em></cite>
-            </div>
+         
+
+   
+<div class="about-quote">
+    <blockquote>
+        <span class="quote-mark">&ldquo;</span>
+        The secret to life is to put yourself in the right lighting.
+        For some, it's a Broadway spotlight; for others, a lamplit desk.
+        Use your natural powers of persistence, concentration, and insight
+        to do work you love and work that matters.
+    </blockquote>
+
+    <cite>
+      <span class="author" style="font-family: Garamond; font-size: 17px;">
+    &mdash; Susan Cain
+</span>
+</br>
+<span class="book-title" style="font-family: Garamond; font-size: 17px;">
+    from Quiet: The Power of Introverts in a World That Can't Stop Talking
+</span>
+    </cite>
+</div>
+
           </div>
 
         </div>
@@ -518,28 +1066,33 @@
 
     <!-- Section 02: Musings & Blog Section (Reordered FIRST per Slide 2) -->
     <section class="section" id="musings"
-      style="background-color: #FAF8F5; border-top: 1px solid var(--border-medium); border-bottom: 1px solid var(--border-medium);">
+      style="background-color: #F0F1F3; ">
       <div class="container">
         <div class="section-header">
-          <span class="section-label">02 / Reflections &amp; Living</span>
-          <h2 class="section-title">Browse Musings &amp; Stories</h2>
-          <p class="section-subtitle">
-            Reflections on culinary alchemy, the science of learning, and quiet leadership.
-          </p>
-          <div class="divider-gold"></div>
+         
+          
+        <!-- SECTION INTRODUCTION -->
+        <header class="section-header">
+          <h1 class="section-title">
+    Reflections
+</h1>
+<a href="geido.html" class="magazine-link" style="font-family: Garamond; font-size: 20px;">Read the Geido Magazine →</a>
+        </header>
+         
+        
         </div>
 
         <div class="blog-grid">
           <!-- Card 1: Cooking -->
           <article class="blog-card">
             <div class="blog-card-media">
-              <img src="assets/images/caprese-salad.jpg" alt="Simplest Salad Recipe Ever" loading="lazy">
+              <img src="assets/images/blog_1.jpg" alt="Simplest Salad Recipe Ever" loading="lazy">
             </div>
             <div class="blog-card-body">
               <div>
                 <div class="blog-tag">Cooking &amp; Living</div>
-                <h3 class="blog-title">Simplest Salad Recipe Ever: Summer Heirloom Caprese</h3>
-                <p class="blog-snippet">
+                <h3 class="blog-title"style="font-family: Garamond; font-size: 30px";>Being Here</h3>
+             <p class="blog-snippet" style="font-family: Garamond; font-size: 16.5px;">
                   A minimalist study in culinary balance: vine-ripened heirloom tomatoes, freshly torn sweet basil,
                   buffalo mozzarella, cold-pressed virgin olive oil, and coarse sea salt.
                 </p>
@@ -547,13 +1100,14 @@
               <div class="blog-footer"
                 style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-medium);">
                 <span class="blog-date"
-                  style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; color: #000000; font-weight: 600;">05
+                  style="font-family: Garamond; font-size: 17.5px; color: #000000; font-weight: 400;">05
                   Apr 2025</span>
-                <a href="https://drive.google.com/file/d/YOUR_STORY_1_DRIVE_ID/view?usp=sharing" target="_blank"
-                  rel="noopener noreferrer" class="read-more" data-drive-doc="story1Salad">
+                  <a href="assets/adult_learning.pdf" target="_blank"
+                  rel="noopener noreferrer" class="read-more" >
                   <span class="button-text">Read More</span>
                   <span class="arrow" aria-hidden="true">&rarr;</span>
                 </a>
+
               </div>
             </div>
           </article>
@@ -561,15 +1115,14 @@
           <!-- Card 2: Pedagogy -->
           <article class="blog-card">
             <div class="blog-card-media"
-              style="background: linear-gradient(135deg, #1E5A83, #154261); display: flex; align-items: center; justify-content: center; padding: 2rem;">
-              <span
-                style="font-family: var(--font-display); font-size: 2.75rem; color: #FFFFFF; font-style: italic;">Kaizen</span>
+             >
+              <img src="assets/images/blog_2.jpg" alt="Simplest Salad Recipe Ever" loading="lazy">
             </div>
             <div class="blog-card-body">
               <div>
                 <div class="blog-tag">Higher Education</div>
-                <h3 class="blog-title">The Andragogical Shift: Beyond Rote Memorization</h3>
-                <p class="blog-snippet">
+                <h3 class="blog-title"style="font-family: Garamond; ">Let's Talk</h3>
+               <p class="blog-snippet" style="font-family: Garamond; font-size: 16.5px;">
                   How adult learners in undergraduate biology classrooms transition from passive memorization to
                   iterative hypothesis testing when empowered by Kaizen feedback loops.
                 </p>
@@ -577,11 +1130,18 @@
               <div class="blog-footer"
                 style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-medium);">
                 <span class="blog-date"
-                  style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; color: #000000; font-weight: 600;">18
-                  Feb 2025</span>
-                <a href="https://drive.google.com/file/d/YOUR_STORY_2_DRIVE_ID/view?usp=sharing" target="_blank"
-                  rel="noopener noreferrer" class="read-more" data-drive-doc="story2Andragogy">
+                  style="font-family: Garamond; font-size: 17.5px; color: #000000; font-weight: 400;">05
+                  Apr 2025</span>
+                <a href="assets/book_Orhan.pdf" target="_blank"
+                  rel="noopener noreferrer" class="read-more" >
+
                   <span class="button-text">Read More</span>
+
+
+
+
+
+
                   <span class="arrow" aria-hidden="true">&rarr;</span>
                 </a>
               </div>
@@ -591,27 +1151,33 @@
           <!-- Card 3: Deep Work -->
           <article class="blog-card">
             <div class="blog-card-media">
-              <img src="assets/images/golden-reeds.jpg" alt="The Quiet Power of Lamplit Desks" loading="lazy">
+              <img src="assets/images/blog_3.jpg" alt="The Quiet Power of Lamplit Desks" loading="lazy">
             </div>
             <div class="blog-card-body">
               <div>
                 <div class="blog-tag">Philosophy &amp; Focus</div>
-                <h3 class="blog-title">Lamplit Desks: The Power of Thoughtful Introversion</h3>
-                <p class="blog-snippet">
+                <h3 class="blog-title"style="font-family: Garamond; ">Paths We Choose</h3>
+                <p class="blog-snippet" style="font-family: Garamond; font-size: 16.5px;">
                   Reflections inspired by Susan Cain: honoring our natural capacities for persistence, solitary
                   concentration, and deep conceptual insight in an overstimulated academy.
                 </p>
               </div>
               <div class="blog-footer"
                 style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-medium);">
-                <span class="blog-date"
-                  style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; color: #000000; font-weight: 600;">12
-                  Jan 2025</span>
-                <a href="https://drive.google.com/file/d/YOUR_STORY_3_DRIVE_ID/view?usp=sharing" target="_blank"
-                  rel="noopener noreferrer" class="read-more" data-drive-doc="story3Desks">
+               <span class="blog-date"
+                  style="font-family: Garamond; font-size: 17.5px; color: #000000; font-weight: 400;">05
+                  Apr 2025</span>
+                <a href="assets/adult_learning.pdf" target="_blank"
+                  rel="noopener noreferrer" class="read-more" >
                   <span class="button-text">Read More</span>
                   <span class="arrow" aria-hidden="true">&rarr;</span>
                 </a>
+
+
+
+
+
+
               </div>
             </div>
           </article>
@@ -624,8 +1190,13 @@
       <div class="container">
         <div class="photo-gallery-header" style="margin-bottom: 2rem;">
           <div>
-            <span class="section-label">03 / Visual Stories</span>
-            <h2 class="section-title">Photo Book &amp; Expeditions</h2>
+           
+                  <header class="section-header">
+          <h1 class="section-title">
+    Photo Book and Expeditions
+</h1>
+<a href="geido.html" class="magazine-link" style="font-family: Garamond; font-size: 20px;">Explore the Photo Magazine →</a>
+        </header>
           </div>
         </div>
 
@@ -636,249 +1207,183 @@
       </div>
     </section>
 
+
+
+
+
+
+
+
+
+
+
+
+
     <!-- Section 04: Join Kaizen Banner -->
-    <section class="join-kaizen-wrap" id="join-kaizen">
-      <div class="join-kaizen-grid">
-
-        <!-- LEFT COLUMN -->
-        <div style="min-width:0;">
-          <div class="join-kaizen-eyebrow">
-            JOIN
-          </div>
-
-          <h2 class="join-kaizen-title">
-            KAIZEN
-          </h2>
-
-          <div class="join-kaizen-divider"></div>
-
-          <!-- COLLABORATION TEXT -->
-          <p class="join-kaizen-text">
-            Evaluating new curricular systems or exploring student AI
-            literacy? Let's build evidence-informed learning together.
-            Feel free to mail me at
-            <a href="mailto:monolinasarkar1@gmail.com"
-              style="color:#000000; font-family:'EB Garamond', Garamond, Georgia, serif; font-weight:500; text-decoration:underline; text-underline-offset:3px;">monolinasarkar1@gmail.com</a>
-          </p>
-
-          <!-- ACTION BUTTONS -->
-          <div style="display:flex; align-items:center; flex-wrap:wrap; gap:16px;">
-            <a href="contact.html" class="btn btn-primary">
-              Reach Out &amp; Collaborate
-            </a>
-
-            <button type="button" class="btn btn-secondary" data-copy="monolinasarkar1@gmail.com"
-              data-copy-label="monolinasarkar1@gmail.com copied to clipboard">
-              Copy Email
-            </button>
-          </div>
-        </div>
-
-        <!-- RIGHT COLUMN: ENSO IMAGE -->
-        <div class="enso-card">
-          <img src="images (3).jpg" alt="Enso circle symbolising continuous learning and growth">
-          <p>
-            The Ens&omacr; &mdash;<br>
-            Symbol of continuous learning &amp; growth
-          </p>
-        </div>
-
-      </div>
-    </section>
+   
 
   </main>
 
-  <!-- Site Footer -->
-  <footer id="site-footer" role="contentinfo">
-    <section class="site-footer-v2">
-      <div class="footer-v2-container">
 
-        <div class="footer-brand-nav">
-          <!-- BRAND -->
-          <div>
-            <div
-              style="font-family:'Cormorant Garamond',serif; font-size:24px; letter-spacing:5px; line-height:1.4; color:#000000; font-weight:500;">
-              MONOLINA SARKAR
-            </div>
-            <div
-              style="font-family:'Cormorant Garamond',serif; font-size:16px; line-height:1.5; color:#000000; margin-top:2px;">
-              Discipline-Based Education Research &middot; Andragogy
-            </div>
-          </div>
 
-          <!-- FOOTER NAVIGATION -->
-          <nav aria-label="Footer navigation">
-            <div class="footer-nav-links">
-              <a href="index.html" class="footer-nav-link">Home</a>
-              <a href="about.html" class="footer-nav-link active">About</a>
-              <a href="index.html#research-focus" class="footer-nav-link">Research</a>
-              <a href="index.html#practice-areas" class="footer-nav-link">Practice areas</a>
-              <a href="contact.html" class="footer-nav-link">Contact</a>
-              <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav-cv"
-                data-drive-doc="academicCv"
-                style="font-size:14px; padding:6px 14px; margin-left:6px; text-decoration:none;">
-                ACADEMIC CV
-              </a>
+
+
+<!-- =========================================
+     PROFESSIONAL ACADEMIC FOOTER
+========================================= -->
+
+<footer id="site-footer" class="academic-footer" role="contentinfo">
+
+    <!-- =====================================
+         TOP SECTION: JOIN KAIZEN
+    ====================================== -->
+
+    <section class="footer-connect" id="join-kaizen">
+
+        <div class="footer-connect-inner">
+
+            <!-- LEFT COLUMN: COLLABORATION -->
+            <div class="footer-connect-content">
+
+                <span class="footer-eyebrow">
+                    LET'S CONNECT
+                </span>
+
+                <h2>
+                    Join the <span style="font-style: italic;color: #24577c ;">Kaizen</span> Journey.
+                </h2>
+
+      
+                <div class="footer-gold-line"></div>
+
+                <p>
+                    Let's explore opportunities to build
+                    evidence-informed learning experiences. I'd love
+                    to hear from you.Feel free to write to me at<a href="mailto:monolinasarkar1@gmail.com">
+                        monolinasarkar1@gmail.com
+                    </a>
+                </p>
+
+             
+                <!-- ACTION BUTTONS -->
+                <div class="footer-actions">
+
+                    <a href="contact.html" class="btn btn-primary">
+                        Connect With Me
+                    </a>
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-copy="monolinasarkar1@gmail.com"
+                        data-copy-label="monolinasarkar1@gmail.com copied to clipboard">
+
+                        Copy Email
+
+                    </button>
+
+                </div>
+
             </div>
-          </nav>
+
+
+            <!-- RIGHT COLUMN: ENSO IMAGE -->
+            <div class="footer-enso">
+
+                <div class="footer-enso-image">
+
+                    <img
+                        src="images (3).jpg"
+                        alt="Enso circle symbolising continuous learning and growth">
+
+                </div>
+
+                <div class="footer-enso-caption">
+
+                    <span>THE ENSO</span>
+
+                    <p>
+                        A journey of continuous learning
+                        and improvement.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <!-- DIVIDER -->
-        <div class="footer-divider"></div>
-
-        <!-- COPYRIGHT + PROFESSIONAL LINKS -->
-        <div class="footer-bottom-row">
-          <div>
-            &copy; 2026 Monolina Sarkar. All rights reserved.
-          </div>
-
-          <div class="footer-bottom-links">
-            <a href="accessibility-statement.html">Accessibility Statement</a>
-            <a href="https://orcid.org/0000-0002-8172-1111" target="_blank" rel="noopener noreferrer">ORCID</a>
-            <a href="https://www.linkedin.com/in/monolinasarkar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
-        </div>
-
-      </div>
     </section>
-  </footer>
 
-  <!-- Lightbox Modal -->
-  <div class="lightbox-modal" id="lightbox-modal" role="dialog" aria-modal="true" aria-label="Photo Lightbox">
-    <button class="modal-close-btn" id="lightbox-close"
-      style="top: 2rem; right: 2rem; background: rgba(255,255,255,0.2); color: #fff;"
-      aria-label="Close Lightbox">&times;</button>
-    <button class="lightbox-nav-btn lightbox-prev" id="lightbox-prev" aria-label="Previous photo">&lsaquo;</button>
-    <button class="lightbox-nav-btn lightbox-next" id="lightbox-next" aria-label="Next photo">&rsaquo;</button>
-    <div class="lightbox-content">
-      <img src="" alt="" id="lightbox-img" class="lightbox-img">
-      <div id="lightbox-caption" class="lightbox-caption"></div>
-    </div>
-  </div>
 
-  <!-- Academic CV Modal -->
-  <div class="modal-overlay" id="cv-modal" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
-    <div class="modal-card">
-      <button class="modal-close-btn" id="cv-modal-close" aria-label="Close CV Modal">&times;</button>
 
-      <div class="cv-document" id="cv-document">
-        <div class="cv-print-header" role="banner">
-          <div class="section-label" style="margin-bottom: 0.35rem;">Curriculum Vitae</div>
-          <h2 id="cv-modal-title" class="cv-print-title">
-            Monolina Sarkar, Ph.D., M.Ed.
-          </h2>
-          <div class="cv-print-subtitle">
-            Biochemistry Doctorate &middot; Master of Education &middot; Discipline-Based Education Research (DBER)
-          </div>
-          <div class="cv-print-contacts">
-            <span><strong>Email:</strong> monolinasarkar1@gmail.com</span>
-            <span><strong>ORCID:</strong> 0000-0002-8172-1111</span>
-            <span><strong>Web of Science:</strong> GRY-0666-2022</span>
-            <span><strong>LinkedIn:</strong> linkedin.com/in/monolinasarkar</span>
-          </div>
+    <!-- =====================================
+         LOWER SECTION: BRAND AND NAVIGATION
+    ====================================== -->
+
+    <section class="footer-main">
+
+        <div class="footer-main-inner">
+
+  <div class="footer-bottom" >
+
+
+                <!-- COPYRIGHT -->
+                <p class="footer-copyright">
+                    &copy; 2026 Monolina Sarkar.
+                    All rights reserved.
+                </p>
+
+
+
+                <!-- PROFESSIONAL LINKS -->
+                <div class="footer-social-links">
+
+                    <a
+                        href="https://orcid.org/0000-0002-8172-1111"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        ORCID
+                        <span aria-hidden="true">↗</span>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/monolinasarkar"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        LinkedIn
+                        <span aria-hidden="true">↗</span>
+
+                    </a>
+
+
+                    <a href="accessibility-statement.html">
+                        Accessibility Statement
+                    </a>
+
+                </div>
+
+            </div>
+
+            </div>
+
+
+
+           
+
+
+            <!-- COPYRIGHT AND PROFESSIONAL LINKS -->
+          
+
         </div>
 
-        <section class="cv-section">
-          <h3 class="cv-section-title">Scholarly &amp; Pedagogical Profile</h3>
-          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
-            Higher education biology educator and research biochemist with over 10 years of teaching experience.
-            Specializes in Discipline-Based Education Research (DBER), transforming undergraduate classrooms into
-            continuous <em>Kaizen</em> learning laboratories. Investigates how learners iteratively construct, refine,
-            and apply scientific reasoning in unfamiliar biological contexts, with focal emphasis on student AI
-            literacy, conceptual change, and evidence-informed curriculum redesign aligned with National Research
-            Council (NRC, 2012) standards.
-          </p>
-        </section>
+    </section>
 
-        <section class="cv-section">
-          <h3 class="cv-section-title">Education &amp; Credentials</h3>
-          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
-            <div class="cv-item">
-              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
-                <strong>Doctor of Philosophy (Ph.D.) in Biochemistry</strong>
-                <span class="cv-date">Conferred</span>
-              </div>
-              <div style="font-size: 0.9rem; color: var(--text-secondary);">University of Calcutta &middot; Department
-                of Biochemistry</div>
-            </div>
-            <div class="cv-item">
-              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
-                <strong>Master of Education (M.Ed.)</strong>
-                <span class="cv-date">Conferred</span>
-              </div>
-              <div style="font-size: 0.9rem; color: var(--text-secondary);">Focus: Pedagogical Theory, Curriculum Design
-                &amp; Learning Assessment</div>
-            </div>
-            <div class="cv-item">
-              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
-                <strong>Master of Science (M.Sc.) in Biochemistry</strong>
-                <span class="cv-date">Conferred</span>
-              </div>
-              <div style="font-size: 0.9rem; color: var(--text-secondary);">University of Calcutta &middot; First Class
-                Honors</div>
-            </div>
-          </div>
-        </section>
-
-        <section class="cv-section">
-          <h3 class="cv-section-title">Higher Education &amp; Teaching Leadership (10+ Years)</h3>
-          <ul class="cv-list">
-            <li><strong>Undergraduate &amp; Graduate Biology Instruction:</strong> Over a decade of teaching
-              biochemistry, molecular biology, and general biology across diverse student cohorts.</li>
-            <li><strong>DBER Curriculum Innovation:</strong> Designed inquiry-driven, problem-based learning modules
-              emphasizing systems thinking, mechanism-building, and data evaluation.</li>
-            <li><strong>AI Literacy &amp; Scientific Reasoning:</strong> Lead author on pedagogical interventions
-              investigating student interactions with generative AI in biology problem-solving.</li>
-            <li><strong>Pedagogical Mentorship:</strong> Mentored teaching assistants and junior instructors on
-              reflective teaching, continuous feedback loops, and inclusive classroom design.</li>
-          </ul>
-        </section>
-
-        <section class="cv-section">
-          <h3 class="cv-section-title">Peer-Reviewed Publications &amp; Book Chapters</h3>
-          <ul class="cv-list" style="list-style: decimal;">
-            <li><strong>Sarkar, M.</strong> (2023). Light-responsive biodegradation of wastewater pollutants: New
-              developments and potential perspectives. <em>Journal of Hazardous Materials Advances</em>, 10, 100281.
-            </li>
-            <li>Das, D. R., <strong>Sarkar, M.</strong>, &amp; Paul, A. (2023). Tools and approaches for assessing
-              stress-responsive secondary metabolites to design climate-smart crops. In <em>Biology and Biotechnology of
-                Environmental Stress Tolerance in Plants</em> (pp. 305&ndash;370). Apple Academic Press.</li>
-            <li>Guha, S., Molla, F., <strong>Sarkar, M.</strong>, Ib&aacute;&ntilde;ez, F., Fabra, A., &amp; DasGupta,
-              M. (2022). Nod factor-independent 'crack-entry' symbiosis in dalbergoid legume <em>Arachis hypogaea</em>.
-              <em>Environmental Microbiology</em>, 24(6), 2732&ndash;2746.</li>
-            <li><strong>Sarkar, M.</strong>, Paul, A., &amp; Das, D. R. (2022). Availing engineered and biosynthesized
-              metal-based nanoparticles to alleviate abiotic stress. In <em>Response of Field Crops to Abiotic
-                Stress</em> (pp. 15&ndash;33). CRC Press / Taylor &amp; Francis.</li>
-            <li><strong>Sarkar, M.</strong> (2022). Effect of silver nanoparticles on nitrogen-cycling bacteria in
-              constructed wetlands. <em>Nanotechnology for Environmental Engineering</em>, 7(2), 537&ndash;559.</li>
-            <li>Guha, S., <strong>Sarkar, M.</strong>, Ganguly, P., Uddin, M. R., Mandal, S., &amp; DasGupta, M. (2016).
-              Segregation of nod-containing and nod-deficient bradyrhizobia as endosymbionts of <em>Arachis
-                hypogaea</em> and as endophytes of <em>Oryza sativa</em>. <em>Environmental Microbiology</em>, 18(8),
-              2575&ndash;2590.</li>
-          </ul>
-        </section>
-
-        <section class="cv-section" style="margin-bottom: 0;">
-          <h3 class="cv-section-title">Professional Affiliations &amp; Service</h3>
-          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55;">
-            Member, American Society for Microbiology (ASM) &middot; Discipline-Based Education Research (DBER) Network
-            &middot; Peer Reviewer, MERLOT Biology Editorial Board &middot; Contributor, Public Science Writing &amp;
-            Knowledge Translation.
-          </p>
-        </section>
-      </div>
-
-      <div class="cv-actions">
-        <button class="btn btn-secondary" onclick="window.print()">
-          Print / Save PDF
-        </button>
-        <a href="mailto:monolinasarkar1@gmail.com?subject=Collaboration%20Inquiry%20-%20Monolina%20Sarkar"
-          class="btn btn-primary">
-          Inquire Directly
-        </a>
-      </div>
-    </div>
-  </div>
+</footer>
 
   <!-- MAIN SCRIPT -->
   <script src="js/main.js"></script>

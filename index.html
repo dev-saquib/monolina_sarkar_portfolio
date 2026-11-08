@@ -30,9 +30,9 @@
     /* Section 01: Hero */
     #home {
       width: 100%;
-      min-height: 440px;
+    
       box-sizing: border-box;
-      padding: clamp(60px, 9vw, 100px) 24px clamp(30px, 5vw, 48px);
+      padding: clamp(60px, 9vw, 100px) 24px clamp(0px, 3vw, 25px);
       display: flex;
       align-items: center;
       flex-direction: column;
@@ -42,10 +42,10 @@
 
     #home .hero-eyebrow {
       margin: 0 0 24px;
-      color: #000000;
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      color: #a29b91;
+      font-family: Garamond;
       font-size: 14px;
-      font-weight: 600;
+      font-weight: 500;
       letter-spacing: 6px;
       text-transform: uppercase;
     }
@@ -53,8 +53,8 @@
     #home .hero-title-main {
       margin: 0;
       color: #171717;
-      font-family: 'Cormorant Garamond', Georgia, serif;
-      font-size: clamp(34px, 5.2vw, 58px);
+      font-family: 'Garamond';
+      font-size: clamp(36px, 5vw, 58px);
       font-weight: 400;
       line-height: 1.25;
       letter-spacing: 7px;
@@ -70,11 +70,14 @@
       max-width: 1100px;
       width: 100%;
       color: #000000;
-      font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(16px, 2vw, 24px);
-      font-weight: 500;
+      font-family: 'Garamond';
+      
+      font-weight: 400;
       line-height: 1.6;
+
     }
+
+
 
     @media (min-width: 768px) {
       #home .hero-desc {
@@ -119,7 +122,7 @@
 
     #research-focus .focus-header .lead-text {
       margin: 0 0 4px;
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: Garamond;
       font-size: clamp(32px, 3.8vw, 42px);
       font-weight: 400;
       color: #171717;
@@ -128,7 +131,7 @@
 
     #research-focus .focus-header .sublead-text {
       margin: 0;
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: Garamond;
       font-style: italic;
       font-size: clamp(36px, 4.4vw, 46px);
       font-weight: 400;
@@ -144,7 +147,7 @@
     #research-focus .focus-intro p {
       max-width: 100%;
       margin: 0;
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-size: 18px;
       line-height: 1.65;
       color: #000000;
@@ -167,7 +170,7 @@
     }
 
     #research-focus .theme-num {
-      font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-size: 16px;
       font-weight: 700;
       letter-spacing: 0.5px;
@@ -176,7 +179,7 @@
 
     #research-focus .focus-theme h3 {
       margin: 0 0 8px;
-      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-family: Garamond;
       font-size: 22px;
       font-weight: 600;
       line-height: 1.3;
@@ -186,7 +189,7 @@
     #research-focus .focus-theme p {
       max-width: 860px;
       margin: 0;
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond, Georgia, serif;
       font-size: 17px;
       line-height: 1.65;
       color: #000000;
@@ -208,22 +211,23 @@
     .section-header h3,
     .section-title {
       font-family: 'Playfair Display', Georgia, serif;
-      font-size: clamp(38px, 5vw, 58px);
+     font-size: clamp(2.375rem, 4vw, 3.625rem);
       font-weight: 600;
       line-height: 1.2;
-      color: #000000;
+      color: #1E272C;
       margin-bottom: 22px;
       background: transparent !important;
       background-color: transparent !important;
       box-shadow: none !important;
       border: none;
+      margin-bottom: 50px;
     }
 
     /* Section: Research Questions (Thinking Section) */
     .thinking-section-wrap {
       width: 100%;
-      background-color: #f7f7f3;
-      border-top: 1px solid #e4e8e2;
+      background-color: #F0F1F3;
+     
       border-bottom: 1px solid #e4e8e2;
       box-sizing: border-box;
     }
@@ -233,12 +237,13 @@
       margin: 0 auto;
       padding: clamp(50px, 7vw, 85px) 24px;
       box-sizing: border-box;
+      background-color: #F0F1F3;
     }
 
     .thinking-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 40px;
+      gap: 70px;
       align-items: start;
     }
 
@@ -261,7 +266,7 @@
 
     .thinking-card .card-category {
       color: #000000;
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: Garamond;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 1.5px;
@@ -290,7 +295,7 @@
       padding-left: 17px;
       margin-bottom: 16px;
       border-left: 2px solid #c49a62;
-      font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-size: 18px;
       font-weight: 500;
       font-style: italic;
@@ -299,17 +304,17 @@
     }
 
     .thinking-card .card-description {
-      font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+      font-family: 'Garamond';
       font-size: 16.5px;
       line-height: 1.7;
       color: #000000;
-      font-weight: 500;
+      font-weight: 400;
       margin-bottom: 16px;
     }
 
     .card-extra {
       display: none;
-      font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-size: 16px;
       line-height: 1.7;
       color: #000000;
@@ -336,7 +341,7 @@
       padding: 0;
       border: none;
       background: transparent;
-      font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-size: 17px;
       font-weight: 600;
       color: #000000;
@@ -379,9 +384,9 @@
       position: relative;
       width: 100%;
       padding: clamp(50px, 7vw, 76px) 0 clamp(60px, 8vw, 88px);
-      background: #ffffff;
+   
       color: #000000;
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond, Georgia, serif;
       box-sizing: border-box;
     }
 
@@ -421,9 +426,9 @@
       border-radius: 4px;
       background: #ffffff;
       padding: 8px 14px;
-      font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+      font-family: 'Garamond';
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 400;
       line-height: 1.4;
       color: #000000;
       cursor: pointer;
@@ -438,7 +443,7 @@
       color: #000000;
       background: var(--rw-accent-soft);
       border-color: #e6dcc0;
-      font-weight: 600;
+      font-weight: 400;
     }
 
     #research-work .rw-profiles {
@@ -454,8 +459,8 @@
       align-items: center;
       gap: 6px;
       padding-bottom: 4px;
-      border-bottom: 1px solid #cfcfcf;
-      font-family: 'Plus Jakarta Sans', sans-serif;
+     
+      font-family: Garamond;
       font-size: 12px;
       font-weight: 600;
       letter-spacing: 0.5px;
@@ -501,14 +506,14 @@
       display: inline-flex;
       align-items: center;
       gap: 7px;
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: Garamond;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 0.5px;
       line-height: 1.5;
       text-transform: uppercase;
       text-decoration: none;
-      color: #000000;
+      color: #245b80;
       transition: color 0.2s ease;
     }
 
@@ -528,10 +533,10 @@
 
     #research-work .rw-citation {
       margin: 0 0 13px;
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
-      font-size: 17.5px;
+      font-family: Garamond;
+      font-size: 16.5px;
       font-weight: 400;
-      line-height: 1.55;
+      line-height: 1.7;
       color: #000000;
       overflow-wrap: anywhere;
     }
@@ -548,16 +553,16 @@
 
     #research-work .rw-contribution {
       margin: 0;
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-size: 16.5px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 1.55;
       color: #000000;
     }
 
     #research-work .rw-contribution-label {
       display: inline;
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-weight: 600;
       color: #000000;
     }
@@ -576,7 +581,7 @@
 
     #research-work .rw-empty-title {
       margin: 0 0 8px;
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: Garamond;
       font-size: 16px;
       font-weight: 500;
       color: #000000;
@@ -610,7 +615,7 @@
     /* Section: Practice Areas */
     .research-section-wrap {
       width: 100%;
-      background-color: #f7f7f3;
+      background-color: #F0F1F3;
       border-top: 1px solid #e4e8e2;
       border-bottom: 1px solid #e4e8e2;
       box-sizing: border-box;
@@ -673,7 +678,7 @@
 
     .research-card .card-category {
       color: #000000;
-      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-family: Garamond;
       font-size: 11px;
       font-weight: 700;
       letter-spacing: 1.6px;
@@ -699,9 +704,9 @@
 
     .research-card .card-description {
       color: #000000;
-      font-family: 'Cormorant Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-size: 17.5px;
-      font-weight: 500;
+      font-weight: 400;
       line-height: 1.65;
       margin-bottom: 16px;
     }
@@ -717,67 +722,68 @@
       width: 100%;
       padding: clamp(48px, 6vw, 70px) 5%;
       box-sizing: border-box;
-      background: #f7f3ed;
+      background: #E0E4E8;
     }
 
     .join-kaizen-grid {
       max-width: 1150px;
       margin: 0 auto;
       display: grid;
-      grid-template-columns: minmax(0, 1.4fr) minmax(280px, 1fr);
+      grid-template-columns: minmax(0, 1fr) minmax(280px, 1fr);
       align-items: center;
       gap: 10%;
       box-sizing: border-box;
     }
 
     .join-kaizen-eyebrow {
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-size: 16px;
-      font-weight: 600;
+      font-weight: 400;
       letter-spacing: 4px;
-      color: #59748b;
+      color: black;
       margin-bottom: 18px;
     }
 
     .join-kaizen-title {
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
-      font-size: clamp(44px, 5vw, 68px);
-      font-weight: 500;
-      letter-spacing: 3px;
-      line-height: 1.05;
+      font-family: Garamond;
+      font-size: clamp(36px, 5vw, 58px);
+      font-weight: 400;
+      letter-spacing: 7px;
+      line-height: 1.25;
       color: #245b80;
       margin: 0 0 24px;
     }
+  
 
     .join-kaizen-divider {
       width: 65px;
       height: 3px;
-      background: #a42c1c;
+      background: #245b80;
       margin-bottom: 24px;
     }
 
     .join-kaizen-text {
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
-      font-size: 18px;
-      font-weight: 500;
-      line-height: 1.75;
+      font-family: Garamond;
+      font-size: 17.5px;
+      font-weight: 400;
+      line-height: 1.65;
       color: #000000;
       margin: 0 0 30px;
     }
 
     .join-kaizen-text a {
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
     }
 
     .enso-card {
       width: 100%;
       min-width: 0;
       padding: 35px 25px;
-      background: #ffffff;
+      
       box-sizing: border-box;
       text-align: center;
-      border: 1px solid #e3ddd3;
-      border-radius: 4px;
+     
+     
     }
 
     .enso-card img {
@@ -790,12 +796,12 @@
     }
 
     .enso-card p {
-      font-family: 'EB Garamond', Garamond, Georgia, serif;
+      font-family: Garamond;
       font-size: 17px;
       letter-spacing: 0.5px;
       line-height: 1.6;
       color: #000000;
-      font-weight: 500;
+      font-weight: 400;
       margin: 0;
     }
 
@@ -808,10 +814,10 @@
 
     .site-footer-v2 {
       width: 100%;
-      padding: 38px 5% 20px;
+      /*padding: 38px 5% 20px;*/
       box-sizing: border-box;
-      background: #f3eee8;
-      border-top: 1px solid #e3ddd3;
+      background:#F0F4FA;
+      
     }
 
     .footer-v2-container {
@@ -838,8 +844,8 @@
       color: #000000;
       font-weight: 500;
       text-decoration: none;
-      font-family: 'Cormorant Garamond', serif !important;
-      font-size: 18px;
+      font-family: 'Garamond', serif !important;
+      font-size: 1.15rem;
       padding: 6px 0;
       transition: color 0.2s ease;
     }
@@ -852,7 +858,7 @@
     .footer-divider {
       width: 100%;
       margin: 28px 0 0;
-      border-top: 1px solid #d8d0c7;
+      border-top: 1px solid #D0DFF8;
     }
 
     .footer-bottom-row {
@@ -862,7 +868,7 @@
       align-items: center;
       flex-wrap: wrap;
       gap: 16px 25px;
-      font-family: 'Cormorant Garamond', serif;
+      font-family: Garamond;
       font-size: 17px;
       font-weight: 500;
       color: #000000;
@@ -885,8 +891,763 @@
 
     .footer-bottom-links a:hover {
       color: #17619b;
-      text-decoration: underline;
+      
     }
+    /* ACTIVE NAVIGATION STATE */
+
+.site-header .nav-link.active,
+.mobile-drawer .nav-link.active {
+    color: #17619b !important;
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
+/* =========================================
+   RESEARCH FOCUS — RESPONSIVE DESIGN
+========================================= */
+
+/* Main section */
+#research-focus {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 60px 24px;
+}
+
+#research-focus-inner {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+/* Section heading */
+#research-focus .section-header {
+    max-width: 1050px;
+    margin: 0 auto 35px;
+    padding-left: 0;
+    text-align: left;
+    box-sizing: border-box;
+}
+#research-focus .section-header h1 {
+    line-height: 1.15;
+}
+
+/* Main two-column layout */
+#research-focus-inner > div {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr);
+    gap: 48px;
+    align-items: start;
+}
+
+/* Right content */
+#research-focus-inner > div > div {
+    min-width: 0;
+}
+
+/* Research theme headings */
+#research-focus article h3 {
+    overflow-wrap: break-word;
+}
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    #research-focus {
+        padding: 50px 30px;
+    }
+
+    #research-focus-inner > div {
+        grid-template-columns: 1fr;
+        gap: 10px;
+    }
+
+    #research-focus-inner > div > aside {
+        display: none;
+    }
+
+    #research-focus .section-header {
+        margin-bottom: 25px;
+    }
+}
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    #research-focus {
+        padding: 40px 20px;
+    }
+
+    #research-focus .section-header {
+        text-align: left;
+        margin-bottom: 25px;
+    }
+
+    #research-focus .section-header h1 {
+        font-size: 30px !important;
+        line-height: 1.2;
+    }
+
+    #research-focus .section-header h1:nth-child(2) {
+        font-size: 34px !important;
+        line-height: 1.15;
+        margin-top: 8px !important;
+    }
+
+    #research-focus-inner > div {
+        display: block;
+        width: 100%;
+    }
+
+    /* Introduction */
+    #research-focus-inner > div > div > div:first-child p {
+        font-size: 16px !important;
+        line-height: 1.6 !important;
+        margin-top: 10px !important;
+    }
+
+    /* Research themes */
+    #research-focus article {
+        grid-template-columns: 30px minmax(0, 1fr) !important;
+        gap: 10px !important;
+        padding: 16px 0 !important;
+    }
+
+    #research-focus article span {
+        font-size: 15px !important;
+    }
+
+    #research-focus article h3 {
+        font-size: 19px !important;
+        line-height: 1.3;
+    }
+
+    #research-focus article p {
+        font-size: 15.5px !important;
+        line-height: 1.55 !important;
+    }
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    #research-focus {
+        padding: 32px 16px;
+    }
+
+    #research-focus .section-header h1 {
+        font-size: 27px !important;
+    }
+
+    #research-focus .section-header h1:nth-child(2) {
+        font-size: 30px !important;
+    }
+
+    #research-focus article {
+        grid-template-columns: 26px minmax(0, 1fr) !important;
+        gap: 8px !important;
+    }
+}
+
+
+/* =========================================
+   PROFESSIONAL ACADEMIC FOOTER
+   Original backgrounds and buttons preserved
+========================================= */
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.academic-footer {
+    width: 100%;
+    overflow: hidden;
+    font-family: Garamond, Georgia, serif;
+}
+
+
+/* =========================================
+   TOP CONNECT SECTION
+========================================= */
+
+.footer-connect {
+    padding: 75px 7%;
+    background: #F0F4FA;
+}
+
+.footer-connect-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    align-items: center;
+    gap: 70px;
+}
+
+
+/* LEFT CONTENT */
+
+.footer-eyebrow {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    font-family: Garamond;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+}
+
+.footer-connect-content h2 {
+    margin: 0;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: clamp(38px, 5vw, 56px);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.footer-connect-content h2 span {
+    font-style: italic;
+}
+
+.footer-gold-line {
+    width: 65px;
+    height: 2px;
+    margin: 25px 0;
+    background: currentColor;
+    opacity: 0.55;
+}
+
+.footer-connect-content > p {
+    max-width: 500px;
+    margin: 0 0 15px;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.footer-email-line a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.footer-email-line a:hover {
+    border-bottom-color: currentColor;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+   Original button styling preserved
+========================================= */
+
+.footer-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+
+/* =========================================
+   ENSO IMAGE
+========================================= */
+
+.footer-enso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-enso-image {
+    width: 225px;
+    height: 225px;
+    padding: 10px;
+
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 50%;
+}
+
+.footer-enso-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer-enso-caption {
+    max-width: 260px;
+    margin-top: 20px;
+}
+
+.footer-enso-caption span {
+    font-family: Garamond;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+}
+
+
+.footer-enso-caption p {
+    margin: 8px 0 0;
+    font-family: Garamond, Georgia, serif;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+@media (max-width: 600px) {
+    .footer-enso-caption p {
+        font-size: 14px;
+        white-space: normal;
+    }
+}
+/* =========================================
+   LOWER FOOTER
+========================================= */
+
+.footer-main {
+    padding: 0px 7% 25px;
+    background: transparent;
+}
+
+.footer-main-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.footer-main-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand-name {
+    display: inline-block;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 4px;
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-brand p {
+    margin: 8px 0 0;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-brand p span {
+    padding: 0 4px;
+}
+
+
+/* =========================================
+   FOOTER NAVIGATION
+========================================= */
+
+.footer-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.footer-navigation a {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+
+    color: inherit;
+    text-decoration: none;
+
+    transition: opacity 0.3s ease;
+}
+
+.footer-navigation a:hover {
+    opacity: 0.7;
+}
+
+
+/* CV LINK */
+
+.footer-navigation .footer-cv-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 15px;
+
+    border: 1px solid currentColor;
+    color: inherit;
+
+    transition: all 0.3s ease;
+}
+
+.footer-navigation .footer-cv-link:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    margin: 32px 0 22px;
+
+    background: currentColor;
+    opacity: 0.2;
+}
+
+
+/* =========================================
+   COPYRIGHT AND PROFESSIONAL LINKS
+========================================= */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.footer-copyright {
+    margin: 0;
+
+    font-family: Garamond;
+    font-size: 15px;
+    letter-spacing: 0.3px;
+}
+
+.footer-social-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-social-links a {
+    font-family: Garamond;
+    font-size: 15px;
+    color: inherit;
+    text-decoration: none;
+
+    transition: opacity 0.3s ease;
+}
+
+.footer-social-links a:hover {
+    opacity: 0.65;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .footer-connect {
+        padding: 65px 6%;
+    }
+
+    .footer-connect-inner {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 35px;
+    }
+
+    .footer-enso-image {
+        width: 190px;
+        height: 190px;
+    }
+
+    .footer-main-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .footer-navigation {
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 600px) {
+
+    .footer-connect {
+        padding: 55px 23px;
+    }
+
+    .footer-connect-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-connect-content h2 {
+        font-size: 39px;
+    }
+
+    .footer-connect-content > p {
+        font-size: 17px;
+    }
+
+    .footer-actions {
+        gap: 12px;
+    }
+
+    .footer-enso-image {
+        width: 175px;
+        height: 175px;
+    }
+
+    .footer-main {
+        padding: 38px 23px 24px;
+    }
+
+    .footer-brand-name {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .footer-navigation {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: start;
+        gap: 19px 15px;
+        width: 100%;
+    }
+
+    .footer-navigation .footer-cv-link {
+        width: fit-content;
+    }
+
+    .footer-divider {
+        margin: 26px 0 20px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .footer-social-links {
+        gap: 18px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE SCREENS
+========================================= */
+
+@media (max-width: 380px) {
+
+    .footer-connect-content h2 {
+        font-size: 34px;
+    }
+
+    .footer-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-navigation {
+        gap: 17px 10px;
+    }
+
+    .footer-social-links {
+        gap: 13px;
+    }
+
+}
+/* =========================================
+   GLOBAL BODY TYPOGRAPHY
+   Preserves existing heading and layout styles
+========================================= */
+
+body {
+    font-family: Garamond, Georgia, serif;
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* Standard body copy */
+body p,
+body blockquote {
+    font-family: Garamond, Georgia, serif !important;
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+    font-weight: 400;
+}
+
+/* Ensure links and interactive text use the same typeface */
+body a,
+body button {
+    font-family: Garamond, Georgia, serif;
+}
+
+/* Keep your existing heading families and sizes */
+h1, h2, h3, h4, h5, h6 {
+    /* Existing individual heading styles remain in control */
+}
+
+/* Research introduction and themes */
+.research-intro p,
+.research-theme p,
+#research-focus .focus-intro p,
+#research-focus .focus-theme p {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+}
+
+/* Research questions */
+.thinking-card .card-question,
+.thinking-card .card-description,
+.card-extra {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+}
+
+/* Research contributions */
+#research-work .rw-citation,
+#research-work .rw-contribution,
+#research-work .rw-empty-text {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+}
+
+/* Practice area cards */
+.research-card .card-description {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+}
+
+
+/* Collaboration section */
+.join-kaizen-text,
+.footer-connect-content > p {
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+}
+
+/* Footer body copy */
+.enso-card p,
+.footer-enso-caption p,
+.footer-brand p,
+.footer-copyright,
+.footer-social-links a,
+.footer-bottom-row,
+.footer-bottom-links a {
+    font-size: 17px;
+    line-height: 1.6;
+}
+
+/* Footer navigation currently uses Arial; align it with the site */
+.footer-navigation a {
+    font-family: Garamond, Georgia, serif;
+    font-size: 17px;
+}
+
+/* Prevent horizontal overflow from long links or citations */
+main,
+main section,
+.rw-container,
+.research-content,
+.research-main,
+.contact-container {
+    min-width: 0;
+}
+
+.rw-citation,
+.rw-contribution,
+.research-intro p,
+.research-theme p,
+.footer-connect-content p {
+    overflow-wrap: break-word;
+}
+
+/* Mobile: retain the same 17px body typography */
+@media (max-width: 600px) {
+    body p,
+    body blockquote,
+    .research-intro p,
+    .research-theme p,
+    .thinking-card .card-question,
+    .thinking-card .card-description,
+    .card-extra,
+    #research-work .rw-citation,
+    #research-work .rw-contribution,
+    .research-card .card-description,
+    #home 
+    .join-kaizen-text,
+    .footer-connect-content > p {
+        font-size: 17px !important;
+        line-height: 1.6 !important;
+    }
+}
+
+
+/* =========================================
+   HERO DESCRIPTION — FONT SIZE OVERRIDE
+========================================= */
+
+#home p.hero-desc {
+    font-family: Garamond !important;
+    font-size: 25px !important;
+    line-height: 1.3 !important;
+    font-weight: 400 !important;
+    max-width: 1100px;
+    width: 100%;
+    margin: 20px auto 0;
+    white-space: normal;
+}
+
+#home p.hero-desc em {
+    color: #24577c;
+    font-style: italic;
+    font-weight: 400;
+}
   </style>
 </head>
 
@@ -902,14 +1663,14 @@
 
   <!-- NAVIGATION BAR -->
   <header class="site-header" id="site-header" role="banner" style="background:#ffffff; border-bottom:1px solid #e9e7e3; padding: 18px 0;">
-    <div class="container navbar" style="height: auto; min-height: 60px;">
+    <div class="container navbar" style="height: auto; min-height: 60px;margin-top: 30px; margin-bottom: 30px;">
       
       <!-- BRAND -->
       <a href="#home" class="brand" aria-label="Monolina Sarkar Home" style="text-decoration:none;">
-        <span class="brand-name" style="font-family:'Cormorant Garamond',serif; font-size:24px; font-weight:500; letter-spacing:5px; line-height:1.15; white-space:nowrap; color:#000000;">
+        <span class="brand-name" style="font-family:'Garamond'; font-size:24px; font-weight:500; letter-spacing:5px; line-height:1.15; white-space:nowrap; color:#000000; ">
           MONOLINA SARKAR
         </span>
-        <span class="brand-subtitle" style="margin-top:4px; font-family:'Cormorant Garamond',serif; font-size:15px; font-weight:500; letter-spacing:0.2px; color:#000000;">
+        <span class="brand-subtitle" style="margin-top:4px; font-family:'Garamond'; font-size:15px; font-weight:500; letter-spacing:0.2px; color:#000000;">
           Discipline-Based Education Research &middot; Andragogy
         </span>
       </a>
@@ -917,18 +1678,21 @@
       <!-- DESKTOP NAVIGATION LINKS -->
       <nav aria-label="Primary Navigation" role="navigation">
         <ul class="nav-links" style="gap: 28px;">
-          <li><a href="#home" class="nav-link active" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Home</a></li>
-          <li><a href="about.html" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">About</a></li>
-          <li><a href="#research-focus" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Research</a></li>
-          <li><a href="#practice-areas" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Practice areas</a></li>
-          <li><a href="contact.html" class="nav-link" style="font-family:'Cormorant Garamond',serif; font-size:18px;">Contact</a></li>
+          <li><a href="#home" class="nav-link active" style="font-family:'Garamond';  font-size: 1.05rem;">Home</a></li>
+         
+          <li><a href="#research-focus" class="nav-link" style="font-family:'Garamond'; font-size:1.15rem;">Research</a></li>
+          <li><a href="#practice-areas" class="nav-link" style="font-family:'Garamond'; font-size:1.15rem;">Practice areas</a></li>
+           <li><a href="about.html" class="nav-link" style="font-family:'Garamond'; font-size:1.15rem;">About</a></li>
+           <li><a href="contact.html" class="nav-link" style="font-family:'Garamond'; font-size:1.15rem;">Contact</a></li>
         </ul>
       </nav>
 
       <!-- NAV ACTIONS -->
       <div class="nav-actions">
-        <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav-cv" data-drive-doc="academicCv" aria-label="View Academic Curriculum Vitae">
-          ACADEMIC CV
+         <!-- SECONDARY BUTTON -->
+        <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-drive-doc="academicCv">
+          <span style="font-family: Garamond; font-weight: 400;">Download CV</span>
+          
         </a>
         <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
           <span></span>
@@ -944,12 +1708,16 @@
   <div class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
     <a href="#home" class="nav-link active">Home</a>
     <a href="about.html" class="nav-link">About</a>
-    <a href="#research-focus" class="nav-link">Research</a>
+  <a href="#research-focus" class="nav-link">Research</a>
     <a href="#practice-areas" class="nav-link">Practice areas</a>
     <a href="contact.html" class="nav-link">Contact</a>
     <a href="accessibility-statement.html" class="nav-link">Accessibility Statement</a>
     <div style="margin-top: 1.5rem;">
-      <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-primary" data-drive-doc="academicCv" style="width: 100%; text-align: center;">View Academic CV</a>
+        <!-- SECONDARY BUTTON -->
+        <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-drive-doc="academicCv">
+          <span style="font-family: Garamond; font-weight: 400;">Download CV</span>
+          
+        </a>
     </div>
   </div>
 
@@ -960,9 +1728,9 @@
     <section id="home">
 
       <!-- EYEBROW -->
-      <p class="hero-eyebrow">
+ <!--      <p class="hero-eyebrow">
         PEDAGOGICAL PHILOSOPHY
-      </p>
+      </p> -->
 
       <!-- MAIN HEADING -->
       <h1 class="hero-title-main">
@@ -972,86 +1740,381 @@
       </h1>
 
       <!-- DESCRIPTION -->
-      <p class="hero-desc">Exploring how learners <em>construct, refine, and transfer</em> scientific reasoning</p>
-
+<p class="hero-desc">
+    Exploring how learners <em>construct, refine, and transfer</em> scientific reasoning
+</p>
       <!-- CALL-TO-ACTION BUTTONS -->
       <div class="hero-cta-group">
         <!-- PRIMARY BUTTON -->
-        <a href="#research-focus" class="btn btn-primary">
-          <span>Explore Research Framework</span>
-          <span style="font-size:17px;" aria-hidden="true">&rarr;</span>
+        
+
+          <a href="#research-focus" class="btn btn-gold">
+    <span style="font-family: Garamond; font-weight: 400;">
+        Explore Research
+    </span>
+</a>
         </a>
 
         <!-- SECONDARY BUTTON -->
         <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-drive-doc="academicCv">
-          <span>Download Academic CV</span>
-          <span style="font-size:16px;" aria-hidden="true">&rarr;</span>
+          <span style="font-family: Garamond; font-weight: 400;">Download CV</span>
+          
         </a>
 
         <!-- GOLD BUTTON -->
-        <a href="contact.html" class="btn btn-gold">
-          Collaborate With Me
-        </a>
+       
+        <a href="contact.html" class="btn btn-primary">
+          <span style="font-family: Garamond; font-weight: 400;">Connect With Me</span>
+
+        </a> 
       </div>
 
     </section>
 
     <!-- SECTION: RESEARCH FOCUS (KAIZEN LEARNING LABORATORY) -->
-    <section id="research-focus">
-      <div id="research-focus-inner">
+<!-- SECTION: RESEARCH QUESTIONS -->
+  <section class="thinking-section-wrap"
+         style="background-color: white;"
+         id="research-focus">
+      <div class="thinking-section"style="background-color: white;">
 
-        <!-- SECTION HEADER -->
-        <header class="section-header focus-header">
-          <h2 class="lead-text">The classroom as a</h2>
-          <h2 class="sublead-text">Kaizen learning laboratory.</h2>
+        <!-- SECTION INTRODUCTION -->
+        <header class="section-header">
+          <h1 class="section-title" style="margin-bottom:0px;">
+    The Classroom as
+</h1>
+        <h1 class="section-title" style="font-style: italic; font-weight: 400; color: #24577c ;">
+    a Kaizen learning laboratory.
+</h1>
         </header>
 
+
+ 
+<style>
+
+/* =========================================
+   RESEARCH CONTENT
+========================================= */
+
+.research-content {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 210px minmax(0, 1fr);
+    gap: 48px;
+
+    align-items: start;
+    box-sizing: border-box;
+}
+
+/* LEFT EDITORIAL GUTTER */
+
+.research-sidebar {
+    min-width: 0;
+    box-sizing: border-box;
+}
+
+/* RIGHT CONTENT */
+
+.research-main {
+    min-width: 0;
+    width: 100%;
+}
+
+/* INTRODUCTION */
+
+.research-intro {
+    padding: 20px 0 24px;
+    border-bottom: 1px solid #E2E5DE;
+}
+
+.research-intro p {
+    max-width: 680px;
+    margin: 0;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 18px;
+    line-height: 1.65;
+
+    color: #222;
+    text-align: justify;
+}
+
+/* RESEARCH THEMES */
+
+.research-themes {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+}
+
+.research-theme {
+    display: grid;
+    grid-template-columns: 38px minmax(0, 1fr);
+    gap: 13px;
+
+    padding: 19px 0;
+    border-bottom: 1px solid #E2E5DE;
+
+    box-sizing: border-box;
+}
+
+.research-number {
+    padding-top: 3px;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 17px;
+    letter-spacing: 0.5px;
+
+    color: #7E8B7A;
+}
+
+.research-theme h3 {
+    margin: 0 0 6px;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 1.3;
+
+    color: #26382D;
+}
+
+.research-theme p {
+    max-width: 650px;
+    margin: 0;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 17px;
+    line-height: 1.6;
+
+    color: #222;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .research-content {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0;
+        width: 100%;
+    }
+
+    .research-sidebar {
+        display: none;
+    }
+
+    .research-main {
+        width: 100%;
+    }
+
+    .research-intro p {
+        max-width: 100%;
+    }
+
+    .research-theme p {
+        max-width: 100%;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .research-content {
+        width: 100%;
+        padding: 0;
+    }
+
+    .research-intro {
+        padding: 12px 0 20px;
+    }
+
+    .research-intro p {
+        font-size: 17px;
+        line-height: 1.65;
+        text-align: left;
+    }
+
+    .research-theme {
+        grid-template-columns: 28px minmax(0, 1fr);
+        gap: 10px;
+
+        padding: 16px 0;
+    }
+
+    .research-number {
+        font-size: 15px;
+    }
+
+    .research-theme h3 {
+        font-size: 20px;
+        line-height: 1.3;
+        margin-bottom: 5px;
+    }
+
+    .research-theme p {
+        font-size: 16px;
+        line-height: 1.55;
+    }
+
+}
+@media (max-width: 900px) {
+    #home .hero-desc {
+        white-space: normal;
+    }
+}
+#research-focus .research-intro p,
+#research-focus .research-theme p {
+    font-family: Garamond, Georgia, serif !important;
+    font-size: 17px !important;
+    line-height: 1.6 !important;
+}
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 380px) {
+
+    .research-intro p {
+        font-size: 17px;
+    }
+
+    .research-theme {
+        grid-template-columns: 25px minmax(0, 1fr);
+        gap: 8px;
+    }
+
+    .research-theme h3 {
+        font-size: 19px;
+    }
+
+    .research-theme p {
+        font-size: 15px;
+        line-height: 1.55;
+    }
+
+}
+
+</style>
+
+
+<div class="research-content">
+
+    <!-- LEFT EDITORIAL GUTTER -->
+
+    <aside class="research-sidebar">
+    </aside>
+
+
+    <!-- RIGHT EDITORIAL CONTENT -->
+
+    <div class="research-main">
+
         <!-- INTRODUCTION -->
-        <div class="focus-intro">
-          <p>
-            My academic journey, shaped by a Ph.D. in Biochemistry, an M.A. in Education, and over a decade of teaching biology in higher education, informs my interest in Discipline-Based Education Research (DBER). My research explores how students develop biological understanding, connect concepts across levels of organization, and transfer knowledge to unfamiliar contexts, particularly through inquiry- and problem-based learning.
-          </p>
+
+        <div class="research-intro">
+
+            <p>
+                My academic journey, shaped by a Ph.D. in Biochemistry,
+                an M.A. in Education, and over a decade of teaching
+                biology in higher education, informs my interest in
+                Discipline-Based Education Research (DBER). My research
+                explores how students develop biological understanding,
+                connect concepts across levels of organization, and
+                transfer knowledge to unfamiliar contexts, particularly
+                through inquiry- and problem-based learning.
+            </p>
+
         </div>
+
 
         <!-- RESEARCH THEMES -->
-        <div class="focus-themes">
 
-          <!-- THEME 01 -->
-          <article class="focus-theme">
-            <span class="theme-num">01</span>
-            <div>
-              <h3>Critical Thinking</h3>
-              <p>
-                How students analyse scientific problems, evaluate evidence, and construct evidence-based explanations.
-              </p>
-            </div>
-          </article>
+        <div class="research-themes">
 
-          <!-- THEME 02 -->
-          <article class="focus-theme">
-            <span class="theme-num">02</span>
-            <div>
-              <h3>Systems Thinking</h3>
-              <p>
-                How students connect biological processes and phenomena to develop an integrated understanding of biological systems.
-              </p>
-            </div>
-          </article>
 
-          <!-- THEME 03 -->
-          <article class="focus-theme">
-            <span class="theme-num">03</span>
-            <div>
-              <h3>Sociocultural Perspectives</h3>
-              <p>
-                How social interactions, learning environments, and broader sociocultural contexts shape students' engagement, and reasoning.
-              </p>
-            </div>
-          </article>
+            <!-- THEME 01 -->
+
+            <article class="research-theme">
+
+                <span class="research-number">01</span>
+
+                <div>
+
+                    <h3>Critical Thinking</h3>
+
+                    <p>
+                        How students analyse scientific problems,
+                        evaluate evidence, and construct evidence-based
+                        explanations.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- THEME 02 -->
+
+            <article class="research-theme">
+
+                <span class="research-number">02</span>
+
+                <div>
+
+                    <h3>Systems Thinking</h3>
+
+                    <p>
+                        How students connect biological processes and
+                        phenomena to develop an integrated understanding
+                        of biological systems.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <!-- THEME 03 -->
+
+            <article class="research-theme">
+
+                <span class="research-number">03</span>
+
+                <div>
+
+                    <h3>Sociocultural Perspectives</h3>
+
+                    <p>
+                        How social interactions, learning environments,
+                        and broader sociocultural contexts shape
+                        students' engagement and reasoning.
+                    </p>
+
+                </div>
+
+            </article>
+
 
         </div>
 
-      </div>
+    </div>
+
+</div>
+
+
+
     </section>
 
     <!-- SECTION: RESEARCH QUESTIONS -->
@@ -1060,7 +2123,9 @@
 
         <!-- SECTION INTRODUCTION -->
         <header class="section-header">
-          <h1 class="section-title">Research Questions</h1>
+          <h1 class="section-title">
+    Research Questions
+</h1>
         </header>
 
         <!-- THREE COLUMNS -->
@@ -1123,15 +2188,7 @@
             This research vector examines pedagogical mechanisms that bridge academic biological competencies with students' personal epistemologies, fostering belonging and authentic identity formation in STEM.
           </div>
 
-          <button
-            class="read-more"
-            type="button"
-            aria-expanded="false"
-            aria-controls="becoming-extra"
-            onclick="toggleCard(this, 'becoming-extra')">
-            <span class="button-text">Read More</span>
-            <span class="arrow" aria-hidden="true">&rarr;</span>
-          </button>
+        
         </article>
 
       </div>
@@ -1145,11 +2202,13 @@
       <div class="rw-container">
 
         <!-- SECTION HEADER -->
-        <header class="rw-header">
-          <header class="section-header" style="margin-bottom: 0;">
-            <h1 class="section-title" id="rw-heading">Research Contributions</h1>
-          </header>
-        </header>
+      <div class="rw-header">
+    <div class="section-header" style="margin-bottom: 0;">
+        <h1 class="section-title" id="rw-heading">
+            Research Contributions
+        </h1>
+    </div>
+</div>
 
         <!-- FILTERS AND PROFILES -->
         <div class="rw-controls">
@@ -1159,7 +2218,7 @@
               type="button"
               class="rw-filter is-active"
               data-filter="all"
-              aria-pressed="true">
+              aria-pressed="true" >
               All publications
             </button>
 
@@ -1177,16 +2236,16 @@
               href="https://orcid.org/0000-0002-8172-1111"
               target="_blank"
               rel="noopener noreferrer"
-              class="rw-profile-link">
-              ORCID <span aria-hidden="true">&rarr;</span>
+              class="rw-profile-link" style="color: #245b80;">
+              ORCID  <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease; color: #245b80;">↗</span>
             </a>
 
             <a
               href="https://www.scopus.com"
               target="_blank"
               rel="noopener noreferrer"
-              class="rw-profile-link">
-              SCOPUS <span aria-hidden="true">&rarr;</span>
+              class="rw-profile-link"style="color: #245b80;">
+              SCOPUS  <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease; color: #245b80;">↗</span>
             </a>
           </div>
 
@@ -1202,13 +2261,13 @@
             data-search="2023 Sarkar light-responsive biodegradation wastewater pollutants new developments potential perspectives Journal of Hazardous Materials Advances review article photo-assisted biological mechanisms microbial photocatalytic synergies effluent remediation">
             <div class="rw-publication-meta">
               <a
-                class="rw-publication-type"
+                class="rw-publication-type" 
                 href="https://doi.org/10.1016/j.hazadv.2023.100281"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="Open review article">
                 <span>Review Article</span>
-                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+                  <span class="rw-type-arrow" aria-hidden="true">↗</span>
               </a>
             </div>
             <p class="rw-citation">
@@ -1238,9 +2297,10 @@
                 rel="noopener noreferrer"
                 aria-label="Visit the publisher for the book chapter">
                 <span>Book Chapter</span>
-                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+                 <span class="rw-type-arrow" aria-hidden="true">↗</span>
               </a>
             </div>
+
             <p class="rw-citation">
               Das, D. R., <strong>Sarkar, M.</strong>, &amp; Paul, A.
               (2023). Tools and approaches for assessing stress-responsive
@@ -1269,7 +2329,7 @@
                 rel="noopener noreferrer"
                 aria-label="Open research article">
                 <span>Research Article</span>
-                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+                   <span class="rw-type-arrow" aria-hidden="true">↗</span>
               </a>
             </div>
             <p class="rw-citation">
@@ -1299,7 +2359,7 @@
                 rel="noopener noreferrer"
                 aria-label="Open book chapter">
                 <span>Book Chapter</span>
-                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+                   <span class="rw-type-arrow" aria-hidden="true">↗</span>
               </a>
             </div>
             <p class="rw-citation">
@@ -1329,7 +2389,7 @@
                 rel="noopener noreferrer"
                 aria-label="Open research article">
                 <span>Research Article</span>
-                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+                   <span class="rw-type-arrow" aria-hidden="true">↗</span>
               </a>
             </div>
             <p class="rw-citation">
@@ -1358,7 +2418,7 @@
                 rel="noopener noreferrer"
                 aria-label="Open research article">
                 <span>Research Article</span>
-                <span class="rw-type-arrow" aria-hidden="true">&rarr;</span>
+                   <span class="rw-type-arrow" aria-hidden="true">↗</span>
               </a>
             </div>
             <p class="rw-citation">
@@ -1430,7 +2490,7 @@
             aria-controls="extra-1"
             onclick="toggleCard(this, 'extra-1')">
             <span class="button-text">Read More</span>
-            <span class="arrow" aria-hidden="true">&rarr;</span>
+            <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease;">↗</span>
           </button>
         </article>
 
@@ -1462,7 +2522,7 @@
             aria-controls="extra-2"
             onclick="toggleCard(this, 'extra-2')">
             <span class="button-text">Read More</span>
-            <span class="arrow" aria-hidden="true">&rarr;</span>
+              <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease;">↗</span>
           </button>
         </article>
 
@@ -1494,7 +2554,7 @@
             aria-controls="extra-3"
             onclick="toggleCard(this, 'extra-3')">
             <span class="button-text">Read More</span>
-            <span class="arrow" aria-hidden="true">&rarr;</span>
+              <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease;">↗</span>
           </button>
         </article>
 
@@ -1526,7 +2586,7 @@
             aria-controls="extra-4"
             onclick="toggleCard(this, 'extra-4')">
             <span class="button-text">Read More</span>
-            <span class="arrow" aria-hidden="true">&rarr;</span>
+              <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease;">↗</span>
           </button>
         </article>
 
@@ -1537,211 +2597,164 @@
 
   </main>
 
-  <!-- FOOTER -->
-  <footer id="site-footer" role="contentinfo">
+  <!-- =========================================
+     PROFESSIONAL ACADEMIC FOOTER
+========================================= -->
 
-    <!-- UPPER SECTION: JOIN KAIZEN -->
-    <section class="join-kaizen-wrap" id="join-kaizen">
-      <div class="join-kaizen-grid">
+<footer id="site-footer" class="academic-footer" role="contentinfo">
 
-        <!-- LEFT COLUMN -->
-        <div style="min-width:0;">
-          <div class="join-kaizen-eyebrow">
-            JOIN
-          </div>
+    <!-- =====================================
+         TOP SECTION: JOIN KAIZEN
+    ====================================== -->
 
-          <h2 class="join-kaizen-title">
-            KAIZEN
-          </h2>
+    <section class="footer-connect" id="join-kaizen">
 
-          <div class="join-kaizen-divider"></div>
+        <div class="footer-connect-inner">
 
-          <!-- COLLABORATION TEXT -->
-          <p class="join-kaizen-text">
-            Evaluating new curricular systems or exploring student AI
-            literacy? Let's build evidence-informed learning together.
-            Feel free to mail me at
-            <a href="mailto:monolinasarkar1@gmail.com" style="color:#000000; font-family:'EB Garamond', Garamond, Georgia, serif; font-weight:500; text-decoration:underline; text-underline-offset:3px;">monolinasarkar1@gmail.com</a>
-          </p>
+            <!-- LEFT COLUMN: COLLABORATION -->
+            <div class="footer-connect-content">
 
-          <!-- ACTION BUTTONS -->
-          <div style="display:flex; align-items:center; flex-wrap:wrap; gap:16px;">
-            <a href="contact.html" class="btn btn-primary">
-              Reach Out &amp; Collaborate
-            </a>
+                <span class="footer-eyebrow">
+                    LET'S CONNECT
+                </span>
 
-            <button
-              type="button"
-              class="btn btn-secondary"
-              data-copy="monolinasarkar1@gmail.com"
-              data-copy-label="monolinasarkar1@gmail.com copied to clipboard">
-              Copy Email
-            </button>
-          </div>
-        </div>
+                <h2>
+                    Join the <span style="font-style: italic;color: #24577c ;">Kaizen</span> Journey.
+                </h2>
 
-        <!-- RIGHT COLUMN: ENSO IMAGE -->
-        <div class="enso-card">
-          <img
-            src="images (3).jpg" 
-            alt="Enso circle symbolising continuous learning and growth">
-          <p>
-            The Ens&omacr; &mdash;<br>
-            Symbol of continuous learning &amp; growth
-          </p>
-        </div>
-
-      </div>
-    </section>
-
-    <!-- LOWER SECTION: BRAND + NAVIGATION -->
-    <section class="site-footer-v2">
-      <div class="footer-v2-container">
-
-        <div class="footer-brand-nav">
-          <!-- BRAND -->
-          <div>
-            <div style="font-family:'Cormorant Garamond',serif; font-size:24px; letter-spacing:5px; line-height:1.4; color:#000000; font-weight:500;">
-              MONOLINA SARKAR
-            </div>
-            <div style="font-family:'Cormorant Garamond',serif; font-size:16px; line-height:1.5; color:#000000; margin-top:2px;">
-              Discipline-Based Education Research &middot; Andragogy
-            </div>
-          </div>
-
-          <!-- FOOTER NAVIGATION -->
-          <nav aria-label="Footer navigation">
-            <div class="footer-nav-links">
-              <a href="#home" class="footer-nav-link active">Home</a>
-              <a href="about.html" class="footer-nav-link">About</a>
-              <a href="#research-focus" class="footer-nav-link">Research</a>
-              <a href="#practice-areas" class="footer-nav-link">Practice areas</a>
-              <a href="contact.html" class="footer-nav-link">Contact</a>
-              <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn-nav-cv" data-drive-doc="academicCv" style="font-size:14px; padding:6px 14px; margin-left:6px; text-decoration:none;">
-                ACADEMIC CV
-              </a>
-            </div>
-          </nav>
-        </div>
-
-        <!-- DIVIDER -->
-        <div class="footer-divider"></div>
-
-        <!-- COPYRIGHT + PROFESSIONAL LINKS -->
-        <div class="footer-bottom-row">
-          <div>
-            &copy; 2026 Monolina Sarkar. All rights reserved.
-          </div>
-
-          <div class="footer-bottom-links">
-            <a href="accessibility-statement.html">Accessibility Statement</a>
-            <a href="https://orcid.org/0000-0002-8172-1111" target="_blank" rel="noopener noreferrer">ORCID</a>
-            <a href="https://www.linkedin.com/in/monolinasarkar" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-          </div>
-        </div>
-
-      </div>
-    </section>
-
-  </footer>
-
-  <!-- ACADEMIC CV MODAL -->
-  <div class="modal-overlay" id="cv-modal" role="dialog" aria-modal="true" aria-labelledby="cv-modal-title">
-    <div class="modal-card">
-      <button class="modal-close-btn" id="cv-modal-close" aria-label="Close CV Modal">&times;</button>
       
-      <div class="cv-document" id="cv-document">
-        <div class="cv-print-header" role="banner">
-          <div class="section-label" style="margin-bottom: 0.35rem;">Curriculum Vitae</div>
-          <h2 id="cv-modal-title" class="cv-print-title">
-            Monolina Sarkar, Ph.D., M.Ed.
-          </h2>
-          <div class="cv-print-subtitle">
-            Biochemistry Doctorate &middot; Master of Education &middot; Discipline-Based Education Research (DBER)
-          </div>
-          <div class="cv-print-contacts">
-            <span><strong>Email:</strong> monolinasarkar1@gmail.com</span>
-            <span><strong>ORCID:</strong> 0000-0002-8172-1111</span>
-            <span><strong>Web of Science:</strong> GRY-0666-2022</span>
-            <span><strong>LinkedIn:</strong> linkedin.com/in/monolinasarkar</span>
-          </div>
+                <div class="footer-gold-line"></div>
+
+                <p>
+                    Let's explore opportunities to build
+                    evidence-informed learning experiences. I'd love
+                    to hear from you.Feel free to write to me at<a href="mailto:monolinasarkar1@gmail.com">
+                        monolinasarkar1@gmail.com
+                    </a>
+                </p>
+
+             
+                <!-- ACTION BUTTONS -->
+                <div class="footer-actions">
+
+                    <a href="contact.html" class="btn btn-primary">
+                        Connect With Me
+                    </a>
+
+                    <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-copy="monolinasarkar1@gmail.com"
+                        data-copy-label="monolinasarkar1@gmail.com copied to clipboard">
+
+                        Copy Email
+
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT COLUMN: ENSO IMAGE -->
+            <div class="footer-enso">
+
+                <div class="footer-enso-image">
+
+                    <img
+                        src="images (3).jpg"
+                        alt="Enso circle symbolising continuous learning and growth">
+
+                </div>
+
+                <div class="footer-enso-caption">
+
+                    <span>THE ENSO</span>
+
+                    <p>
+                        A journey of continuous learning
+                        and improvement.
+                    </p>
+
+                </div>
+
+            </div>
+
         </div>
 
-        <section class="cv-section">
-          <h3 class="cv-section-title">Scholarly &amp; Pedagogical Profile</h3>
-          <p style="font-size: 0.95rem; color: var(--text-secondary); line-height: 1.6;">
-            Higher education biology educator and research biochemist with over 10 years of teaching experience. Specializes in Discipline-Based Education Research (DBER), transforming undergraduate classrooms into continuous <em>Kaizen</em> learning laboratories. Investigates how learners iteratively construct, refine, and apply scientific reasoning in unfamiliar biological contexts, with focal emphasis on student AI literacy, conceptual change, and evidence-informed curriculum redesign aligned with National Research Council (NRC, 2012) standards.
-          </p>
-        </section>
+    </section>
 
-        <section class="cv-section">
-          <h3 class="cv-section-title">Education &amp; Credentials</h3>
-          <div style="display: flex; flex-direction: column; gap: 0.85rem;">
-            <div class="cv-item">
-              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
-                <strong>Doctor of Philosophy (Ph.D.) in Biochemistry</strong>
-                <span class="cv-date">Conferred</span>
-              </div>
-              <div style="font-size: 0.9rem; color: var(--text-secondary);">University of Calcutta &middot; Department of Biochemistry</div>
+
+
+    <!-- =====================================
+         LOWER SECTION: BRAND AND NAVIGATION
+    ====================================== -->
+
+    <section class="footer-main">
+
+        <div class="footer-main-inner">
+
+  <div class="footer-bottom">
+
+
+                <!-- COPYRIGHT -->
+                <p class="footer-copyright">
+                    &copy; 2026 Monolina Sarkar.
+                    All rights reserved.
+                </p>
+
+
+
+                <!-- PROFESSIONAL LINKS -->
+                <div class="footer-social-links">
+
+                    <a
+                        href="https://orcid.org/0000-0002-8172-1111"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        ORCID
+                        <span aria-hidden="true">↗</span>
+
+                    </a>
+
+
+                    <a
+                        href="https://www.linkedin.com/in/monolinasarkar"
+                        target="_blank"
+                        rel="noopener noreferrer">
+
+                        LinkedIn
+                        <span aria-hidden="true">↗</span>
+
+                    </a>
+
+
+                    <a href="accessibility-statement.html">
+                        Accessibility Statement
+                    </a>
+
+                </div>
+
             </div>
-            <div class="cv-item">
-              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
-                <strong>Master of Education (M.Ed.)</strong>
-                <span class="cv-date">Conferred</span>
-              </div>
-              <div style="font-size: 0.9rem; color: var(--text-secondary);">Focus: Pedagogical Theory, Curriculum Design &amp; Learning Assessment</div>
+
             </div>
-            <div class="cv-item">
-              <div style="display: flex; justify-content: space-between; align-items: baseline; flex-wrap: wrap;">
-                <strong>Master of Science (M.Sc.) in Biochemistry</strong>
-                <span class="cv-date">Conferred</span>
-              </div>
-              <div style="font-size: 0.9rem; color: var(--text-secondary);">University of Calcutta &middot; First Class Honors</div>
-            </div>
-          </div>
-        </section>
 
-        <section class="cv-section">
-          <h3 class="cv-section-title">Higher Education &amp; Teaching Leadership (10+ Years)</h3>
-          <ul class="cv-list">
-            <li><strong>Undergraduate &amp; Graduate Biology Instruction:</strong> Over a decade of teaching biochemistry, molecular biology, and general biology across diverse student cohorts.</li>
-            <li><strong>DBER Curriculum Innovation:</strong> Designed inquiry-driven, problem-based learning modules emphasizing systems thinking, mechanism-building, and data evaluation.</li>
-            <li><strong>AI Literacy &amp; Scientific Reasoning:</strong> Lead author on pedagogical interventions investigating student interactions with generative AI in biology problem-solving.</li>
-            <li><strong>Pedagogical Mentorship:</strong> Mentored teaching assistants and junior instructors on reflective teaching, continuous feedback loops, and inclusive classroom design.</li>
-          </ul>
-        </section>
 
-        <section class="cv-section">
-          <h3 class="cv-section-title">Peer-Reviewed Publications &amp; Book Chapters</h3>
-          <ul class="cv-list" style="list-style: decimal;">
-            <li><strong>Sarkar, M.</strong> (2023). Light-responsive biodegradation of wastewater pollutants: New developments and potential perspectives. <em>Journal of Hazardous Materials Advances</em>, 10, 100281.</li>
-            <li>Das, D. R., <strong>Sarkar, M.</strong>, &amp; Paul, A. (2023). Tools and approaches for assessing stress-responsive secondary metabolites to design climate-smart crops. In <em>Biology and Biotechnology of Environmental Stress Tolerance in Plants</em> (pp. 305&ndash;370). Apple Academic Press.</li>
-            <li>Guha, S., Molla, F., <strong>Sarkar, M.</strong>, Ib&aacute;&ntilde;ez, F., Fabra, A., &amp; DasGupta, M. (2022). Nod factor-independent 'crack-entry' symbiosis in dalbergoid legume <em>Arachis hypogaea</em>. <em>Environmental Microbiology</em>, 24(6), 2732&ndash;2746.</li>
-            <li><strong>Sarkar, M.</strong>, Paul, A., &amp; Das, D. R. (2022). Availing engineered and biosynthesized metal-based nanoparticles to alleviate abiotic stress. In <em>Response of Field Crops to Abiotic Stress</em> (pp. 15&ndash;33). CRC Press / Taylor &amp; Francis.</li>
-            <li><strong>Sarkar, M.</strong> (2022). Effect of silver nanoparticles on nitrogen-cycling bacteria in constructed wetlands. <em>Nanotechnology for Environmental Engineering</em>, 7(2), 537&ndash;559.</li>
-            <li>Guha, S., <strong>Sarkar, M.</strong>, Ganguly, P., Uddin, M. R., Mandal, S., &amp; DasGupta, M. (2016). Segregation of nod-containing and nod-deficient bradyrhizobia as endosymbionts of <em>Arachis hypogaea</em> and as endophytes of <em>Oryza sativa</em>. <em>Environmental Microbiology</em>, 18(8), 2575&ndash;2590.</li>
-          </ul>
-        </section>
 
-        <section class="cv-section" style="margin-bottom: 0;">
-          <h3 class="cv-section-title">Professional Affiliations &amp; Service</h3>
-          <p style="font-size: 0.92rem; color: var(--text-secondary); line-height: 1.55;">
-            Member, American Society for Microbiology (ASM) &middot; Discipline-Based Education Research (DBER) Network &middot; Peer Reviewer, MERLOT Biology Editorial Board &middot; Contributor, Public Science Writing &amp; Knowledge Translation.
-          </p>
-        </section>
-      </div>
+           
 
-      <div class="cv-actions">
-        <button class="btn btn-secondary" onclick="window.print()">
-          Print / Save PDF
-        </button>
-        <a href="mailto:monolinasarkar1@gmail.com?subject=Academic%20Dossier%20Inquiry%20-%20Monolina%20Sarkar" class="btn btn-primary">
-          Inquire Directly
-        </a>
-      </div>
-    </div>
-  </div>
 
+            <!-- COPYRIGHT AND PROFESSIONAL LINKS -->
+          
+
+        </div>
+
+    </section>
+
+</footer>
+
+ 
   <!-- SCRIPT FOR CARD TOGGLE -->
   <script>
     function toggleCard(button, contentId) {
@@ -1809,37 +2822,84 @@
   </script>
 
   <!-- SCROLLSPY SCRIPT -->
-  <script>
-    (function() {
-      const sections = document.querySelectorAll('section[id]');
-      const navLinks = document.querySelectorAll('.site-header .nav-link');
-      if (!sections.length || !navLinks.length) return;
+<!-- SCROLLSPY SCRIPT -->
+<script>
+document.addEventListener('DOMContentLoaded', function () {
 
-      window.addEventListener('scroll', () => {
-        let current = '';
-        const scrollPos = window.scrollY + 140;
+    const sections = document.querySelectorAll(
+        'main section[id]'
+    );
+
+    const navLinks = document.querySelectorAll(
+        '.site-header .nav-link, .mobile-drawer .nav-link'
+    );
+
+    // Three research sections grouped under one navbar item
+    const researchSections = [
+        'research-focus',
+        'research-questions',
+        'research-work'
+    ];
+
+    function updateActiveNavigation() {
+
+        let currentSection = 'home';
+
+        const scrollPosition = window.scrollY + 180;
 
         sections.forEach(section => {
-          const top = section.offsetTop;
-          const height = section.offsetHeight;
-          if (scrollPos >= top && scrollPos < top + height) {
-            current = section.getAttribute('id');
-          }
+
+            const sectionTop =
+                section.getBoundingClientRect().top + window.scrollY;
+
+            if (scrollPosition >= sectionTop) {
+                currentSection = section.id;
+            }
+
         });
 
-        if (current) {
-          navLinks.forEach(link => {
-            const href = link.getAttribute('href');
-            if (href === '#' + current || (current === 'home' && (href === '#home' || href === 'index.html'))) {
-              link.classList.add('active');
-            } else if (href && href.startsWith('#')) {
-              link.classList.remove('active');
-            }
-          });
+        // Ensure the final section is recognised near the page bottom
+        if (
+            window.innerHeight + window.scrollY >=
+            document.documentElement.scrollHeight - 5
+        ) {
+            currentSection = 'practice-areas';
         }
-      }, { passive: true });
-    })();
-  </script>
+
+        navLinks.forEach(link => {
+
+            const href = link.getAttribute('href');
+
+            let isActive = false;
+
+            if (researchSections.includes(currentSection)) {
+
+                isActive = href === '#research-focus';
+
+            } else {
+
+                isActive = href === '#' + currentSection;
+
+            }
+
+            link.classList.toggle('active', isActive);
+
+        });
+
+    }
+
+    window.addEventListener('scroll', updateActiveNavigation, {
+        passive: true
+    });
+
+    window.addEventListener('resize', updateActiveNavigation);
+
+    window.addEventListener('load', updateActiveNavigation);
+
+    updateActiveNavigation();
+
+});
+</script>
 
   <!-- MAIN SCRIPT (Modals, Sticky Header, Mobile Drawer, Copy Buttons) -->
   <script src="js/main.js"></script>

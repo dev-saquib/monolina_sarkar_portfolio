@@ -92,12 +92,12 @@ html {
 }
 
 body {
-  background-color: var(--bg-page);
+  background-color: white;
   color: var(--text-primary);
   font-family: var(--font-body);
   font-size: var(--body-font-size);
   line-height: var(--body-line-height);
-  letter-spacing: 0.01em;
+ 
   overflow-x: hidden;
   min-height: 100vh;
   display: flex;
@@ -128,7 +128,7 @@ button,
 input[type="button"],
 input[type="submit"],
 input[type="reset"] {
-  font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+  font-family: 'Garamond';
   cursor: pointer;
   border: none;
   background: none;
@@ -208,8 +208,9 @@ input[type="reset"] {
 }
 
 .nav-link {
-  font-family: 'Cormorant Garamond', serif !important;
-  font-size: 18px;
+  font-family: 'Garamond', serif !important;
+ 
+  font-size: 1.05rem;
   font-weight: 500;
   color: #252525;
   position: relative;
@@ -231,12 +232,12 @@ input[type="reset"] {
 
 .nav-link:hover,
 .nav-link.active {
-  font-family: 'Cormorant Garamond', serif !important;
+  font-family: 'Garamond', serif !important;
   color: var(--accent-blue);
 }
 
 .nav-link.active {
-  font-family: 'Cormorant Garamond', serif !important;
+  font-family: 'Garamond', serif !important;
   font-weight: 600;
 }
 
@@ -246,7 +247,7 @@ input[type="reset"] {
 }
 
 .footer-nav-link {
-  font-family: 'Cormorant Garamond', serif !important;
+  font-family: Garamond !important;
 }
 
 .nav-actions {
@@ -259,14 +260,12 @@ input[type="reset"] {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  font-family: 'Cormorant Garamond', serif !important;
-  font-size: 1.05rem;
-  font-weight: 600;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-family: 'Garamond', important;
+  font-size: 1.15rem;
+  font-weight: 400;
   padding: 0.65rem 1.15rem;
-  border: 1px solid #a7b7c4;
-  color: var(--accent-blue);
+  border:  1px solid var(--border-medium);;
+  color: black;
   border-radius: var(--radius-sm);
   background: transparent;
   cursor: pointer;
@@ -277,8 +276,10 @@ input[type="reset"] {
 }
 
 .btn-nav-cv:hover {
-  background-color: var(--accent-blue);
-  color: #FFFFFF;
+ border-color: var(--accent-blue);
+  color: black;
+  background-color: var(--accent-blue-tint);
+
 }
 
 /* Mobile Toggle */
@@ -342,7 +343,7 @@ input[type="reset"] {
 }
 
 .mobile-drawer .nav-link {
-  font-family: 'Cormorant Garamond', serif !important;
+  font-family: Garamond, !important;
   font-size: 18px;
   font-weight: 500;
   padding: 0.5rem 0;
@@ -391,7 +392,7 @@ input[type="reset"] {
   font-size: clamp(38px, 5vw, 58px);
   font-weight: 600;
   line-height: 1.2;
-  color: #000000;
+  color: black;
   margin-bottom: 1.25rem;
 }
 
@@ -430,10 +431,10 @@ a.btn {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+  font-family: 'Garamond';
   font-size: 1.15rem;
-  font-weight: 600;
-  letter-spacing: 0.02em;
+  font-weight: 400;
+  
   padding: 0.85rem 1.6rem;
   min-height: 46px;
   box-sizing: border-box;
@@ -452,24 +453,26 @@ a.btn {
 }
 
 .btn-primary:hover {
-  background-color: var(--accent-blue-hover);
+  background-color: white;
   border-color: var(--accent-blue-hover);
-  transform: translateY(-2px);
-  box-shadow: 0 6px 16px rgba(30, 90, 131, 0.25);
+  color: black;
+  
+  
 }
 
 .btn-secondary {
   background-color: transparent;
   color: var(--text-primary);
-  border: 1px solid var(--border-medium);
+  border: 1px solid var(--accent-blue);
 }
 
 .btn-secondary:hover {
   border-color: var(--accent-blue);
-  color: var(--accent-blue);
+  color: black;
   background-color: var(--accent-blue-tint);
-  transform: translateY(-2px);
+  
 }
+
 
 .btn-gold {
   background-color: var(--accent-gold-border);
@@ -483,12 +486,12 @@ a.btn {
   background-color: #FFFFFF;
   color: #1A1A1A;
   border-color: var(--accent-gold-hover);
-  box-shadow: 0 4px 14px rgba(215, 164, 73, 0.25);
-  transform: translateY(-2px);
+  
+  
 }
 
 .btn-link {
-  font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+  font-family: Garamond;
   font-size: 1.05rem;
   font-weight: 600;
   color: var(--accent-blue);
@@ -532,14 +535,15 @@ a.btn {
 
 .hero-title {
   font-family: var(--font-display);
-  font-size: clamp(2.75rem, 6.5vw, 4.75rem);
-  font-weight: 500;
-  line-height: 1.1;
-  letter-spacing: 0.08em;
+ font-size: clamp(2.25rem, 5vw, 3.625rem);
+  font-weight: 400;
+  line-height: 1.25;
+  letter-spacing: 0.4em;
   color: var(--text-primary);
   margin-bottom: 1.75rem;
   text-transform: uppercase;
 }
+
 
 .hero-title .highlight-blue {
   color: var(--accent-blue);
@@ -607,7 +611,7 @@ a.btn {
   padding: 0;
   border: none;
   background: transparent;
-  font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+  font-family: Garamond;
   font-size: 17px;
   font-weight: 600;
   color: #000000;
@@ -704,7 +708,7 @@ a.btn {
 }
 
 .inquiry-question {
-  font-family: var(--font-serif);
+  font-family: Garamond;
   font-size: 1.45rem;
   line-height: 1.35;
   font-weight: 500;
@@ -1037,7 +1041,7 @@ a.btn {
 }
 
 .filter-btn {
-  font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+  font-family: Garamond;
   font-size: 1.1rem;
   font-weight: 600;
   letter-spacing: 0.02em;
@@ -1261,7 +1265,7 @@ a.btn {
 }
 
 .kaizen-banner-content .tag {
-  font-family: 'EB Garamond', Garamond, Georgia, serif;
+  font-family: Garamond;
   font-size: 0.95rem;
   font-weight: 600;
   letter-spacing: 0.2em;
@@ -1271,7 +1275,7 @@ a.btn {
 }
 
 .kaizen-banner-content h2 {
-  font-family: 'EB Garamond', Garamond, Georgia, serif;
+  font-family: Garamond;
   font-size: clamp(2.5rem, 5vw, 3.5rem);
   font-weight: 500;
   letter-spacing: 0.08em;
@@ -1289,7 +1293,7 @@ a.btn {
 }
 
 .kaizen-banner-content p {
-  font-family: 'EB Garamond', Garamond, Georgia, serif;
+  font-family: Garamond;
   font-size: 1.2rem;
   line-height: 1.65;
   color: #000000;
@@ -1331,6 +1335,7 @@ a.btn {
   margin-top: 1rem;
 }
 
+.button-text {font-family: Garamond;font-weight: 400; color: #245b80;}
 /* --- About Page: The Journey --- */
 .about-hero {
   display: grid;
@@ -1396,11 +1401,11 @@ a.btn {
   padding: 1.75rem 2rem;
   border-radius: 0 var(--radius-sm) var(--radius-sm) 0;
   margin: 2rem 0;
-  box-shadow: var(--shadow-sm);
+  
 }
 
 .about-quote blockquote {
-  font-family: var(--font-serif);
+  font-family: Garamond;
   font-size: 1.15rem;
   line-height: 1.6;
   color: #000000;
@@ -1561,32 +1566,42 @@ a.btn {
   flex-direction: column;
   flex: 1;
   justify-content: space-between;
+  font-family: Garamond;
 }
 
 .blog-tag {
-  font-family: var(--font-mono);
-  font-size: 0.72rem;
+  font-family: Garamond;
+ 
   letter-spacing: 0.1em;
   text-transform: uppercase;
   color: #000000;
-  font-weight: 700;
+ 
   margin-bottom: 0.65rem;
+
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 1.6px;
+    
 }
 
 .blog-title {
-  font-family: var(--font-serif);
-  font-size: 1.35rem;
-  line-height: 1.3;
-  color: var(--text-primary);
-  margin-bottom: 0.85rem;
+  font-family: 'Playfair Display', serif;
+    color: #000000;
+    font-size: 30px;
+    line-height: 1.3;
+    font-weight: 600;
+    margin-bottom: 16px;
 }
 
+    
+}
 .blog-snippet {
-  font-size: 0.95rem;
+  font-size: 16.5px;
   color: #000000;
   font-weight: 500;
-  line-height: 1.6;
+  line-height: 1.7;
   margin-bottom: 1.5rem;
+  font-family: Garamond;
 }
 
 .blog-footer {
@@ -1655,7 +1670,7 @@ a.btn {
 }
 
 .contact-card-value {
-  font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+  font-family: Garamond;
   font-size: 1.15rem;
   font-weight: 600;
   color: var(--text-primary);
@@ -2361,7 +2376,7 @@ textarea.form-control {
   border-radius: var(--radius-sm);
   background: transparent;
   color: var(--text-secondary);
-  font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+  font-family: 'Garamond';
   font-size: 1.05rem;
   font-weight: 600;
   cursor: pointer;
@@ -2507,8 +2522,8 @@ textarea.form-control {
   border-radius: var(--radius-sm);
   background: var(--bg-card);
   color: var(--text-primary);
-  font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
-  font-size: 1.05rem;
+  font-family: 'Garamond';
+  font-size: 1.15rem;
   font-weight: 600;
   cursor: pointer;
   text-align: center;
@@ -2644,7 +2659,7 @@ textarea.form-control {
   color: var(--text-secondary);
   border: 1px solid var(--border-medium);
   border-radius: var(--radius-sm);
-  font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+  font-family: 'Garamond';
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -2888,7 +2903,7 @@ html.a11y-font-xl {
   border: 1px solid rgba(30, 90, 131, 0.2);
   padding: 0.35rem 0.75rem;
   border-radius: var(--radius-sm);
-  font-family: 'Cormorant Garamond', 'EB Garamond', Garamond, Georgia, serif;
+  font-family: Garamond;
   font-size: 1rem;
   font-weight: 600;
   cursor: pointer;
@@ -3001,7 +3016,7 @@ html.a11y-font-xl {
 .statement-section-title {
   font-family: var(--font-serif);
   font-size: 1.85rem;
-  color: var(--text-primary);
+  color: #245b80;
   margin-bottom: 1.25rem;
   display: flex;
   align-items: baseline;
