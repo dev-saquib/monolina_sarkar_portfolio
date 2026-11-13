@@ -750,7 +750,18 @@
 
 }
 
+.contact-arrow {
+    display: inline-block;
+    font-size: 14px;
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform: translate(0, 0);
+}
 
+a:hover .contact-arrow {
+    transform: translate(3px, -3px);
+    color: #245b80;
+}
 /* =========================================
    MOBILE RESPONSIVENESS
 ========================================= */
@@ -845,6 +856,54 @@
     }
 
 }
+/* =========================================
+   MOBILE NAVIGATION DRAWER
+========================================= */
+
+.mobile-drawer {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    background: #ffffff;
+    padding: 15px 20px 25px;
+    box-sizing: border-box;
+    z-index: 9999;
+    flex-direction: column;
+}
+
+/* Show drawer when opened */
+.mobile-drawer.is-open {
+    display: flex;
+}
+
+/* Individual navigation links */
+.mobile-drawer .nav-link {
+    display: block;
+    width: 100%;
+    padding: 14px 12px;
+    box-sizing: border-box;
+    color: #222222;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Active link */
+.mobile-drawer .nav-link.active {
+    color: #17619b !important;
+    font-weight: 700;
+    border-bottom: 2px solid #17619b;
+}
+
+/* Mobile screen */
+@media (min-width: 821px) {
+    .mobile-drawer {
+        display: none !important;
+    }
+}
   </style>
 
   <!-- Skip Links -->
@@ -904,7 +963,7 @@
         <li>
           <a href="index.html#practice-areas" class="nav-link"
              style="font-family:'Garamond'; font-size:1.15rem;">
-            Practice areas
+            Programs
           </a>
         </li>
 
@@ -972,9 +1031,7 @@
    <a href="about.html" class="nav-link active">About</a>
   <a href="contact.html" class="nav-link">Contact</a>
 
-  <a href="accessibility-statement.html" class="nav-link">
-    Accessibility Statement
-  </a>
+
 
   <div style="margin-top:1.5rem;">
 
@@ -1102,11 +1159,14 @@
                 <span class="blog-date"
                   style="font-family: Garamond; font-size: 17.5px; color: #000000; font-weight: 400;">05
                   Apr 2025</span>
-                  <a href="assets/adult_learning.pdf" target="_blank"
-                  rel="noopener noreferrer" class="read-more" >
-                  <span class="button-text">Read More</span>
-                  <span class="arrow" aria-hidden="true">&rarr;</span>
-                </a>
+              
+           <a href="assets/adult_learning.pdf"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="font-family: Garamond; font-size: 17.5px; color: #245b80;">
+    Read More
+    <span class="contact-arrow" aria-hidden="true" style="color: #245b80;">↗</span>
+</a>
 
               </div>
             </div>
@@ -1132,18 +1192,14 @@
                 <span class="blog-date"
                   style="font-family: Garamond; font-size: 17.5px; color: #000000; font-weight: 400;">05
                   Apr 2025</span>
-                <a href="assets/book_Orhan.pdf" target="_blank"
-                  rel="noopener noreferrer" class="read-more" >
+                     <a href="assets/adult_learning.pdf"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="font-family: Garamond; font-size: 17.5px; color: #245b80;">
+    Read More
+    <span class="contact-arrow" aria-hidden="true" style="color: #245b80;">↗</span>
+</a>
 
-                  <span class="button-text">Read More</span>
-
-
-
-
-
-
-                  <span class="arrow" aria-hidden="true">&rarr;</span>
-                </a>
               </div>
             </div>
           </article>
@@ -1167,12 +1223,13 @@
                <span class="blog-date"
                   style="font-family: Garamond; font-size: 17.5px; color: #000000; font-weight: 400;">05
                   Apr 2025</span>
-                <a href="assets/adult_learning.pdf" target="_blank"
-                  rel="noopener noreferrer" class="read-more" >
-                  <span class="button-text">Read More</span>
-                  <span class="arrow" aria-hidden="true">&rarr;</span>
-                </a>
-
+                     <a href="assets/adult_learning.pdf"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="font-family: Garamond; font-size: 17.5px; color: #245b80;">
+    Read More
+    <span class="contact-arrow" aria-hidden="true" style="color: #245b80;">↗</span>
+</a>
 
 
 
@@ -1190,13 +1247,14 @@
       <div class="container">
         <div class="photo-gallery-header" style="margin-bottom: 2rem;">
           <div>
-           
-                  <header class="section-header">
+       <header class="section-header">
           <h1 class="section-title">
     Photo Book and Expeditions
 </h1>
 <a href="geido.html" class="magazine-link" style="font-family: Garamond; font-size: 20px;">Explore the Photo Magazine →</a>
         </header>
+         
+        
           </div>
         </div>
 

@@ -912,6 +912,114 @@ section[id] {
 
 }
 
+.copy-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 6px;
+    opacity: 0.7;
+    font-family: Garamond;
+}
+
+.copy-btn:hover {
+    opacity: 1;
+     font-family: Garamond;
+}
+/* =========================================
+   SMALL MOBILE SCREENS
+========================================= */
+
+@media (max-width: 380px) {
+
+    .footer-connect-content h2 {
+        font-size: 34px;
+    }
+
+    .footer-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-navigation {
+        gap: 17px 10px;
+    }
+
+    .footer-social-links {
+        gap: 13px;
+    }
+
+}
+========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 600px) {
+
+    .footer-connect {
+        padding: 55px 23px;
+    }
+
+    .footer-connect-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-connect-content h2 {
+        font-size: 39px;
+    }
+
+    .footer-connect-content > p {
+        font-size: 17px;
+    }
+
+    .footer-actions {
+        gap: 12px;
+    }
+
+    .footer-enso-image {
+        width: 175px;
+        height: 175px;
+    }
+
+    .footer-main {
+        padding: 38px 23px 24px;
+    }
+
+    .footer-brand-name {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .footer-navigation {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: start;
+        gap: 19px 15px;
+        width: 100%;
+    }
+
+    .footer-navigation .footer-cv-link {
+        width: fit-content;
+    }
+
+    .footer-divider {
+        margin: 26px 0 20px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .footer-social-links {
+        gap: 18px;
+    }
+
+}
+
 
 /* =========================================
    SMALL MOBILE SCREENS
@@ -942,152 +1050,131 @@ section[id] {
 
 <body>
 
-<!-- =========================================
-     SKIP LINKS
-========================================= -->
+  <!-- NAVIGATION BAR -->
+  <header class="site-header" id="site-header" role="banner" style="background:#ffffff; border-bottom:1px solid #e9e7e3; padding: 18px 0;">
+    <div class="container navbar" style="height: auto; min-height: 60px;margin-top: 30px; margin-bottom: 30px;">
 
-<div class="skip-links">
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    <a href="#site-header" class="skip-link">Skip to navigation</a>
-    <a href="#site-footer" class="skip-link">Skip to footer</a>
+      <!-- BRAND -->
+      <a href="#home" class="brand" aria-label="Monolina Sarkar Home" style="text-decoration:none;">
+        <span class="brand-name" style="font-family:'Garamond'; font-size:24px; font-weight:500; letter-spacing:5px; line-height:1.15; white-space:nowrap; color:#000000; ">
+          MONOLINA SARKAR
+        </span>
+        <span class="brand-subtitle" style="margin-top:4px; font-family:Garamond; font-size:15px; font-weight:500; letter-spacing:0.2px; color:#000000;">
+          Discipline-Based Education Research &middot; Andragogy
+        </span>
+      </a>
 
-    <button type="button" class="skip-link" id="skip-a11y-btn">
-        Open Accessibility Preferences (Alt+A)
-    </button>
-</div>
+      <!-- DESKTOP NAVIGATION LINKS -->
+   <!-- DESKTOP NAVIGATION -->
+    <nav aria-label="Primary Navigation" role="navigation">
+
+      <ul class="nav-links" style="gap:28px;">
+
+        <li>
+          <a href="index.html#home" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.05rem;">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#research-focus" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+            Research
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#practice-areas" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+           Programs
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+            About
+          </a>
+        </li>
 
 
-<!-- =========================================
-     NAVIGATION
-========================================= -->
 
-<header class="site-header" id="site-header" role="banner"
-        style="background:#ffffff; border-bottom:1px solid #e9e7e3; padding:18px 0;">
+        <li>
+          <a href="contact.html" class="nav-link active"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+            Contact
+          </a>
+        </li>
 
-    <div class="container navbar"
-         style="height:auto; min-height:60px; margin-top:30px; margin-bottom:30px;">
+      </ul>
 
-        <a href="index.html#home"
-           class="brand"
-           aria-label="Monolina Sarkar Home"
-           style="text-decoration:none;">
+    </nav>
 
-            <span class="brand-name"
-                  style="font-family:'Garamond'; font-size:24px; font-weight:500;
-                  letter-spacing:5px; line-height:1.15; white-space:nowrap; color:#000000;">
-                MONOLINA SARKAR
-            </span>
 
-            <span class="brand-subtitle"
-                  style="margin-top:4px; font-family:'Garamond'; font-size:15px;
-                  font-weight:500; letter-spacing:0.2px; color:#000000;">
-                Discipline-Based Education Research &middot; Andragogy
-            </span>
+    <!-- NAVIGATION ACTIONS -->
+    <div class="nav-actions">
 
-        </a>
+      <a href="Monolina_Sarkar_cv.pdf"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn-nav-cv"
+         data-drive-doc="academicCv"
+         aria-label="View Academic Curriculum Vitae">
+        Download CV
+      </a>
 
-        <nav aria-label="Primary Navigation" role="navigation">
-            <ul class="nav-links" style="gap:28px;">
+      <button class="mobile-toggle"
+              type="button"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+              aria-controls="mobile-drawer">
 
-                <li>
-                    <a href="index.html#home" class="nav-link"
-                       style="font-family:'Garamond'; font-size:1.05rem;">
-                        Home
-                    </a>
-                </li>
+        <span></span>
+        <span></span>
+        <span></span>
 
-                <li>
-                    <a href="index.html#research-focus" class="nav-link"
-                       style="font-family:'Garamond'; font-size:1.15rem;">
-                        Research
-                    </a>
-                </li>
-
-                <li>
-                    <a href="index.html#practice-areas" class="nav-link"
-                       style="font-family:'Garamond'; font-size:1.15rem;">
-                        Practice areas
-                    </a>
-                </li>
-
-                <li>
-                    <a href="about.html" class="nav-link"
-                       style="font-family:'Garamond'; font-size:1.15rem;">
-                        About
-                    </a>
-                </li>
-
-                <li>
-                    <a href="contact.html" class="nav-link active"
-                       aria-current="page"
-                       style="font-family:'Garamond'; font-size:1.15rem;">
-                        Contact
-                    </a>
-                </li>
-
-            </ul>
-        </nav>
-
-        <div class="nav-actions">
-
-            <a href="Monolina_Sarkar_cv.pdf"
-               target="_blank"
-               rel="noopener noreferrer"
-               class="btn-nav-cv"
-               aria-label="View Academic Curriculum Vitae">
-                Download CV
-            </a>
-
-            <button class="mobile-toggle"
-                    type="button"
-                    aria-label="Toggle navigation menu"
-                    aria-expanded="false"
-                    aria-controls="mobile-drawer">
-
-                <span></span>
-                <span></span>
-                <span></span>
-
-            </button>
-
-        </div>
+      </button>
 
     </div>
+
+  </div>
 </header>
 
 
-
-
-
-<!-- =========================================
-     MOBILE NAVIGATION
-========================================= -->
-
-<div class="mobile-drawer"
-     id="mobile-drawer"
+<!-- MOBILE NAVIGATION DRAWER -->
+<div class="mobile-drawer" id="mobile-drawer"
      aria-label="Mobile Navigation">
 
-    <a href="index.html#home" class="nav-link">Home</a>
-    <a href="index.html#research-focus" class="nav-link">Research</a>
-    <a href="index.html#practice-areas" class="nav-link">Practice areas</a>
-    <a href="about.html" class="nav-link">About</a>
-    <a href="contact.html" class="nav-link active" aria-current="page">Contact</a>
+  <a href="index.html#home" class="nav-link">Home</a>
 
-    <a href="accessibility-statement.html" class="nav-link">
-        Accessibility Statement
+
+
+  <a href="index.html#research-focus" class="nav-link">Research</a>
+
+  <a href="index.html#practice-areas" class="nav-link">Practice areas</a>
+   <a href="about.html" class="nav-link">About</a>
+  <a href="contact.html" class="nav-link active">Contact</a>
+
+  <div style="margin-top:1.5rem;">
+
+    <a href="Monolina_Sarkar_cv.pdf"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn btn-primary"
+       data-drive-doc="academicCv"
+       style="width:100%; text-align:center;">
+
+      Download CV
+
     </a>
 
-    <div style="margin-top:1.5rem;">
-        <a href="Monolina_Sarkar_cv.pdf"
-           target="_blank"
-           rel="noopener noreferrer"
-           class="btn btn-primary"
-           style="width:100%; text-align:center;">
-            View Academic CV
-        </a>
-    </div>
+  </div>
 
 </div>
+</body>
+
+  <main id="main-content" role="main">
 
    <!-- SECTION: PRACTICE AREAS -->
 <section class="research-section-wrap" id="practice-areas">
@@ -1132,10 +1219,26 @@ section[id] {
                 EMAIL:
             </span>
 
-            <a href="mailto:monolinasarkar1@gmail.com">
-                monolinasarkar1@gmail.com
-                <span class="contact-arrow" aria-hidden="true">↗</span>
-            </a>
+<div class="email-contact">
+    <span
+        class="email-text"
+        onclick="copyEmail()"
+        style="font-family: Garamond; color:#245b80; cursor:pointer;"
+        title="Click to copy email">
+        monolinasarkar1@gmail.com
+    </span>
+
+    <button
+        class="copy-btn"
+        style="font-family: Garamond; color:#245b80;"
+        onclick="copyEmail()"
+        aria-label="Copy email"
+        title="Copy email">
+        ⧉
+    </button>
+
+    <span id="copy-feedback"></span>
+</div>
         </div>
 
         <div class="contact-link-group secondary-link">
@@ -1446,6 +1549,23 @@ section[id] {
 
   <!-- MAIN SCRIPT -->
   <script src="js/main.js"></script>
+<script>
+    function copyEmail() {
+        navigator.clipboard.writeText("monolinasarkar1@gmail.com")
+            .then(() => {
+                const feedback = document.getElementById("copy-feedback");
+                feedback.textContent = "Copied!";
 
+                setTimeout(() => {
+                    feedback.textContent = "";
+                }, 1500);
+            })
+            .catch(() => {
+                alert("Unable to copy email. Please copy it manually.");
+            });
+    }
+</script>
+</body>
+</html>
 </body>
 </html>

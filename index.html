@@ -30,7 +30,7 @@
     /* Section 01: Hero */
     #home {
       width: 100%;
-    
+
       box-sizing: border-box;
       padding: clamp(60px, 9vw, 100px) 24px clamp(0px, 3vw, 25px);
       display: flex;
@@ -71,7 +71,7 @@
       width: 100%;
       color: #000000;
       font-family: 'Garamond';
-      
+
       font-weight: 400;
       line-height: 1.6;
 
@@ -227,7 +227,7 @@
     .thinking-section-wrap {
       width: 100%;
       background-color: #F0F1F3;
-     
+
       border-bottom: 1px solid #e4e8e2;
       box-sizing: border-box;
     }
@@ -243,7 +243,7 @@
     .thinking-grid {
       display: grid;
       grid-template-columns: repeat(3, minmax(0, 1fr));
-      gap: 70px;
+      gap: 100px;
       align-items: start;
     }
 
@@ -384,7 +384,7 @@
       position: relative;
       width: 100%;
       padding: clamp(50px, 7vw, 76px) 0 clamp(60px, 8vw, 88px);
-   
+
       color: #000000;
       font-family: Garamond, Georgia, serif;
       box-sizing: border-box;
@@ -459,7 +459,7 @@
       align-items: center;
       gap: 6px;
       padding-bottom: 4px;
-     
+
       font-family: Garamond;
       font-size: 12px;
       font-weight: 600;
@@ -694,7 +694,7 @@
     }
 
     .research-card h2 {
-      font-family: 'Playfair Display', serif;
+      font-family: Garamond;
       color: #000000;
       font-size: clamp(22px, 2.3vw, 28px);
       line-height: 1.35;
@@ -753,7 +753,7 @@
       color: #245b80;
       margin: 0 0 24px;
     }
-  
+
 
     .join-kaizen-divider {
       width: 65px;
@@ -779,11 +779,11 @@
       width: 100%;
       min-width: 0;
       padding: 35px 25px;
-      
+
       box-sizing: border-box;
       text-align: center;
-     
-     
+
+
     }
 
     .enso-card img {
@@ -817,7 +817,7 @@
       /*padding: 38px 5% 20px;*/
       box-sizing: border-box;
       background:#F0F4FA;
-      
+
     }
 
     .footer-v2-container {
@@ -891,16 +891,11 @@
 
     .footer-bottom-links a:hover {
       color: #17619b;
-      
-    }
-    /* ACTIVE NAVIGATION STATE */
 
-.site-header .nav-link.active,
-.mobile-drawer .nav-link.active {
-    color: #17619b !important;
-    font-weight: 600;
-    transition: color 0.3s ease;
-}
+    }
+
+
+
 /* =========================================
    RESEARCH FOCUS — RESPONSIVE DESIGN
 ========================================= */
@@ -1200,7 +1195,7 @@
 
 .footer-enso-caption span {
     font-family: Garamond;
-    font-size: 17px;
+    font-size: 20px;
     font-weight: 600;
     letter-spacing: 3.5px;
 }
@@ -1209,14 +1204,14 @@
 .footer-enso-caption p {
     margin: 8px 0 0;
     font-family: Garamond, Georgia, serif;
-    font-size: 17px;
+    font-size:20px;
     font-style: italic;
     line-height: 1.5;
     white-space: nowrap;
 }
 @media (max-width: 600px) {
     .footer-enso-caption p {
-        font-size: 14px;
+        font-size: 17px;
         white-space: normal;
     }
 }
@@ -1370,7 +1365,7 @@
 }
 
 .footer-social-links a:hover {
-    opacity: 0.65;
+    color:#245b80;
 }
 
 
@@ -1619,7 +1614,7 @@ main section,
     #research-work .rw-citation,
     #research-work .rw-contribution,
     .research-card .card-description,
-    #home 
+    #home
     .join-kaizen-text,
     .footer-connect-content > p {
         font-size: 17px !important;
@@ -1648,78 +1643,821 @@ main section,
     font-style: italic;
     font-weight: 400;
 }
-  </style>
-</head>
+/* ENSO LOGO AND TAGLINE — CENTRED ALIGNMENT */
 
-<body>
+.footer-enso {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.footer-enso-image {
+    display: block;
+    margin: 0 auto;
+}
+
+.footer-enso-caption {
+    width: 100%;
+    max-width: 320px;
+    margin: 20px auto 0;
+    text-align: center;
+}
+.contact-arrow {
+    display: inline-block;
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+.contact-arrow {
+    transform: translate(3px, -3px);
+}
+
+
+.read-more {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.read-more:hover {
+    color: #245b80;
+}
+.contact-arrow {
+    display: inline-block;
+    font-size: 14px;
+    color: black;
+    transition: transform 0.3s ease, color 0.3s ease;
+    transform: translate(0, 0);
+}
+
+a:hover .contact-arrow {
+    transform: translate(3px, -3px);
+    color: #245b80;
+}
+body .footer-enso-caption p {
+    width: 100%;
+    margin: 8px auto 0;
+    text-align: center;
+    font-family: Garamond, Georgia, serif !important;
+    font-size: 20px !important;
+    font-style: italic !important;
+    line-height: 1.5 !important;
+    font-weight: 400 !important;
+    white-space: normal;
+}
+  </style>
+
+<style>
+
+
+
+
+
+
+/* =========================================
+   PROFESSIONAL ACADEMIC FOOTER
+   Original backgrounds and buttons preserved
+========================================= */
+
+
+/* =========================================
+   MAIN FOOTER
+========================================= */
+
+.academic-footer {
+    width: 100%;
+    overflow: hidden;
+    font-family: Garamond, Georgia, serif;
+}
+
+
+/* =========================================
+   TOP CONNECT SECTION
+========================================= */
+
+.footer-connect {
+    padding: 75px 7%;
+    background: #F0F4FA;
+}
+
+.footer-connect-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1.35fr 0.65fr;
+    align-items: center;
+    gap: 70px;
+}
+
+
+/* LEFT CONTENT */
+
+.footer-eyebrow {
+    display: inline-block;
+    margin-bottom: 18px;
+
+    font-family: Garamond;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+}
+
+.footer-connect-content h2 {
+    margin: 0;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: clamp(38px, 5vw, 56px);
+    font-weight: 400;
+    line-height: 1.15;
+}
+
+.footer-connect-content h2 span {
+    font-style: italic;
+}
+
+.footer-gold-line {
+    width: 65px;
+    height: 2px;
+    margin: 25px 0;
+    background: currentColor;
+    opacity: 0.55;
+}
+
+.footer-connect-content > p {
+    max-width: 500px;
+    margin: 0 0 15px;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 17px;
+    line-height: 1.7;
+}
+
+.footer-email-line a {
+    text-decoration: none;
+    border-bottom: 1px solid transparent;
+    transition: border-color 0.3s ease;
+}
+
+.footer-email-line a:hover {
+    border-bottom-color: currentColor;
+}
+
+
+/* =========================================
+   ACTION BUTTONS
+   Original button styling preserved
+========================================= */
+
+.footer-actions {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 28px;
+}
+
+
+/* =========================================
+   ENSO IMAGE
+========================================= */
+
+.footer-enso {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.footer-enso-image {
+    width: 225px;
+    height: 225px;
+    padding: 10px;
+
+    border: 1px solid rgba(128, 128, 128, 0.4);
+    border-radius: 50%;
+}
+
+.footer-enso-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.footer-enso-caption {
+    max-width: 260px;
+    margin-top: 20px;
+}
+
+.footer-enso-caption span {
+    font-family: Garamond;
+    font-size: 17px;
+    font-weight: 600;
+    letter-spacing: 3.5px;
+}
+
+
+.footer-enso-caption p {
+    margin: 8px 0 0;
+    font-family: Garamond, Georgia, serif;
+    font-size: 17px;
+    font-style: italic;
+    line-height: 1.5;
+    white-space: nowrap;
+}
+@media (max-width: 600px) {
+    .footer-enso-caption p {
+        font-size: 14px;
+        white-space: normal;
+    }
+}
+/* =========================================
+   LOWER FOOTER
+========================================= */
+
+.footer-main {
+    padding: 0px 7% 25px;
+    background: transparent;
+}
+
+.footer-main-inner {
+    max-width: 1180px;
+    margin: 0 auto;
+}
+
+.footer-main-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 35px;
+}
+
+
+/* =========================================
+   BRAND
+========================================= */
+
+.footer-brand-name {
+    display: inline-block;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 25px;
+    font-weight: 500;
+    letter-spacing: 4px;
+
+    color: inherit;
+    text-decoration: none;
+}
+
+.footer-brand p {
+    margin: 8px 0 0;
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.footer-brand p span {
+    padding: 0 4px;
+}
+
+
+/* =========================================
+   FOOTER NAVIGATION
+========================================= */
+
+.footer-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    flex-wrap: wrap;
+    gap: 22px;
+}
+
+.footer-navigation a {
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    letter-spacing: 0.5px;
+
+    color: inherit;
+    text-decoration: none;
+
+    transition: opacity 0.3s ease;
+}
+
+.footer-navigation a:hover {
+    opacity: 0.7;
+}
+
+
+/* CV LINK */
+
+.footer-navigation .footer-cv-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+
+    padding: 10px 15px;
+
+    border: 1px solid currentColor;
+    color: inherit;
+
+    transition: all 0.3s ease;
+}
+
+.footer-navigation .footer-cv-link:hover {
+    opacity: 0.7;
+}
+
+
+/* =========================================
+   DIVIDER
+========================================= */
+
+.footer-divider {
+    width: 100%;
+    height: 1px;
+    margin: 32px 0 22px;
+
+    background: currentColor;
+    opacity: 0.2;
+}
+
+
+/* =========================================
+   COPYRIGHT AND PROFESSIONAL LINKS
+========================================= */
+
+.footer-bottom {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.footer-copyright {
+    margin: 0;
+
+    font-family: Garamond;
+    font-size: 17px;
+    letter-spacing: 0.3px;
+}
+
+.footer-social-links {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 24px;
+}
+
+.footer-social-links a {
+    font-family: Garamond;
+    font-size: 17px;
+    color: inherit;
+    text-decoration: none;
+
+    transition: opacity 0.3s ease;
+}
+
+.footer-social-links a:hover {
+    opacity: 0.65;
+}
+
+
+/* =========================================
+   TABLET RESPONSIVENESS
+========================================= */
+
+@media (max-width: 900px) {
+
+    .footer-connect {
+        padding: 65px 6%;
+    }
+
+    .footer-connect-inner {
+        grid-template-columns: 1.2fr 0.8fr;
+        gap: 35px;
+    }
+
+    .footer-enso-image {
+        width: 190px;
+        height: 190px;
+    }
+
+    .footer-main-top {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 28px;
+    }
+
+    .footer-navigation {
+        justify-content: flex-start;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE RESPONSIVENESS
+========================================= */
+
+@media (max-width: 600px) {
+
+    .footer-connect {
+        padding: 55px 23px;
+    }
+
+    .footer-connect-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-connect-content h2 {
+        font-size: 39px;
+    }
+
+    .footer-connect-content > p {
+        font-size: 17px;
+    }
+
+    .footer-actions {
+        gap: 12px;
+    }
+
+    .footer-enso-image {
+        width: 175px;
+        height: 175px;
+    }
+
+    .footer-main {
+        padding: 38px 23px 24px;
+    }
+
+    .footer-brand-name {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .footer-navigation {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: start;
+        gap: 19px 15px;
+        width: 100%;
+    }
+
+    .footer-navigation .footer-cv-link {
+        width: fit-content;
+    }
+
+    .footer-divider {
+        margin: 26px 0 20px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .footer-social-links {
+        gap: 18px;
+    }
+
+}
+
+.copy-btn {
+    background: none;
+    border: none;
+    color: inherit;
+    cursor: pointer;
+    font-size: 18px;
+    margin-left: 6px;
+    opacity: 0.7;
+    font-family: Garamond;
+}
+
+.copy-btn:hover {
+    opacity: 1;
+     font-family: Garamond;
+}
+/* =========================================
+   SMALL MOBILE SCREENS
+========================================= */
+
+@media (max-width: 380px) {
+
+    .footer-connect-content h2 {
+        font-size: 34px;
+    }
+
+    .footer-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-navigation {
+        gap: 17px 10px;
+    }
+
+    .footer-social-links {
+        gap: 13px;
+    }
+
+}
+
+
+@media (max-width: 600px) {
+
+    .footer-connect {
+        padding: 55px 23px;
+    }
+
+    .footer-connect-inner {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+
+    .footer-connect-content h2 {
+        font-size: 39px;
+    }
+
+    .footer-connect-content > p {
+        font-size: 17px;
+    }
+
+    .footer-actions {
+        gap: 12px;
+    }
+
+    .footer-enso-image {
+        width: 175px;
+        height: 175px;
+    }
+
+    .footer-main {
+        padding: 38px 23px 24px;
+    }
+
+    .footer-brand-name {
+        font-size: 22px;
+        letter-spacing: 3px;
+    }
+
+    .footer-navigation {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        justify-content: start;
+        gap: 19px 15px;
+        width: 100%;
+    }
+
+    .footer-navigation .footer-cv-link {
+        width: fit-content;
+    }
+
+    .footer-divider {
+        margin: 26px 0 20px;
+    }
+
+    .footer-bottom {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 18px;
+    }
+
+    .footer-social-links {
+        gap: 18px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE SCREENS
+========================================= */
+
+@media (max-width: 380px) {
+
+    .footer-connect-content h2 {
+        font-size: 34px;
+    }
+
+    .footer-actions {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    .footer-navigation {
+        gap: 17px 10px;
+    }
+
+    .footer-social-links {
+        gap: 13px;
+    }
+
+}
+/* =========================================
+   MOBILE NAVIGATION DRAWER
+========================================= */
+
+.mobile-drawer {
+    display: none;
+    position: fixed;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    max-height: calc(100vh - 70px);
+    overflow-y: auto;
+    background: #ffffff;
+    padding: 15px 20px 25px;
+    box-sizing: border-box;
+    z-index: 9999;
+    flex-direction: column;
+}
+
+/* Show drawer when opened */
+.mobile-drawer.is-open {
+    display: flex;
+}
+
+/* Individual navigation links */
+.mobile-drawer .nav-link {
+    display: block;
+    width: 100%;
+    padding: 14px 12px;
+    box-sizing: border-box;
+    color: #222222;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+/* Active link */
+.mobile-drawer .nav-link.active {
+    color: #17619b !important;
+    font-weight: 700;
+    border-bottom: 2px solid #17619b;
+}
+
+/* Mobile screen */
+@media (min-width: 821px) {
+    .mobile-drawer {
+        display: none !important;
+    }
+}
+</style>
+</head>
 
   <!-- Skip Links -->
   <div class="skip-links">
     <a href="#main-content" class="skip-link">Skip to main content</a>
     <a href="#site-header" class="skip-link">Skip to navigation</a>
     <a href="#site-footer" class="skip-link">Skip to footer</a>
-    <button type="button" class="skip-link" id="skip-a11y-btn">Open Accessibility Preferences (Alt+A)</button>
+    <button type="button" class="skip-link" id="skip-a11y-btn">
+      Open Accessibility Preferences (Alt+A)
+    </button>
   </div>
+<!-- NAVIGATION BAR -->
+<header class="site-header" id="site-header" role="banner"
+  style="background:#ffffff; border-bottom:1px solid #e9e7e3; padding:18px 0;">
 
-  <!-- NAVIGATION BAR -->
-  <header class="site-header" id="site-header" role="banner" style="background:#ffffff; border-bottom:1px solid #e9e7e3; padding: 18px 0;">
-    <div class="container navbar" style="height: auto; min-height: 60px;margin-top: 30px; margin-bottom: 30px;">
-      
-      <!-- BRAND -->
-      <a href="#home" class="brand" aria-label="Monolina Sarkar Home" style="text-decoration:none;">
-        <span class="brand-name" style="font-family:'Garamond'; font-size:24px; font-weight:500; letter-spacing:5px; line-height:1.15; white-space:nowrap; color:#000000; ">
-          MONOLINA SARKAR
-        </span>
-        <span class="brand-subtitle" style="margin-top:4px; font-family:'Garamond'; font-size:15px; font-weight:500; letter-spacing:0.2px; color:#000000;">
-          Discipline-Based Education Research &middot; Andragogy
-        </span>
+  <div class="container navbar"
+    style="height:auto; min-height:60px; margin-top:30px; margin-bottom:30px;">
+
+    <!-- BRAND -->
+    <a href="index.html#home" class="brand"
+       aria-label="Monolina Sarkar Home"
+       style="text-decoration:none;">
+
+      <span class="brand-name"
+        style="font-family:'Garamond'; font-size:24px; font-weight:500;
+        letter-spacing:5px; line-height:1.15; white-space:nowrap; color:#000000;">
+        MONOLINA SARKAR
+      </span>
+
+      <span class="brand-subtitle"
+        style="margin-top:4px; font-family:'Garamond'; font-size:15px;
+        font-weight:500; letter-spacing:0.2px; color:#000000;">
+        Discipline-Based Education Research &middot; Andragogy
+      </span>
+
+    </a>
+
+    <!-- DESKTOP NAVIGATION -->
+    <nav aria-label="Primary Navigation" role="navigation">
+
+      <ul class="nav-links" style="gap:28px;">
+
+        <li>
+          <a href="index.html#home" class="nav-link active"
+             style="font-family:'Garamond'; font-size:1.05rem;">
+            Home
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#research-focus" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+            Research
+          </a>
+        </li>
+
+        <li>
+          <a href="index.html#practice-areas" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+           Programs
+          </a>
+        </li>
+
+        <li>
+          <a href="about.html" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+            About
+          </a>
+        </li>
+
+
+
+        <li>
+          <a href="contact.html" class="nav-link"
+             style="font-family:'Garamond'; font-size:1.15rem;">
+            Contact
+          </a>
+        </li>
+
+      </ul>
+
+    </nav>
+
+    <!-- NAVIGATION ACTIONS -->
+    <div class="nav-actions">
+
+      <a href="Monolina_Sarkar_cv.pdf"
+         target="_blank"
+         rel="noopener noreferrer"
+         class="btn-nav-cv"
+         data-drive-doc="academicCv"
+         aria-label="View Academic Curriculum Vitae">
+        Download CV
       </a>
 
-      <!-- DESKTOP NAVIGATION LINKS -->
-      <nav aria-label="Primary Navigation" role="navigation">
-        <ul class="nav-links" style="gap: 28px;">
-          <li><a href="#home" class="nav-link active" style="font-family:'Garamond';  font-size: 1.05rem;">Home</a></li>
-         
-          <li><a href="#research-focus" class="nav-link" style="font-family:'Garamond'; font-size:1.15rem;">Research</a></li>
-          <li><a href="#practice-areas" class="nav-link" style="font-family:'Garamond'; font-size:1.15rem;">Practice areas</a></li>
-           <li><a href="about.html" class="nav-link" style="font-family:'Garamond'; font-size:1.15rem;">About</a></li>
-           <li><a href="contact.html" class="nav-link" style="font-family:'Garamond'; font-size:1.15rem;">Contact</a></li>
-        </ul>
-      </nav>
+      <button class="mobile-toggle"
+              type="button"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+              aria-controls="mobile-drawer">
 
-      <!-- NAV ACTIONS -->
-      <div class="nav-actions">
-         <!-- SECONDARY BUTTON -->
-        <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-drive-doc="academicCv">
-          <span style="font-family: Garamond; font-weight: 400;">Download CV</span>
-          
-        </a>
-        <button class="mobile-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
+        <span></span>
+        <span></span>
+        <span></span>
+
+      </button>
 
     </div>
-  </header>
 
-  <!-- MOBILE NAVIGATION DRAWER -->
-  <div class="mobile-drawer" id="mobile-drawer" aria-label="Mobile Navigation">
-    <a href="#home" class="nav-link active">Home</a>
-    <a href="about.html" class="nav-link">About</a>
-  <a href="#research-focus" class="nav-link">Research</a>
-    <a href="#practice-areas" class="nav-link">Practice areas</a>
-    <a href="contact.html" class="nav-link">Contact</a>
-    <a href="accessibility-statement.html" class="nav-link">Accessibility Statement</a>
-    <div style="margin-top: 1.5rem;">
-        <!-- SECONDARY BUTTON -->
-        <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-drive-doc="academicCv">
-          <span style="font-family: Garamond; font-weight: 400;">Download CV</span>
-          
-        </a>
-    </div>
   </div>
+</header>
+
+
+<!-- MOBILE NAVIGATION DRAWER -->
+<div class="mobile-drawer" id="mobile-drawer"
+     aria-label="Mobile Navigation">
+
+  <a href="index.html#home" class="nav-link active">Home</a>
+
+
+
+  <a href="index.html#research-focus" class="nav-link">Research</a>
+
+  <a href="index.html#practice-areas" class="nav-link">Practice areas</a>
+   <a href="about.html" class="nav-link">About</a>
+  <a href="contact.html" class="nav-link">Contact</a>
+
+
+
+  <div style="margin-top:1.5rem;">
+
+    <a href="Monolina_Sarkar_cv.pdf"
+       target="_blank"
+       rel="noopener noreferrer"
+       class="btn btn-primary"
+       data-drive-doc="academicCv"
+       style="width:100%; text-align:center;">
+
+      View Academic CV
+
+    </a>
+
+  </div>
+
+</div>
+</body>
 
   <!-- MAIN CONTENT -->
   <main id="main-content">
@@ -1746,27 +2484,26 @@ main section,
       <!-- CALL-TO-ACTION BUTTONS -->
       <div class="hero-cta-group">
         <!-- PRIMARY BUTTON -->
-        
+
 
           <a href="#research-focus" class="btn btn-gold">
     <span style="font-family: Garamond; font-weight: 400;">
         Explore Research
     </span>
 </a>
-        </a>
 
         <!-- SECONDARY BUTTON -->
         <a href="Monolina_Sarkar_cv.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-secondary" data-drive-doc="academicCv">
           <span style="font-family: Garamond; font-weight: 400;">Download CV</span>
-          
+
         </a>
 
         <!-- GOLD BUTTON -->
-       
+
         <a href="contact.html" class="btn btn-primary">
           <span style="font-family: Garamond; font-weight: 400;">Connect With Me</span>
 
-        </a> 
+        </a>
       </div>
 
     </section>
@@ -1789,107 +2526,215 @@ main section,
         </header>
 
 
- 
+
 <style>
 
+
 /* =========================================
-   RESEARCH CONTENT
+   RESEARCH EDITORIAL LAYOUT
 ========================================= */
+
+.research-content,
+.research-content * {
+    box-sizing: border-box;
+}
 
 .research-content {
     width: 100%;
-    max-width: 1050px;
+    max-width: 1100px;
     margin: 0 auto;
 
     display: grid;
-    grid-template-columns: 210px minmax(0, 1fr);
-    gap: 48px;
+    grid-template-columns: 145px minmax(0, 1fr);
+    gap: 116px;
 
     align-items: start;
-    box-sizing: border-box;
-}
 
-/* LEFT EDITORIAL GUTTER */
+}
 
 .research-sidebar {
     min-width: 0;
-    box-sizing: border-box;
 }
 
-/* RIGHT CONTENT */
-
 .research-main {
+    width: 100%;
     min-width: 0;
+}
+
+
+/* =========================================
+   INTRODUCTION
+========================================= */
+
+.research-intro {
     width: 100%;
 }
 
-/* INTRODUCTION */
-
-.research-intro {
-    padding: 20px 0 24px;
-    border-bottom: 1px solid #E2E5DE;
+.research-intro-content {
+    width: 100%;
+    max-width: 720px;
 }
 
-.research-intro p {
-    max-width: 680px;
-    margin: 0;
-
-    font-family: Garamond, Georgia, serif;
-    font-size: 18px;
-    line-height: 1.65;
-
-    color: #222;
-    text-align: justify;
-}
-
-/* RESEARCH THEMES */
-
-.research-themes {
-    display: grid;
-    grid-template-columns: minmax(0, 1fr);
-}
-
-.research-theme {
-    display: grid;
-    grid-template-columns: 38px minmax(0, 1fr);
-    gap: 13px;
-
-    padding: 19px 0;
-    border-bottom: 1px solid #E2E5DE;
-
-    box-sizing: border-box;
-}
-
-.research-number {
-    padding-top: 3px;
+.research-lead {
+    margin: 0 0 25px;
 
     font-family: Garamond, Georgia, serif;
     font-size: 17px;
-    letter-spacing: 0.5px;
-
-    color: #7E8B7A;
-}
-
-.research-theme h3 {
-    margin: 0 0 6px;
-
-    font-family: Garamond, Georgia, serif;
-    font-size: 22px;
     font-weight: 400;
-    line-height: 1.3;
+    line-height: 1.75;
 
-    color: #26382D;
+    color: #000;
+    text-align: left;
 }
 
-.research-theme p {
-    max-width: 650px;
+.research-description {
     margin: 0;
 
     font-family: Garamond, Georgia, serif;
     font-size: 17px;
-    line-height: 1.6;
+    font-weight: 400;
+    line-height: 1.75;
 
-    color: #222;
+    color: #000;
+    text-align: left;
+}
+
+
+/* =========================================
+   EDITORIAL DIVIDER
+========================================= */
+
+.research-divider {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    width: 100%;
+    max-width: 720px;
+
+    margin: 38px 0 32px;
+}
+
+.research-divider span {
+    width: 32px;
+    height: 2px;
+    background: #245b80;
+}
+
+.research-divider small {
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    color: #82919a;
+}
+
+
+/* =========================================
+   PHILOSOPHY BOX
+========================================= */
+
+.research-philosophy {
+    width: 100%;
+    max-width: 720px;
+
+    padding: 27px 30px 29px;
+
+    background: #f2f5f6;
+    border-left: 3px solid #245b80;
+}
+
+.philosophy-label {
+    display: block;
+    margin-bottom: 17px;
+
+    font-family: Arial, sans-serif;
+    font-size: 9px;
+    font-weight: 600;
+    letter-spacing: 2.5px;
+
+    color: #245b80;
+}
+
+
+/* =========================================
+   PHILOSOPHY TEXT
+========================================= */
+
+.philosophy-text {
+    /*margin: 0 0 23px;*/
+
+    font-family: Garamond, Georgia, serif;
+    font-size: 17px;
+    font-weight: 400;
+    line-height: 1.75;
+
+    color: #000;
+}
+
+.philosophy-text a {
+    color: #245b80;
+    font-weight: 600;
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(36, 91, 128, 0.4);
+
+    transition: color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.philosophy-text a:hover {
+    color: #153d59;
+    border-color: #153d59;
+}
+
+
+/* =========================================
+   PHILOSOPHY LINKS
+========================================= */
+
+.philosophy-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    padding-top: 18px;
+    border-top: 1px solid #dce3e6;
+}
+
+.philosophy-links a {
+    display: inline-flex;
+    align-items: center;
+    gap: 12px;
+
+    padding-bottom: 5px;
+
+    font-family: Arial, sans-serif;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+
+    color: #245b80;
+    text-decoration: none;
+
+    border-bottom: 1px solid rgba(36, 91, 128, 0.4);
+
+    transition: color 0.3s ease,
+                border-color 0.3s ease;
+}
+
+.philosophy-links a span {
+    font-size: 14px;
+    transition: transform 0.3s ease;
+}
+
+.philosophy-links a:hover {
+    color: #153d59;
+    border-color: #153d59;
+}
+
+.philosophy-links a:hover span {
+    transform: translate(3px, -3px);
 }
 
 
@@ -1900,24 +2745,18 @@ main section,
 @media (max-width: 900px) {
 
     .research-content {
-        grid-template-columns: minmax(0, 1fr);
+        grid-template-columns: 1fr;
         gap: 0;
-        width: 100%;
+        padding: 35px 22px 65px;
     }
 
     .research-sidebar {
         display: none;
     }
 
-    .research-main {
-        width: 100%;
-    }
-
-    .research-intro p {
-        max-width: 100%;
-    }
-
-    .research-theme p {
+    .research-intro-content,
+    .research-divider,
+    .research-philosophy {
         max-width: 100%;
     }
 
@@ -1928,57 +2767,35 @@ main section,
    MOBILE
 ========================================= */
 
-@media (max-width: 600px) {
+@media (max-width: 650px) {
 
     .research-content {
-        width: 100%;
-        padding: 0;
+        padding: 30px 20px 55px;
     }
 
-    .research-intro {
-        padding: 12px 0 20px;
-    }
-
-    .research-intro p {
+    .research-lead,
+    .research-description,
+    .philosophy-text {
         font-size: 17px;
-        line-height: 1.65;
-        text-align: left;
+        line-height: 1.7;
     }
 
-    .research-theme {
-        grid-template-columns: 28px minmax(0, 1fr);
-        gap: 10px;
-
-        padding: 16px 0;
+    .research-divider {
+        margin: 32px 0;
     }
 
-    .research-number {
-        font-size: 15px;
+    .research-philosophy {
+        padding: 23px 20px;
     }
 
-    .research-theme h3 {
-        font-size: 20px;
-        line-height: 1.3;
-        margin-bottom: 5px;
-    }
-
-    .research-theme p {
-        font-size: 16px;
-        line-height: 1.55;
+    .philosophy-links {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 18px;
     }
 
 }
-@media (max-width: 900px) {
-    #home .hero-desc {
-        white-space: normal;
-    }
-}
-#research-focus .research-intro p,
-#research-focus .research-theme p {
-    font-family: Garamond, Georgia, serif !important;
-    font-size: 17px !important;
-    line-height: 1.6 !important;
-}
+
 
 /* =========================================
    SMALL MOBILE
@@ -1986,22 +2803,24 @@ main section,
 
 @media (max-width: 380px) {
 
-    .research-intro p {
-        font-size: 17px;
+    .research-content {
+        padding-right: 16px;
+        padding-left: 16px;
     }
 
-    .research-theme {
-        grid-template-columns: 25px minmax(0, 1fr);
-        gap: 8px;
-    }
+}
 
-    .research-theme h3 {
-        font-size: 19px;
-    }
 
-    .research-theme p {
-        font-size: 15px;
-        line-height: 1.55;
+/* =========================================
+   ACCESSIBILITY
+========================================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+    .philosophy-links a,
+    .philosophy-links a span,
+    .philosophy-text a {
+        transition: none;
     }
 
 }
@@ -2009,7 +2828,12 @@ main section,
 </style>
 
 
+<!-- =========================================
+     RESEARCH CONTENT
+========================================= -->
+
 <div class="research-content">
+
 
     <!-- LEFT EDITORIAL GUTTER -->
 
@@ -2017,99 +2841,92 @@ main section,
     </aside>
 
 
-    <!-- RIGHT EDITORIAL CONTENT -->
+    <!-- MAIN CONTENT -->
 
-    <div class="research-main">
+    <main class="research-main">
+
 
         <!-- INTRODUCTION -->
 
-        <div class="research-intro">
+        <section class="research-intro"
+                 aria-label="Research introduction">
 
-            <p>
-                My academic journey, shaped by a Ph.D. in Biochemistry,
-                an M.A. in Education, and over a decade of teaching
-                biology in higher education, informs my interest in
-                Discipline-Based Education Research (DBER). My research
-                explores how students develop biological understanding,
-                connect concepts across levels of organization, and
-                transfer knowledge to unfamiliar contexts, particularly
-                through inquiry- and problem-based learning.
+            <div class="research-intro-content">
+
+                <p class="research-lead" style="text-align:justify; margin-top: 50px;">
+
+                    My academic journey, shaped by a Ph.D. in
+                    Biochemistry and an M.A. in Education, informs
+                    my engagement with Discipline-Based Education
+                    Research (DBER). My work is rooted in the
+                    intersection of disciplinary knowledge,
+                    educational research, and teaching practice
+                    in higher education.
+
+                </p>
+
+
+                <p class="research-description"style="text-align:justify;">
+
+                    I view biology classrooms as important contexts
+                    for investigating how students develop scientific
+                    reasoning, integrate concepts across different
+                    levels of biological organisation, and apply
+                    knowledge to unfamiliar contexts. My teaching
+                    experience informs my research questions, while
+                    educational research continually shapes how I
+                    design learning experiences, engage students,
+                    and reflect on pedagogical decisions.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+
+
+
+
+
+
+
+        <!-- RESEARCH AND TEACHING PHILOSOPHIES -->
+
+        <section class="research-philosophy" style="margin-top:50px;"
+                 aria-label="Research and teaching philosophies">
+
+
+
+            <p class="philosophy-text" style="text-align: justify;">
+
+                My disciplinary background in biochemistry and
+                engagement with biology education research inform
+                how I approach questions of student understanding,
+                conceptual integration, and the teaching of biology.
+                These perspectives find expression in my
+                <a href="research-philosophy.html">Research Philosophy</a>
+                and
+                <a href="teaching-philosophy.html">Teaching Philosophy</a>,
+                which articulate the scholarly interests and
+                pedagogical commitments that shape my work in
+                higher education.
+
             </p>
 
-        </div>
 
 
-        <!-- RESEARCH THEMES -->
 
-        <div class="research-themes">
-
-
-            <!-- THEME 01 -->
-
-            <article class="research-theme">
-
-                <span class="research-number">01</span>
-
-                <div>
-
-                    <h3>Critical Thinking</h3>
-
-                    <p>
-                        How students analyse scientific problems,
-                        evaluate evidence, and construct evidence-based
-                        explanations.
-                    </p>
-
-                </div>
-
-            </article>
+        </section>
 
 
-            <!-- THEME 02 -->
+    </main>
 
-            <article class="research-theme">
-
-                <span class="research-number">02</span>
-
-                <div>
-
-                    <h3>Systems Thinking</h3>
-
-                    <p>
-                        How students connect biological processes and
-                        phenomena to develop an integrated understanding
-                        of biological systems.
-                    </p>
-
-                </div>
-
-            </article>
+</div>
 
 
-            <!-- THEME 03 -->
-
-            <article class="research-theme">
-
-                <span class="research-number">03</span>
-
-                <div>
-
-                    <h3>Sociocultural Perspectives</h3>
-
-                    <p>
-                        How social interactions, learning environments,
-                        and broader sociocultural contexts shape
-                        students' engagement and reasoning.
-                    </p>
-
-                </div>
-
-            </article>
-
-
-        </div>
-
-    </div>
+</div>
 
 </div>
 
@@ -2144,9 +2961,7 @@ main section,
             &ldquo;When AI can provide the answer, can learners retain ownership of scientific reasoning?&rdquo;
           </blockquote>
 
-          <p class="card-description">
-            I explore how learners engage with AI, focusing on whether they formulate questions, evaluate scientific evidence, test predictions, and construct evidence-based explanations rather than simply accept AI-generated answers.
-          </p>
+
         </article>
 
         <!-- COLUMN 02: KAIZEN -->
@@ -2162,9 +2977,7 @@ main section,
             &ldquo;What can persistent misconceptions reveal about how learners organize knowledge&mdash;and how can it inform instructional improvement?&rdquo;
           </blockquote>
 
-          <p class="card-description">
-            I examine persistent misconceptions in higher education biology as indicators of underlying conceptual difficulties, using patterns in student responses to inform instructional improvement.
-          </p>
+
         </article>
 
         <!-- COLUMN 03: BECOMING -->
@@ -2177,18 +2990,14 @@ main section,
           <h2>Becoming</h2>
 
           <blockquote class="card-question">
-            &ldquo;How can biology learning environments enable students to express themselves, exercise agency, and find their place in science?&rdquo;
+            &ldquo;How can learning environments enable students to express themselves, exercise agency, and find their place in science?&rdquo;
           </blockquote>
 
-          <p class="card-description">
-            Exploring how learning environments support learners in developing scientific confidence, exercising choice, and participating in ways that reflect their strengths, interests, and experiences.
-          </p>
 
-          <div class="card-extra" id="becoming-extra">
-            This research vector examines pedagogical mechanisms that bridge academic biological competencies with students' personal epistemologies, fostering belonging and authentic identity formation in STEM.
-          </div>
 
-        
+
+
+
         </article>
 
       </div>
@@ -2236,17 +3045,19 @@ main section,
               href="https://orcid.org/0000-0002-8172-1111"
               target="_blank"
               rel="noopener noreferrer"
-              class="rw-profile-link" style="color: #245b80;">
-              ORCID  <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease; color: #245b80;">↗</span>
+            style="color: #245b80;">
+              ORCID  <span class="contact-arrow" aria-hidden="true" style="color: #245b80;font-size:17px;">↗</span>
             </a>
 
-            <a
-              href="https://www.scopus.com"
+
+  <a
+              href="https://www.webofscience.com/wos/author/record/GRY-0666-2022"
               target="_blank"
               rel="noopener noreferrer"
-              class="rw-profile-link"style="color: #245b80;">
-              SCOPUS  <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease; color: #245b80;">↗</span>
+            style="color: #245b80;">
+              Web of Science <span class="contact-arrow" aria-hidden="true" style="color: #245b80;font-size:17px;">↗</span>
             </a>
+
           </div>
 
         </div>
@@ -2260,15 +3071,15 @@ main section,
             data-year="2023"
             data-search="2023 Sarkar light-responsive biodegradation wastewater pollutants new developments potential perspectives Journal of Hazardous Materials Advances review article photo-assisted biological mechanisms microbial photocatalytic synergies effluent remediation">
             <div class="rw-publication-meta">
-              <a
-                class="rw-publication-type" 
-                href="https://doi.org/10.1016/j.hazadv.2023.100281"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open review article">
-                <span>Review Article</span>
-                  <span class="rw-type-arrow" aria-hidden="true">↗</span>
-              </a>
+
+  <a
+              href="https://doi.org/10.1016/j.hazadv.2023.100281"
+              target="_blank"
+              rel="noopener noreferrer"
+            style="color: #245b80;">
+             Review Article <span class="contact-arrow" aria-hidden="true" style="color: #245b80;font-size:17px;">↗</span>
+            </a>
+
             </div>
             <p class="rw-citation">
               <strong>Sarkar, M.</strong> (2023).
@@ -2290,15 +3101,13 @@ main section,
             data-year="2023"
             data-search="2023 Das Sarkar Paul tools approaches assessing stress-responsive secondary metabolites climate-smart crops Biology Biotechnology Environmental Stress Tolerance Plants book chapter methodological frameworks metabolomic profiling stress-resilient crop development">
             <div class="rw-publication-meta">
-              <a
-                class="rw-publication-type"
-                href="https://www.appleacademicpress.com/"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Visit the publisher for the book chapter">
-                <span>Book Chapter</span>
-                 <span class="rw-type-arrow" aria-hidden="true">↗</span>
-              </a>
+             <a
+              href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003346173-15/tools-approaches-assessing-stress-responsive-secondary-metabolites-design-climate-smart-crops-debapriya-rajlakshmi-das-monolina-sarkar-anindita-paul"
+              target="_blank"
+              rel="noopener noreferrer"
+            style="color: #245b80;">
+Book Chapter <span class="contact-arrow" aria-hidden="true" style="color: #245b80;font-size:17px;">↗</span>
+            </a>
             </div>
 
             <p class="rw-citation">
@@ -2322,15 +3131,13 @@ main section,
             data-year="2022"
             data-search="2022 Guha Molla Sarkar Ibanez Fabra DasGupta Nod factor-independent crack-entry symbiosis dalbergoid legume Arachis hypogaea Environmental Microbiology rhizobial entry mechanisms">
             <div class="rw-publication-meta">
-              <a
-                class="rw-publication-type"
-                href="https://doi.org/10.1111/1462-2920.15989"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open research article">
-                <span>Research Article</span>
-                   <span class="rw-type-arrow" aria-hidden="true">↗</span>
-              </a>
+           <a
+              href="https://pubmed.ncbi.nlm.nih.gov/34995397/2"
+              target="_blank"
+              rel="noopener noreferrer"
+            style="color: #245b80;">
+             Research Article <span class="contact-arrow" aria-hidden="true" style="color: #245b80;font-size:17px;">↗</span>
+            </a>
             </div>
             <p class="rw-citation">
               Guha, S., Molla, F., <strong>Sarkar, M.</strong>,
@@ -2352,15 +3159,13 @@ main section,
             data-year="2022"
             data-search="2022 Sarkar Paul Das engineered biosynthesized metal-based nanoparticles alleviate abiotic stress Response Field Crops Abiotic Stress CRC Press Taylor Francis nanobiotechnology agricultural crop systems">
             <div class="rw-publication-meta">
-              <a
-                class="rw-publication-type"
-                href="https://doi.org/10.1201/9781003258063"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open book chapter">
-                <span>Book Chapter</span>
-                   <span class="rw-type-arrow" aria-hidden="true">↗</span>
-              </a>
+               <a
+              href="https://www.taylorfrancis.com/chapters/edit/10.1201/9781003258063-2/availing-engineered-biosynthesized-metal-based-nanoparticles-alleviate-abiotic-stress-monolina-sarkar-anindita-paul-debapriya-rajlakshmi-das"
+              target="_blank"
+              rel="noopener noreferrer"
+            style="color: #245b80;">
+             Book Chapter <span class="contact-arrow" aria-hidden="true" style="color: #245b80;font-size:17px;">↗</span>
+            </a>
             </div>
             <p class="rw-citation">
               <strong>Sarkar, M.</strong>, Paul, A., &amp; Das, D. R.
@@ -2382,15 +3187,13 @@ main section,
             data-year="2022"
             data-search="2022 Sarkar effect silver nanoparticles nitrogen-cycling bacteria constructed wetlands Nanotechnology Environmental Engineering ecotoxicological microbial nitrogen transformation pathways">
             <div class="rw-publication-meta">
-              <a
-                class="rw-publication-type"
-                href="https://doi.org/10.1007/s41204-022-00244-6"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open research article">
-                <span>Research Article</span>
-                   <span class="rw-type-arrow" aria-hidden="true">↗</span>
-              </a>
+           <a
+              href="https://link.springer.com/article/10.1007/s41204-021-00192-3"
+              target="_blank"
+              rel="noopener noreferrer"
+            style="color: #245b80;">
+             Review Article <span class="contact-arrow" aria-hidden="true" style="color: #245b80;font-size:17px;">↗</span>
+            </a>
             </div>
             <p class="rw-citation">
               <strong>Sarkar, M.</strong> (2022). Effect of silver
@@ -2411,15 +3214,13 @@ main section,
             data-year="2016"
             data-search="2016 Guha Sarkar Ganguly Uddin Mandal DasGupta segregation nod-containing nod-deficient bradyrhizobia endosymbionts Arachis hypogaea endophytes Oryza sativa intercropped fields Bengal Basin India Environmental Microbiology host microbe selectivity">
             <div class="rw-publication-meta">
-              <a
-                class="rw-publication-type"
-                href="https://doi.org/10.1111/1462-2920.13289"
-                target="_blank"
-                rel="noopener noreferrer"
-                aria-label="Open research article">
-                <span>Research Article</span>
-                   <span class="rw-type-arrow" aria-hidden="true">↗</span>
-              </a>
+             <a
+              href="https://pubmed.ncbi.nlm.nih.gov/27102878/"
+              target="_blank"
+              rel="noopener noreferrer"
+            style="color: #245b80;">
+             Research Article <span class="contact-arrow" aria-hidden="true" style="color: #245b80;font-size:17px;">↗</span>
+            </a>
             </div>
             <p class="rw-citation">
               Guha, S., <strong>Sarkar, M.</strong>, Ganguly, P., Uddin,
@@ -2479,19 +3280,25 @@ main section,
             Collaborating with academic colleagues across higher education institutions to investigate how students learn and to advance inclusive, evidence-informed approaches to scientific reasoning.
           </p>
 
-          <div class="card-extra" id="extra-1">
-            Focusing on systematic inquiry into instructional effectiveness, evidence-based curriculum redesign, and pedagogical research partnerships that bridge theory and laboratory practice.
-          </div>
 
-          <button
-            class="read-more"
-            type="button"
-            aria-expanded="false"
-            aria-controls="extra-1"
-            onclick="toggleCard(this, 'extra-1')">
-            <span class="button-text">Read More</span>
-            <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease;">↗</span>
-          </button>
+
+<div class="blog-footer"
+                style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-medium);">
+               <span class="blog-date"
+                  style="font-family: Garamond; font-size: 17.5px; color: #000000; font-weight: 400;"></span>
+                     <a href="assets/adult_learning.pdf"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="font-family: Garamond; font-size: 17.5px; color: #245b80;">
+    Read More
+    <span class="contact-arrow" aria-hidden="true" style="color: #245b80;">↗</span>
+</a>
+
+
+
+
+
+              </div>
         </article>
 
         <!-- CARD 02 -->
@@ -2511,19 +3318,25 @@ main section,
             Engaging with international virtual exchange initiatives through the Global Citizenship Virtual Exchange Consortium (GCVEX), associated with Rutgers University's Graduate School of Education, and COIL Connect, New York, Brooklyn.
           </p>
 
-          <div class="card-extra" id="extra-2">
-            I am interested in how cross-context collaboration can inform pedagogical practice, enrich global learning, strengthen critical thinking, and create opportunities for collaborative education research.
-          </div>
 
-          <button
-            class="read-more"
-            type="button"
-            aria-expanded="false"
-            aria-controls="extra-2"
-            onclick="toggleCard(this, 'extra-2')">
-            <span class="button-text">Read More</span>
-              <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease;">↗</span>
-          </button>
+
+<div class="blog-footer"
+                style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-medium);">
+               <span class="blog-date"
+                  style="font-family: Garamond; font-size: 17.5px; color: #000000; font-weight: 400;"></span>
+                     <a href="assets/adult_learning.pdf"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="font-family: Garamond; font-size: 17.5px; color: #245b80;">
+    Read More
+    <span class="contact-arrow" aria-hidden="true" style="color: #245b80;">↗</span>
+</a>
+
+
+
+
+
+              </div>
         </article>
 
         <!-- CARD 03 -->
@@ -2543,19 +3356,26 @@ main section,
             Contributing educational resources and reviewing learning materials for MERLOT, supporting the discoverability, quality, and wider use of open educational resources to enhance teaching and learning.
           </p>
 
-          <div class="card-extra" id="extra-3">
-            Open educational resources offer opportunities to make quality learning materials more accessible, adaptable, and reusable. This work supports knowledge sharing and the broader educational community.
-          </div>
 
-          <button
-            class="read-more"
-            type="button"
-            aria-expanded="false"
-            aria-controls="extra-3"
-            onclick="toggleCard(this, 'extra-3')">
-            <span class="button-text">Read More</span>
-              <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease;">↗</span>
-          </button>
+
+
+<div class="blog-footer"
+                style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-medium);">
+               <span class="blog-date"
+                  style="font-family: Garamond; font-size: 17.5px; color: #000000; font-weight: 400;"></span>
+                     <a href="assets/adult_learning.pdf"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="font-family: Garamond; font-size: 17.5px; color: #245b80;">
+    Read More
+    <span class="contact-arrow" aria-hidden="true" style="color: #245b80;">↗</span>
+</a>
+
+
+
+
+
+              </div>
         </article>
 
         <!-- CARD 04 -->
@@ -2575,20 +3395,28 @@ main section,
             Communicating scientific research and ideas to broader audiences through science writing, with contributions to the American Society for Microbiology (ASM) and CSIR Science Reporter.
           </p>
 
-          <div class="card-extra" id="extra-4">
-            This work focuses on translating scientific concepts into accessible narratives that connect research with wider public understanding, encourage curiosity, and make scientific knowledge more approachable for diverse audiences.
-          </div>
 
-          <button
-            class="read-more"
-            type="button"
-            aria-expanded="false"
-            aria-controls="extra-4"
-            onclick="toggleCard(this, 'extra-4')">
-            <span class="button-text">Read More</span>
-              <span class="rw-type-arrow" aria-hidden="true" style="font-weight: 400;line-height: 1; transition: transform 0.2s ease;">↗</span>
-          </button>
-        </article>
+
+<div class="blog-footer"
+                style="display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--border-medium);">
+               <span class="blog-date"
+                  style="font-family: Garamond; font-size: 17.5px; color: #000000; font-weight: 400;"></span>
+                     <a href="assets/adult_learning.pdf"
+   target="_blank"
+   rel="noopener noreferrer"
+   style="font-family: Garamond; font-size: 17.5px; color: #245b80;">
+    Read More
+    <span class="contact-arrow" aria-hidden="true" style="color: #245b80;">↗</span>
+</a>
+
+
+
+
+
+              </div>
+            </div>
+
+</article>
 
       </div>
 
@@ -2622,7 +3450,7 @@ main section,
                     Join the <span style="font-style: italic;color: #24577c ;">Kaizen</span> Journey.
                 </h2>
 
-      
+
                 <div class="footer-gold-line"></div>
 
                 <p>
@@ -2633,7 +3461,7 @@ main section,
                     </a>
                 </p>
 
-             
+
                 <!-- ACTION BUTTONS -->
                 <div class="footer-actions">
 
@@ -2669,11 +3497,10 @@ main section,
 
                 <div class="footer-enso-caption">
 
-                    <span>THE ENSO</span>
+                    <span>KAIZEN</span>
 
                     <p>
-                        A journey of continuous learning
-                        and improvement.
+                        A journey of continuous learning and becoming.
                     </p>
 
                 </div>
@@ -2731,7 +3558,7 @@ main section,
 
 
                     <a href="accessibility-statement.html">
-                        Accessibility Statement
+                        Accessibility Statement  <span aria-hidden="true">↗</span>
                     </a>
 
                 </div>
@@ -2742,11 +3569,11 @@ main section,
 
 
 
-           
+
 
 
             <!-- COPYRIGHT AND PROFESSIONAL LINKS -->
-          
+
 
         </div>
 
@@ -2754,155 +3581,74 @@ main section,
 
 </footer>
 
- 
-  <!-- SCRIPT FOR CARD TOGGLE -->
-  <script>
-    function toggleCard(button, contentId) {
-      const content = document.getElementById(contentId);
-      if (!content) return;
-      const isExpanded = button.getAttribute("aria-expanded") === "true";
 
-      content.classList.toggle("open", !isExpanded);
-      button.setAttribute("aria-expanded", String(!isExpanded));
 
-      const textSpan = button.querySelector(".button-text");
-      if (textSpan) {
-        textSpan.textContent = isExpanded ? "Read More" : "Read Less";
-      }
-
-      const arrow = button.querySelector(".arrow");
-      if (arrow) {
-        arrow.textContent = isExpanded ? "\u2192" : "\u2191";
-      }
-    }
-  </script>
-
-  <!-- SCRIPT FOR RESEARCH WORK YEAR FILTER -->
-  <script>
-    (function () {
-      "use strict";
-      const section = document.getElementById("research-work");
-      if (!section) return;
-
-      const publications = Array.from(section.querySelectorAll(".rw-publication"));
-      const filterButtons = Array.from(section.querySelectorAll(".rw-filter"));
-      const emptyState = section.querySelector("#rw-empty");
-      let activeFilter = "all";
-
-      function updatePublications() {
-        let numberVisible = 0;
-        publications.forEach(function (pub) {
-          const year = Number(pub.dataset.year);
-          let match = true;
-          if (activeFilter === "recent") {
-            match = year >= 2020;
-          }
-          pub.hidden = !match;
-          if (match) numberVisible++;
-        });
-
-        if (emptyState) {
-          emptyState.hidden = numberVisible > 0;
-        }
-      }
-
-      filterButtons.forEach(function (btn) {
-        btn.addEventListener("click", function () {
-          filterButtons.forEach(b => {
-            b.classList.remove("is-active");
-            b.setAttribute("aria-pressed", "false");
-          });
-          btn.classList.add("is-active");
-          btn.setAttribute("aria-pressed", "true");
-          activeFilter = btn.dataset.filter;
-          updatePublications();
-        });
-      });
-    })();
-  </script>
-
-  <!-- SCROLLSPY SCRIPT -->
-<!-- SCROLLSPY SCRIPT -->
+  <!-- MAIN SCRIPT -->
+  <script src="js/main.js"></script>
 <script>
-document.addEventListener('DOMContentLoaded', function () {
+   document.addEventListener('DOMContentLoaded', function () {
 
-    const sections = document.querySelectorAll(
-        'main section[id]'
-    );
+  const sections = document.querySelectorAll('main section[id]');
+  const navLinks = document.querySelectorAll(
+    '.site-header .nav-link, .mobile-drawer .nav-link'
+  );
 
-    const navLinks = document.querySelectorAll(
-        '.site-header .nav-link, .mobile-drawer .nav-link'
-    );
+  const researchSections = [
+    'research-focus',
+    'research-questions',
+    'research-work'
+  ];
 
-    // Three research sections grouped under one navbar item
-    const researchSections = [
-        'research-focus',
-        'research-questions',
-        'research-work'
-    ];
+  function updateActiveNavigation() {
 
-    function updateActiveNavigation() {
+    let currentSection = 'home';
+    const scrollPosition = window.scrollY + 180;
 
-        let currentSection = 'home';
+    sections.forEach(section => {
+      const sectionTop =
+        section.getBoundingClientRect().top + window.scrollY;
 
-        const scrollPosition = window.scrollY + 180;
-
-        sections.forEach(section => {
-
-            const sectionTop =
-                section.getBoundingClientRect().top + window.scrollY;
-
-            if (scrollPosition >= sectionTop) {
-                currentSection = section.id;
-            }
-
-        });
-
-        // Ensure the final section is recognised near the page bottom
-        if (
-            window.innerHeight + window.scrollY >=
-            document.documentElement.scrollHeight - 5
-        ) {
-            currentSection = 'practice-areas';
-        }
-
-        navLinks.forEach(link => {
-
-            const href = link.getAttribute('href');
-
-            let isActive = false;
-
-            if (researchSections.includes(currentSection)) {
-
-                isActive = href === '#research-focus';
-
-            } else {
-
-                isActive = href === '#' + currentSection;
-
-            }
-
-            link.classList.toggle('active', isActive);
-
-        });
-
-    }
-
-    window.addEventListener('scroll', updateActiveNavigation, {
-        passive: true
+      if (scrollPosition >= sectionTop) {
+        currentSection = section.id;
+      }
     });
 
-    window.addEventListener('resize', updateActiveNavigation);
+    // Highlight Programs when reaching the bottom of the page
+    if (
+      window.innerHeight + window.scrollY >=
+      document.documentElement.scrollHeight - 5
+    ) {
+      currentSection = 'practice-areas';
+    }
 
-    window.addEventListener('load', updateActiveNavigation);
+    navLinks.forEach(link => {
 
-    updateActiveNavigation();
+      const url = new URL(link.href, window.location.href);
+      const targetId = url.hash.replace('#', '');
+
+      let isActive = false;
+
+      if (researchSections.includes(currentSection)) {
+        isActive = targetId === 'research-focus';
+      } else {
+        isActive = targetId === currentSection;
+      }
+
+      link.classList.toggle('active', isActive);
+    });
+  }
+
+  window.addEventListener('scroll', updateActiveNavigation, {
+    passive: true
+  });
+
+  window.addEventListener('resize', updateActiveNavigation);
+  window.addEventListener('load', updateActiveNavigation);
+
+  updateActiveNavigation();
 
 });
 </script>
-
-  <!-- MAIN SCRIPT (Modals, Sticky Header, Mobile Drawer, Copy Buttons) -->
-  <script src="js/main.js"></script>
 
 </body>
 </html>

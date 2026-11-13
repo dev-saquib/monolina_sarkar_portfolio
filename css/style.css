@@ -360,10 +360,10 @@ input[type="reset"] {
   padding-top: calc(var(--section-spacing-y) * 0.65);
   padding-bottom: calc(var(--section-spacing-y) * 0.65);
 }
-
+/*
 .section-header {
   margin-bottom: var(--header-body-spacing);
-}
+}*/
 
 .section-label {
   font-family: var(--font-mono);
@@ -621,7 +621,7 @@ a.btn {
 }
 
 .read-more:hover {
-  color: #a47a43;
+  color: #245b80;;
 }
 
 .read-more .arrow {
